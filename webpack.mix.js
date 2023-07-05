@@ -36,7 +36,7 @@ mix.setPublicPath('public')
 .sass('resources/site/assets/sass/main.scss',  'site/css/main.css').options({ processCssUrls: false })
 .js('resources/site/assets/js/vendor.js', 'site/js/vendor.js')
 .js('resources/site/assets/js/main.js', 'site/js/main.js')
-.js('resources/site/assets/js/pages/home.js', 'public/site/js/pages/home.js')
+.js('resources/site/assets/js/pages/page_home.js', 'public/site/js/pages/page_home.js')
 .js('resources/site/assets/js/pages/contactPage.js', 'public/site/js/pages/contactPage.js')
 .sourceMaps();
 
