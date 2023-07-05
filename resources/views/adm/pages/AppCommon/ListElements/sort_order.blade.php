@@ -1,0 +1,1 @@
+<i class="fas fa-arrows-alt" data-id="{{$item->id}}" data-sort-order="{{$item->sort_order}}"></i>

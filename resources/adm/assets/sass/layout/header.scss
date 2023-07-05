@@ -1,0 +1,31 @@
+header#header{
+	// position: absolute;
+	// width: 100%;
+	// z-index: 99;
+	nav{
+		padding-right: 0;
+		padding-left: 0;
+		li{
+			a{
+				color: #8d8d8d;
+				text-transform: uppercase;
+				font-size: 14px;
+			}
+		}
+		.menu{
+			.nav-item{
+				margin-right: 15px;
+				&:last-child{
+					margin-right: 0;
+				}
+			}
+		}
+	}
+	.navbar-brand {	
+		
+		@media (max-width: 991.98px){
+			left: 25% !important;
+		}
+		
+	}
+}

@@ -1,0 +1,13 @@
+@custom-media --desktop_big (width >= 1920px)
+
+@custom-media --desktop (width <= 1399px)
+
+@custom-media --desktop_min (width <= 1199px)
+
+@custom-media --tablet_big (width <= 999px)
+
+@custom-media --tablet (width <= 799px)
+
+@custom-media --mobile_big (width <= 599px)
+
+@custom-media --mobile (width <= 499px)

@@ -1,0 +1,13 @@
+.app-footer{
+	&__listMidias{
+		display: flex;
+		list-style: none;
+		align-items: center;
+		margin: 0;
+	}
+	&__link{
+		color: #738187;
+		font-size: 18px;
+		margin-left: 20px;
+	}
+}

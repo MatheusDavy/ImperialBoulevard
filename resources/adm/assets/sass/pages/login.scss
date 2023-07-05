@@ -1,0 +1,13 @@
+section#login{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-image: url('../img/bgLogin.jpg');
+	background-size: cover;
+	background-position: center;
+}
+.login-img{
+    background: url('../img/login.jpg') center center/cover no-repeat;
+    border: 0;
+}

@@ -1,0 +1,42 @@
+///////////////////////////////////
+////////// FONT-FACE //////////////
+///////////////////////////////////
+
+//SE FOR GOOGLEFONTES COLOCAR NO APP.BLADE.PHP
+
+/*@font-face {
+	font-family: 'Branding-Medium';
+	src: url('../fonts/Branding/Branding-Medium.woff2') format('woff2'),
+	url('../fonts/Branding/Branding-Medium.woff') format('woff'),
+	url('../fonts/Branding/Branding-Medium.eot') format('eot'),
+	url('../fonts/Branding/Branding-Medium.svg') format('svg');
+}*/
+
+$thin: 100;
+$extra-light: 200;
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semi-bold: 600;
+$bold: 700;
+$extra-bold: 800;
+$black: 900;
+
+html {
+    font-size: 62.5%;
+
+    // 12px = 1.2rem
+    // 20px = 2.0rem
+    // 35px = 3.5rem
+    // 46px = 4.6rem
+	// 91px = 9.1rem
+}
+
+@mixin fontTemplate($size, $height, $color, $weight, $family, $align: start) {
+    font-size: $size;
+    line-height: $height;
+    color: $color;
+    font-weight: $weight;
+    font-family: $family;
+	text-align: $align;
+}

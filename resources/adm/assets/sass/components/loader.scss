@@ -1,0 +1,19 @@
+.modalLoader{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 999999;
+	display: none;
+	text-align: center;
+	background: #fff;
+	border: 0;
+	box-shadow: 0 0 5px rgba(0,0,0,.1);
+	padding: 10px;
+	&__text{
+		color: #fff;
+		@include fontSize(16px);
+		font-family: "Branding-Bold";
+		margin-bottom: 0;
+	}
+}

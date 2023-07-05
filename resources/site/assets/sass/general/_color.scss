@@ -1,0 +1,48 @@
+$red-error: #95201C;
+$green-success: #2C4325;
+/*  */
+
+/*------------- Hover background gradient --------------*/
+
+@property --myColor1 {
+    syntax: '<color>';
+    initial-value: #FCA32D;
+    inherits: false;
+}
+  
+@property --myColor2 {
+    syntax: '<color>';
+    initial-value: #FF6196;
+    inherits: false;
+}
+
+.button-hover-linearGradient {
+    background-image: linear-gradient(
+        105deg,
+        var(--myColor1) 7%,
+        var(--myColor2) 78%
+    );
+    transition: --myColor1 0.7s, --myColor2 0.7s;
+    &:hover {
+        --myColor1: #ff933c;
+        --myColor2: #ff933c;
+    }
+}
+
+.button-hover-linearGradient-others-browsers {
+    background-image: linear-gradient(
+        105deg,
+        #ff933c 7%,
+        #ff6196 78%
+    );
+    background-image: -o-linear-gradient(
+        105deg,
+        #ff933c 7%,
+        #ff6196 78%
+    );
+    background-image: -moz-linear-gradient(
+        105deg,
+        #ff933c 7%,
+        #ff6196 78%
+    );
+}

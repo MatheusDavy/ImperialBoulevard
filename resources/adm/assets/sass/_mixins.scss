@@ -1,0 +1,99 @@
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return #{$remSize}rem;
+}
+@mixin fontSize($size) {
+  font-size: $size; //Fallback in px
+  font-size: calculateRem($size);
+}
+
+@mixin dim($width: auto, $height: auto){
+	height: $height;
+	width: $width;
+}
+
+@mixin transition($element: all, $duration: .3s, $timing-function: linear){
+	-webkit-transition: $element $duration $timing-function;
+	-moz-transition: $element $duration $timing-function;
+	-ms-transition: $element $duration $timing-function;
+	-o-transition: $element $duration $timing-function;
+	transition: $element $duration $timing-function;
+}
+
+@mixin flex($align: normal, $justify: normal){
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: $align;
+	justify-content: $justify;
+}
+
+@mixin rotate($angle: 0deg){
+	-webkit-transform: rotate($angle);
+	-moz-transform: rotate($angle);
+	-ms-transform: rotate($angle);
+	-o-transform: rotate($angle);
+	transform: rotate($angle);
+}
+
+@mixin pseudo($display: block, $pos: absolute, $content: ''){
+	content: $content;
+	display: $display;
+	position: $pos;
+}
+
+@mixin border-radius($radius) {
+	-webkit-border-radius: $radius; 
+	-moz-border-radius: $radius; 
+	border-radius: $radius;  
+}
+
+@mixin appearance($val: none) {
+	-webkit-appearance: $val;
+	-moz-appearance: $val;
+	appearance: $val;
+}
+
+@mixin css-triangle($color, $direction, $size: 6px, $position: absolute, $round: false){
+	@include pseudo($pos: $position);
+	width: 0;
+	height: 0;
+
+	@if $round {
+		border-radius: 3px;
+	}
+
+	@if $direction == down {
+		border-left: $size solid transparent;
+		border-right: $size solid transparent;
+		border-top: $size solid $color;
+		margin-top: 0 - round( $size / 2.5 );
+	} @else if $direction == up {
+		border-left: $size solid transparent;
+		border-right: $size solid transparent;
+		border-bottom: $size solid $color;
+		margin-bottom: 0 - round( $size / 2.5 );
+	} @else if $direction == right {
+		border-top: $size solid transparent;
+		border-bottom: $size solid transparent;
+		border-left: $size solid $color;
+		margin-right: -$size;
+	} @else if  $direction == left {
+		border-top: $size solid transparent;
+		border-bottom: $size solid transparent;
+		border-right: $size solid $color;
+		margin-left: -$size;
+	}
+}
+
+@mixin input-placeholder($color, $opacity: 1) {
+	&:placeholder { color: $color; opacity: $opacity; }
+	&:-moz-placeholder { color: $color; opacity: $opacity; }
+	&::-moz-placeholder { color: $color; opacity: $opacity; }
+	&:-ms-input-placeholder { color: $color; opacity: $opacity; }
+	&::-webkit-input-placeholder { color: $color; opacity: $opacity; }
+}
+
+@mixin push--auto { margin: { left: auto; right: auto; } }

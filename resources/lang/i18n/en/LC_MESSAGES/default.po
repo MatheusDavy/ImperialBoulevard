@@ -1,0 +1,1948 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2020-06-16 14:28-0300\n"
+"PO-Revision-Date: 2021-05-13 08:33-0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.4.2\n"
+"X-Poedit-Basepath: ../../../../..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: lang\n"
+"X-Poedit-SearchPath-0: app\n"
+"X-Poedit-SearchPath-1: resources/site/views\n"
+
+#: app/Http/Controllers/Site/CertificadosController.php:42
+#: app/Http/Controllers/Site/CertificadosController.php:62
+msgid "Erro!"
+msgstr "Error!"
+
+#: app/Http/Controllers/Site/CertificadosController.php:43
+msgid "Preencha os campos"
+msgstr "Fill up the field"
+
+#: app/Http/Controllers/Site/CertificadosController.php:57
+msgid "Sucesso!"
+msgstr "Success!"
+
+#: app/Http/Controllers/Site/CertificadosController.php:58
+msgid ""
+"Seu certificado está sendo emitido. O download do arquivo iniciará em "
+"instantes."
+msgstr ""
+
+#: app/Http/Controllers/Site/CertificadosController.php:63
+msgid "Dados não encontrados"
+msgstr "Have found"
+
+#: app/Http/Controllers/Site/HomeController.php:81
+msgid "Preencha o e-mail."
+msgstr "Fill up e-mail."
+
+#: app/Http/Controllers/Site/HomeController.php:83
+msgid "Selecione uma área de interesse."
+msgstr "Select an area of interest."
+
+#: app/Http/Controllers/Site/HomeController.php:94
+#: app/Http/Controllers/Site/SiteController.php:104
+msgid "Obrigado!"
+msgstr "Thanks!"
+
+#: app/Http/Controllers/Site/HomeController.php:95
+msgid "Você se cadastrou para receber nossas novidades."
+msgstr "You have registered to receive our news."
+
+#: app/Http/Controllers/Site/HomeController.php:151
+msgid "E-mail já está cadastrado."
+msgstr ""
+
+#: app/Http/Controllers/Site/ProductController.php:697
+msgid "Valide o campo"
+msgstr "Validate the field"
+
+#: app/Http/Controllers/Site/ProductController.php:701
+#: app/Http/Controllers/Site/RepresentativeRegisterController.php:72
+#: app/Http/Controllers/Site/RepresentativeRegisterController.php:88
+#: app/Http/Controllers/Site/SacController.php:95
+#: app/Http/Controllers/Site/SacController.php:100
+#: app/Http/Controllers/Site/SacController.php:105
+#: app/Http/Controllers/Site/SacController.php:111
+#: app/Http/Controllers/Site/SacController.php:115
+msgid "Preencha o campo"
+msgstr "Fill up the field"
+
+#: app/Http/Controllers/Site/ProductController.php:880
+msgid "Orçamento enviado!<br>Em breve entraremos em contato."
+msgstr "Quote request submitted!<br>Shortly we'll respond."
+
+#: app/Http/Controllers/Site/RepresentativeRegisterController.php:83
+msgid "Selecione ao menos uma área de interesse"
+msgstr "Select at least one area of interest"
+
+#: app/Http/Controllers/Site/RepresentativeRegisterController.php:129
+msgid "Você precisa enviar um arquivo na extensão"
+msgstr "You need to upload a file in the extension"
+
+#: app/Http/Controllers/Site/RepresentativeRegisterController.php:136
+#: app/Http/Controllers/Site/SacController.php:144
+msgid "ENVIADO"
+msgstr "SENT"
+
+#: app/Http/Controllers/Site/RepresentativeRegisterController.php:137
+msgid "Obrigado por se cadastrar!<br>Em breve retornaremos o contato."
+msgstr "Thanks for contacting us. <br> Shortly we'll respond."
+
+#: app/Http/Controllers/Site/SacController.php:23
+msgid "Dúvidas"
+msgstr "Doubts"
+
+#: app/Http/Controllers/Site/SacController.php:24
+msgid "Receber visita de representante"
+msgstr "Receive a visit from a sales agent"
+
+#: app/Http/Controllers/Site/SacController.php:25
+msgid "Reclamações"
+msgstr "Complaints"
+
+#: app/Http/Controllers/Site/SacController.php:26
+msgid "Solicitar uma cotação"
+msgstr "Request a quote"
+
+#: app/Http/Controllers/Site/SacController.php:27
+msgid "Ser Cliente/Distribuidor"
+msgstr "I want to be a Customer / Distributor"
+
+#: app/Http/Controllers/Site/SacController.php:28
+msgid "Sugestões"
+msgstr "Suggestions"
+
+#: app/Http/Controllers/Site/SacController.php:29
+msgid "Visita técnica"
+msgstr "Technical visit"
+
+#: app/Http/Controllers/Site/SacController.php:30
+msgid "Outros"
+msgstr "Another subjects"
+
+#: app/Http/Controllers/Site/SacController.php:145
+msgid "Obrigado por falar conosco!<br>Em breve retornaremos o contato."
+msgstr "Thanks for contacting us. <br> Shortly we'll respond."
+
+#: app/Http/Controllers/Site/SecondTicketController.php:63
+msgid "Nota fiscal não localizada."
+msgstr "Invoice not found."
+
+#: app/Http/Controllers/Site/SiteController.php:105
+msgid "Erro ao enviar!"
+msgstr "Error submitting!"
+
+#: app/Http/Controllers/Site/SiteController.php:106
+msgid "Algo deu errado, tente novamente mais tarde!"
+msgstr "There was an error while sending, please try again later!"
+
+#: app/Http/Controllers/Site/SiteController.php:107
+msgid "OPS!"
+msgstr "Error!"
+
+#: app/Http/Controllers/Site/SiteController.php:108
+msgid "Algum dado está incorreto ou não foi preenchido. Tente novamente!"
+msgstr "Some data is incorrect or not filled. Try again!"
+
+#: app/Http/Controllers/Site/SiteController.php:109
+#: resources/site/views/pages/AppDownloads/index.blade.php:68
+msgid "Foram encontrados"
+msgstr "Have found"
+
+#: app/Http/Controllers/Site/SiteController.php:110
+#: resources/site/views/pages/AppDownloads/index.blade.php:68
+msgid "resultados"
+msgstr "results"
+
+#: app/Http/Controllers/Site/SiteController.php:111
+#: resources/site/views/pages/AppHome/index.blade.php:80
+msgid "Ver mais"
+msgstr "See more"
+
+#: app/Http/Controllers/Site/SiteController.php:112
+#: resources/site/views/components/bag.blade.php:24
+#: resources/site/views/components/bag.blade.php:62
+msgid "Produto"
+msgstr "Product"
+
+#: app/Http/Controllers/Site/SiteController.php:113
+#: resources/site/views/components/bag.blade.php:28
+#: resources/site/views/components/bag.blade.php:63
+msgid "Código"
+msgstr "Code"
+
+#: app/Http/Controllers/Site/SiteController.php:114
+#: resources/site/views/components/bag.blade.php:32
+#: resources/site/views/components/bag.blade.php:61
+msgid "Qtd."
+msgstr "Qty."
+
+#: app/Http/Controllers/Site/SiteController.php:115
+#: resources/site/views/pages/AppBlog/index.blade.php:28
+#: resources/site/views/pages/AppBlogDetail/index.blade.php:21
+msgid "Publicado por"
+msgstr "Published by"
+
+#: app/Http/Controllers/Site/SiteController.php:116
+#: resources/site/views/pages/AppBlog/index.blade.php:28
+#: resources/site/views/pages/AppBlogDetail/index.blade.php:21
+msgid "dia"
+msgstr "date"
+
+#: app/Http/Controllers/Site/SiteController.php:117
+#: resources/site/views/pages/AppFindRepresentative/index.blade.php:39
+msgid "Estado"
+msgstr "State"
+
+#: app/Http/Controllers/Site/SiteController.php:118
+#: resources/site/views/pages/AppFindRepresentative/index.blade.php:48
+msgid "Cidade"
+msgstr "City"
+
+#: app/Http/Controllers/Site/SiteController.php:119
+#: resources/site/views/pages/AppFindRepresentative/index.blade.php:57
+msgid "Unidade de negócio"
+msgstr "Business Units"
+
+#: app/Http/Controllers/Site/SiteController.php:120
+#: resources/site/views/pages/AppFindRepresentative/index.blade.php:69
+msgid "Atuação"
+msgstr "Performance"
+
+#: app/Http/Controllers/Site/SiteController.php:121
+#: resources/site/views/components/bag.blade.php:106
+#: resources/site/views/pages/AppFindRepresentative/index.blade.php:78
+msgid "Segmento"
+msgstr "Segment"
+
+#: app/Http/Controllers/Site/SiteController.php:122
+#: resources/site/views/pages/AppDownloads/index.blade.php:71
+msgid "Não foram encontrados resultados"
+msgstr "No results"
+
+#: app/Http/Controllers/Site/SiteController.php:123
+#: resources/site/views/pages/AppDownloads/index.blade.php:69
+msgid "Selecione os itens que deseja fazer download."
+msgstr "Select the items that you want to download."
+
+#: app/Http/Controllers/Site/SiteController.php:124
+msgid "Atenção!"
+msgstr "Attention!"
+
+#: app/Http/Controllers/Site/SiteController.php:125
+msgid "Você precisa selecionar uma unidade para realizar a pesquisa!"
+msgstr "You must select a unit to search!"
+
+#: app/Http/Controllers/Site/SiteController.php:126
+msgid "para"
+msgstr "to"
+
+#: app/Http/Controllers/Site/SiteController.php:127
+#: resources/site/views/pages/AppProductDetail/index.blade.php:93
+#: resources/site/views/pages/AppProductList/index.blade.php:128
+msgid "Cód.:"
+msgstr "Code:"
+
+#: app/Http/Controllers/Site/SiteController.php:128
+msgid ""
+"Selecione uma categoria ao lado para visualizar as perguntas mais frequentes."
+msgstr ""
+"Select a category next to it to view the most frequently asked questions."
+
+#: resources/site/views/components/bag.blade.php:6
+msgid "Solicitação de Orçamento"
+msgstr "Request for Quote"
+
+#: resources/site/views/components/bag.blade.php:11
+msgid "Você adicionou um item à sua solicitação de orçamento:"
+msgstr "You have added an item to your quote request:"
+
+#: resources/site/views/components/bag.blade.php:12
+msgid "Adicione itens para continuar."
+msgstr "Add items to continue."
+
+#: resources/site/views/components/bag.blade.php:43
+msgid "Continuar navegando"
+msgstr "Continue browsing"
+
+#: resources/site/views/components/bag.blade.php:46
+#: resources/site/views/components/bag.blade.php:84
+#: resources/site/views/components/bag.blade.php:148
+#: resources/site/views/pages/AppSecondTicket/index.blade.php:89
+#: resources/site/views/pages/AppSecondTicket/index.blade.php:120
+msgid "Avançar"
+msgstr "GO FORWARD"
+
+#: resources/site/views/components/bag.blade.php:49
+msgid "Limpar Produtos"
+msgstr "Delete products"
+
+#: resources/site/views/components/bag.blade.php:56
+msgid "Resumo da sua solicitação de orçamento"
+msgstr "Overview of your quote request"
+
+#: resources/site/views/components/bag.blade.php:81
+#: resources/site/views/components/bag.blade.php:145
+#: resources/site/views/pages/AppPhotovoltaic/index.blade.php:98
+#: resources/site/views/pages/AppPhotovoltaic/index.blade.php:116
+#: resources/site/views/pages/AppPhotovoltaicUnicred/index.blade.php:130
+#: resources/site/views/pages/AppPhotovoltaicUnicred/index.blade.php:148
+#: resources/site/views/pages/AppProductDetail/index.blade.php:160
+#: resources/site/views/pages/AppSac/index.blade.php:77
+#: resources/site/views/pages/AppSac/index.blade.php:108
+#: resources/site/views/pages/AppSac/index.blade.php:128
+#: resources/site/views/pages/AppSac/index.blade.php:149
+msgid "Voltar"
+msgstr "RETURN"
+
+#: resources/site/views/components/bag.blade.php:92
+msgid "Quase lá! Informe seus dados para finalizar a solicitação:"
+msgstr "Almost there! Please enter your details to finish the request:"
+
+#: resources/site/views/components/bag.blade.php:97
+msgid "Nome Completo"
+msgstr "Full Name"
+
+#: resources/site/views/components/bag.blade.php:100
+msgid "CNPJ ou CPF"
+msgstr "Document"
+
+#: resources/site/views/components/bag.blade.php:103
+msgid "Nome Empresa"
+msgstr "Company"
+
+#: resources/site/views/components/bag.blade.php:109
+#: resources/site/views/components/newsletter.blade.php:26
+#: resources/site/views/pages/AppBlog/index.blade.php:99
+msgid "E-mail"
+msgstr "E-mail"
+
+#: resources/site/views/components/bag.blade.php:112
+#: resources/site/views/pages/AppPhotovoltaicUnicred/index.blade.php:92
+msgid "Telefone"
+msgstr "Phone"
+
+#: resources/site/views/components/bag.blade.php:115
+msgid "CEP"
+msgstr "Postcode"
+
+#: resources/site/views/components/bag.blade.php:120
+#: resources/site/views/pages/AppPhotovoltaic/index.blade.php:88
+#: resources/site/views/pages/AppPhotovoltaicUnicred/index.blade.php:120
+#: resources/site/views/pages/AppRepresentativeRegister/index.blade.php:104
+#: resources/site/views/pages/AppSac/index.blade.php:89
+msgid "*Estado"
+msgstr "State"
+
+#: resources/site/views/components/bag.blade.php:129
+#: resources/site/views/pages/AppRepresentativeRegister/index.blade.php:116
+#: resources/site/views/pages/AppSac/index.blade.php:101
+msgid "*Cidade"
+msgstr "City"
+
+#: resources/site/views/components/bag.blade.php:133
+msgid "Mensagem"
+msgstr "Message"
+
+#: resources/site/views/components/bag.blade.php:139
+#: resources/site/views/pages/AppSac/index.blade.php:142
+msgid "Desejo receber informações e novidades sobre a Soprano."
+msgstr "I wish to receive information and news about Soprano."
+
+#: resources/site/views/components/bag.blade.php:155
+msgid "Sua solicitação foi enviada com sucesso!"
+msgstr "Your solicitation has been sent!"
+
+#: resources/site/views/components/bag.blade.php:156
+msgid ""
+"Fique atento ao seu e-mail, em breve você receberá o retorno do seu "
+"orçamento."
+msgstr ""
+"Stay tuned on your email, soon you will receive infos about the solicitation."
+
+#: resources/site/views/components/bag.blade.php:157
+msgid "OK"
+msgstr "OK"
+
+#: resources/site/views/components/bagFixed.blade.php:9
+msgid "Cotação"
+msgstr "Quote"
+
+#: resources/site/views/components/categoryBlog.blade.php:3
+#: resources/site/views/pages/AppFaq/index.blade.php:38
+msgid "Categorias"
+msgstr "Categories"
+
+#: resources/site/views/components/contentPhotoBottom.blade.php:6
+msgid "Qual seria <span>sua economia</span>"
+msgstr ""
+
+#: resources/site/views/components/contentPhotoBottom.blade.php:7
+msgid "em 25 anos de uso da tecnologia?"
+msgstr ""
+
+#: resources/site/views/components/contentPhotoBottom.blade.php:8
+msgid "Economia de <span data-simulate=\"economy\"></span> em 25 anos"
+msgstr ""
+
+#: resources/site/views/components/contentPhotoBottom.blade.php:9
+msgid ""
+"O retorno de investimento (payback) contempla o valor médio do kit Soprano e "
+"o valor médio de instalação cobrado pelos integradores de energia "
+"fotovoltaica. Esta simulação considera condições ideais e não substitui a "
+"visita técnica de um profissional especializado."
+msgstr ""
+
+#: resources/site/views/components/contentPhotoBottom.blade.php:20
+msgid "A energia limpa produzida por este sistema, equivale ao plantio de"
+msgstr ""
+
+#: resources/site/views/components/contentPhotoBottom.blade.php:21
+msgid "árvores"
+msgstr ""
+
+#: resources/site/views/components/contentPhotoBottom.blade.php:51
+msgid "Opções de financiamento"
+msgstr ""
+
+#: resources/site/views/components/contentPhotoBottom.blade.php:59
+#, fuzzy
+#| msgid "Nome Completo"
+msgid "Seguro completo"
+msgstr "Full Name"
+
+#: resources/site/views/components/contentPhotoBottom.blade.php:67
+msgid "25 anos de garantia na eficiência de 80%"
+msgstr ""
+
+#: resources/site/views/components/contentPhotoBottom.blade.php:75
+msgid "Energia limpa e renovável"
+msgstr ""
+
+#: resources/site/views/components/contentPhotoBottom.blade.php:83
+msgid "Acompanhamento da geração do sistema via app"
+msgstr ""
+
+#: resources/site/views/components/contentPhotoBottom.blade.php:91
+msgid "Redução na conta de energia elétrica"
+msgstr ""
+
+#: resources/site/views/components/contentPhotoTop.blade.php:11
+#: resources/site/views/components/contentPhotoTop.blade.php:39
+#, fuzzy
+#| msgid "Contato"
+msgid "Conta"
+msgstr "Contact"
+
+#: resources/site/views/components/contentPhotoTop.blade.php:12
+msgid "sem kit:"
+msgstr ""
+
+#: resources/site/views/components/contentPhotoTop.blade.php:25
+msgid "Economia"
+msgstr ""
+
+#: resources/site/views/components/contentPhotoTop.blade.php:26
+msgid "mensal:"
+msgstr ""
+
+#: resources/site/views/components/contentPhotoTop.blade.php:40
+msgid "com kit:"
+msgstr ""
+
+#: resources/site/views/components/contentPhotoTop.blade.php:56
+#, fuzzy
+#| msgid "Vencimento"
+msgid "Investimento"
+msgstr "Expiration"
+
+#: resources/site/views/components/contentPhotoTop.blade.php:65
+msgid "Payback"
+msgstr ""
+
+#: resources/site/views/components/contentPhotoTop.blade.php:73
+msgid "Potência do Sistema"
+msgstr ""
+
+#: resources/site/views/components/filtersProduct.blade.php:7
+msgid "FILTROS"
+msgstr "FILTERS"
+
+#: resources/site/views/components/filtersProduct.blade.php:16
+#: resources/site/views/components/search.blade.php:56
+msgid "Pesquisa"
+msgstr "Search"
+
+#: resources/site/views/components/filtersProduct.blade.php:19
+msgid "Busca"
+msgstr "Search"
+
+#: resources/site/views/components/filtersProduct.blade.php:29
+msgid "Filtrar por:"
+msgstr "Filter by:"
+
+#: resources/site/views/components/filtersProduct.blade.php:85
+msgid "Acabamentos"
+msgstr "Finishings"
+
+#: resources/site/views/components/filtersProduct.blade.php:104
+msgid "Contato"
+msgstr "Contact"
+
+#: resources/site/views/components/filtersProduct.blade.php:105
+msgid "Entre em <br> contato com a gente"
+msgstr "Get in touch <br> with us"
+
+#: resources/site/views/components/filtersProduct.blade.php:108
+msgid "Limpar"
+msgstr "Clean"
+
+#: resources/site/views/components/filtersProduct.blade.php:109
+#: resources/site/views/pages/AppProductList/index.blade.php:58
+msgid "Filtrar"
+msgstr "Filter"
+
+#: resources/site/views/components/loader.blade.php:2
+msgid "Carregando"
+msgstr "Loading"
+
+#: resources/site/views/components/modalPhoto.blade.php:8
+msgid "Sua conta passou de 34,64Kwp!!"
+msgstr ""
+
+#: resources/site/views/components/modalPhoto.blade.php:9
+msgid ""
+"Para calcularmos o valor do seu sistema fotoltaico, solicite um projeto "
+"personalizado!"
+msgstr ""
+
+#: resources/site/views/components/modalPhoto.blade.php:10
+msgid "Ok"
+msgstr ""
+
+#: resources/site/views/components/newsletter.blade.php:13
+#: resources/site/views/pages/AppBlog/index.blade.php:88
+msgid "Interesse"
+msgstr "Interest"
+
+#: resources/site/views/components/newsletter.blade.php:14
+#: resources/site/views/pages/AppBlog/index.blade.php:89
+msgid "Institucional / Corporativo"
+msgstr "Institutional / Corporate"
+
+#: resources/site/views/components/newsletter.blade.php:15
+#: resources/site/views/pages/AppBlog/index.blade.php:90
+msgid "Fechaduras, Ferragens e Cadeados"
+msgstr "Locks, Hardware and Padlocks"
+
+#: resources/site/views/components/newsletter.blade.php:16
+#: resources/site/views/layout/footer.blade.php:84
+#: resources/site/views/pages/AppBlog/index.blade.php:91
+#: resources/site/views/pages/AppSac/index.blade.php:194
+msgid "Materiais Elétricos"
+msgstr "Electric Materials"
+
+#: resources/site/views/components/newsletter.blade.php:17
+#: resources/site/views/pages/AppBlog/index.blade.php:92
+msgid "Utilidades Térmicas, Casa, Lazer e Dia a Dia"
+msgstr "Thermal Utilities, Home, Leisure and Day by Day"
+
+#: resources/site/views/components/newsletter.blade.php:18
+#: resources/site/views/pages/AppBlog/index.blade.php:93
+msgid "Acessórios e Componentes para Móveis"
+msgstr "Furniture Accessories & Components"
+
+#: resources/site/views/components/previewBlog.blade.php:6
+#: resources/site/views/layout/footer.blade.php:54
+#: resources/site/views/layout/header.blade.php:37
+#: resources/site/views/pages/AppBlog/index.blade.php:42
+#: resources/site/views/pages/AppBlog/index.blade.php:49
+msgid "Blog"
+msgstr "Blog"
+
+#: resources/site/views/components/previewBlog.blade.php:9
+#: resources/site/views/pages/AppBlogDetail/index.blade.php:48
+msgid "ver mais noticias"
+msgstr "see more news"
+
+#: resources/site/views/components/previewBlog.blade.php:23
+#: resources/site/views/pages/AppBlogDetail/index.blade.php:61
+msgid "leia mais"
+msgstr "read more"
+
+#: resources/site/views/components/representativeBottom.blade.php:5
+#: resources/site/views/pages/AppSac/index.blade.php:229
+#: resources/site/views/pages/AppSac/index.blade.php:239
+msgid "<strong>Clique aqui</strong> para saber mais"
+msgstr "<strong>Click here</strong> to learn more"
+
+#: resources/site/views/components/search.blade.php:13
+msgid "Que produto você busca..."
+msgstr "Search..."
+
+#: resources/site/views/components/search.blade.php:26
+msgid "Produtos mais buscados"
+msgstr "Popular Products"
+
+#: resources/site/views/components/search.blade.php:37
+msgid "Notícias mais lidas"
+msgstr "Most read news"
+
+#: resources/site/views/components/timeline.blade.php:10
+msgid "Anterior"
+msgstr "Previous"
+
+#: resources/site/views/components/timeline.blade.php:17
+#: resources/site/views/pages/AppPhotovoltaic/index.blade.php:65
+#: resources/site/views/pages/AppPhotovoltaicUnicred/index.blade.php:97
+#: resources/site/views/pages/AppRepresentativeRegister/index.blade.php:55
+#: resources/site/views/pages/AppSac/index.blade.php:43
+#: resources/site/views/pages/AppSac/index.blade.php:80
+#: resources/site/views/pages/AppSac/index.blade.php:111
+#: resources/site/views/pages/AppSac/index.blade.php:131
+msgid "Próximo"
+msgstr "Next"
+
+#: resources/site/views/components/timeline.blade.php:21
+msgid "Conheça nossa história"
+msgstr "Get to know our history"
+
+#: resources/site/views/layout/footer.blade.php:5
+msgid "Conecte-se com a soprano"
+msgstr "Connect with Soprano"
+
+#: resources/site/views/layout/footer.blade.php:23
+#: resources/site/views/layout/header.blade.php:17
+msgid "Produtos"
+msgstr "Products"
+
+#: resources/site/views/layout/footer.blade.php:31
+#: resources/site/views/layout/header.blade.php:43
+#: resources/site/views/layout/header.blade.php:46
+#: resources/site/views/pages/AppInstitutional/index.blade.php:14
+#: resources/site/views/pages/AppInstitutional/index.blade.php:16
+#: resources/site/views/pages/AppSac/index.blade.php:180
+msgid "Institucional"
+msgstr "Institutional"
+
+#: resources/site/views/layout/footer.blade.php:33
+#: resources/site/views/layout/header.blade.php:49
+#: resources/site/views/pages/AppAbout/index.blade.php:48
+#: resources/site/views/pages/AppInstitutional/index.blade.php:25
+#: resources/site/views/pages/AppJobs/index.blade.php:42
+msgid "Quem Somos"
+msgstr "About us"
+
+#: resources/site/views/layout/footer.blade.php:36
+#: resources/site/views/layout/header.blade.php:50
+msgid "Unidades de Negócio"
+msgstr "Business Units"
+
+#: resources/site/views/layout/footer.blade.php:39
+#: resources/site/views/layout/header.blade.php:51
+msgid "Programas Sociais"
+msgstr "Social Programs"
+
+#: resources/site/views/layout/footer.blade.php:42
+#: resources/site/views/layout/header.blade.php:52
+msgid "Qualidade e Meio Ambiente"
+msgstr "Quality and Environment"
+
+#: resources/site/views/layout/footer.blade.php:45
+#: resources/site/views/layout/header.blade.php:53
+#: resources/site/views/pages/AppJobs/index.blade.php:35
+msgid "Trabalhe Conosco"
+msgstr "Work With Us"
+
+#: resources/site/views/layout/footer.blade.php:51
+#: resources/site/views/layout/header.blade.php:55
+#: resources/site/views/pages/AppInstitutional/index.blade.php:100
+msgid "Políticas de Privacidade"
+msgstr "Privacy Policies"
+
+#: resources/site/views/layout/footer.blade.php:58
+#: resources/site/views/layout/header.blade.php:40
+msgid "Central do cliente"
+msgstr "Customer Center"
+
+#: resources/site/views/layout/footer.blade.php:60
+#: resources/site/views/pages/AppCustomerService/index.blade.php:26
+#: resources/site/views/pages/AppFindRepresentative/index.blade.php:15
+#: resources/site/views/pages/AppFindRepresentative/index.blade.php:18
+msgid "Encontre um Representante Comercial"
+msgstr "Find a Sales Representative"
+
+#: resources/site/views/layout/footer.blade.php:63
+msgid "Segunda Via do Boleto"
+msgstr "Second Copy of the Bill"
+
+#: resources/site/views/layout/footer.blade.php:66
+msgid "SAC (Serviço de Atendimento ao Cliente)"
+msgstr "SAC (Customer Service)"
+
+#: resources/site/views/layout/footer.blade.php:69
+msgid "FAQ (Perguntas Frequentes)"
+msgstr "FAQ (Frequently Asked Questions)"
+
+#: resources/site/views/layout/footer.blade.php:72
+#: resources/site/views/pages/AppContact/index.blade.php:18
+msgid "Telefones e Endereços"
+msgstr "Phones and Adresses"
+
+#: resources/site/views/layout/footer.blade.php:75
+#: resources/site/views/pages/AppDownloads/index.blade.php:15
+#: resources/site/views/pages/AppDownloads/index.blade.php:26
+msgid "Central de Downloads"
+msgstr "Download Center"
+
+#: resources/site/views/layout/footer.blade.php:78
+msgid "Carrinho de Cotação"
+msgstr "Quotation Cart"
+
+#: resources/site/views/layout/footer.blade.php:82
+msgid "Contatos"
+msgstr "Contacts"
+
+#: resources/site/views/layout/footer.blade.php:83
+#: resources/site/views/pages/AppSac/index.blade.php:187
+msgid "Fechaduras e Ferragens"
+msgstr "Locks and Hardware"
+
+#: resources/site/views/layout/footer.blade.php:85
+#: resources/site/views/pages/AppSac/index.blade.php:201
+msgid "Utilidades Térmicas"
+msgstr "Thermoware"
+
+#: resources/site/views/layout/footer.blade.php:86
+#: resources/site/views/pages/AppSac/index.blade.php:208
+msgid "Componentes para Móveis"
+msgstr "Furniture Components"
+
+#: resources/site/views/layout/footer.blade.php:87
+#: resources/site/views/pages/AppContact/index.blade.php:38
+#: resources/site/views/pages/AppSac/index.blade.php:23
+msgid "Whatsapp"
+msgstr "Whatsapp"
+
+#: resources/site/views/layout/footer.blade.php:90
+msgid "Área do representante"
+msgstr "Representative area"
+
+#: resources/site/views/layout/footer.blade.php:92
+msgid "Acessar"
+msgstr "Access"
+
+#: resources/site/views/layout/footer.blade.php:98
+msgid "e-mail"
+msgstr "e-mail"
+
+#: resources/site/views/layout/footer.blade.php:101
+msgid "senha"
+msgstr "password"
+
+#: resources/site/views/layout/footer.blade.php:121
+msgid "Todos os direitos reservados."
+msgstr "All rights are reserved."
+
+#: resources/site/views/pages/App404/index.blade.php:8
+msgid "Olá,"
+msgstr ""
+
+#: resources/site/views/pages/App404/index.blade.php:9
+msgid "seja bem-vindo ao"
+msgstr ""
+
+#: resources/site/views/pages/App404/index.blade.php:10
+msgid "novo site"
+msgstr ""
+
+#: resources/site/views/pages/App404/index.blade.php:13
+msgid ""
+"<p>Não conseguimos localizar a página que você está procurando.</p><p>Que "
+"tal acessar o menu <b>Produtos</b> e navegar entre as categorias? Temos "
+"certeza que uma delas vai facilitar o seu dia a dia.</p>"
+msgstr ""
+
+#: resources/site/views/pages/AppAbout/index.blade.php:52
+msgid "Assistir ao vídeo do manifesto"
+msgstr "Watch the manifest video"
+
+#: resources/site/views/pages/AppAbout/index.blade.php:66
+msgid "Missão"
+msgstr "Mission"
+
+#: resources/site/views/pages/AppAbout/index.blade.php:74
+msgid "Visão"
+msgstr "Vision"
+
+#: resources/site/views/pages/AppAbout/index.blade.php:85
+msgid "Valores"
+msgstr "Values"
+
+#: resources/site/views/pages/AppAbout/index.blade.php:102
+msgid "Palavra do CEO"
+msgstr "CEO's Statement"
+
+#: resources/site/views/pages/AppAbout/index.blade.php:133
+msgid "Reconhecimentos"
+msgstr "Recognition"
+
+#: resources/site/views/pages/AppAbout/index.blade.php:162
+msgid "Prêmios"
+msgstr "Awards"
+
+#: resources/site/views/pages/AppBlog/index.blade.php:53
+#: resources/site/views/pages/AppDownloads/index.blade.php:30
+#: resources/site/views/pages/AppFaq/index.blade.php:25
+#: resources/site/views/pages/AppFindRepresentative/index.blade.php:85
+msgid "Buscar"
+msgstr "Search"
+
+#: resources/site/views/pages/AppBlog/index.blade.php:59
+msgid "Exibir:"
+msgstr "Show:"
+
+#: resources/site/views/pages/AppBlog/index.blade.php:63
+#: resources/site/views/pages/AppProductList/index.blade.php:84
+msgid "itens"
+msgstr "items"
+
+#: resources/site/views/pages/AppBlog/index.blade.php:82
+msgid "Fique por dentro"
+msgstr "Keep updated"
+
+#: resources/site/views/pages/AppBlog/index.blade.php:83
+msgid "Receba nossas newsletters com novidades e promoções!"
+msgstr "Receive our newsletter with promotions!"
+
+#: resources/site/views/pages/AppBlog/index.blade.php:116
+#: resources/site/views/pages/AppSac/index.blade.php:285
+msgid "Assessoria <br> de Imprensa"
+msgstr "Advisory <br> press"
+
+#: resources/site/views/pages/AppBlog/index.blade.php:119
+#: resources/site/views/pages/AppSac/index.blade.php:288
+msgid "Dinâmica Conteúdo Inteligente"
+msgstr "Dynamic Smart Content"
+
+#: resources/site/views/pages/AppBlog/index.blade.php:120
+#: resources/site/views/pages/AppSac/index.blade.php:289
+msgid "Telefone: (54) <b>3025-3030</b>"
+msgstr "Telephone: +55 (54) <b>3025-3030</b>"
+
+#: resources/site/views/pages/AppBlog/index.blade.php:121
+#: resources/site/views/pages/AppSac/index.blade.php:290
+msgid "E-mail: <b>atendimento@dinamicaconteudo.com.br</b>"
+msgstr "E-mail: <b>atendimento@dinamicaconteudo.com.br</b>"
+
+#: resources/site/views/pages/AppBlogDetail/index.blade.php:23
+msgid "Compartilhe:"
+msgstr "Share:"
+
+#: resources/site/views/pages/AppBlogDetail/index.blade.php:29
+msgid "Ficou com alguma dúvida?"
+msgstr "Got a question?"
+
+#: resources/site/views/pages/AppBlogDetail/index.blade.php:30
+msgid "Fale Conosco"
+msgstr "Contact us"
+
+#: resources/site/views/pages/AppBlogDetail/index.blade.php:45
+msgid "Você também pode gostar de:"
+msgstr "You may also like:"
+
+#: resources/site/views/pages/AppCertificados/index.blade.php:14
+#: resources/site/views/pages/AppContact/index.blade.php:14
+#: resources/site/views/pages/AppCustomerService/index.blade.php:15
+#: resources/site/views/pages/AppCustomerService/index.blade.php:17
+#: resources/site/views/pages/AppDownloads/index.blade.php:14
+#: resources/site/views/pages/AppFaq/index.blade.php:14
+#: resources/site/views/pages/AppFindRepresentative/index.blade.php:14
+#: resources/site/views/pages/AppSac/index.blade.php:14
+#: resources/site/views/pages/AppSecondTicket/index.blade.php:15
+msgid "Central do Cliente"
+msgstr "Customer Center"
+
+#: resources/site/views/pages/AppCertificados/index.blade.php:21
+msgid ""
+"Antes de prosseguir, tenha em mãos a Nota Fiscal da compra para facilitar o "
+"processo de emissão do certificado."
+msgstr ""
+"Please have the Purchase Invoice in hand before proceeding to facilitate the "
+"process of printing the certificate."
+
+#: resources/site/views/pages/AppCertificados/index.blade.php:25
+#: resources/site/views/pages/AppSecondTicket/index.blade.php:106
+msgid "Número da nota fiscal:"
+msgstr "Invoice number:"
+
+#: resources/site/views/pages/AppCertificados/index.blade.php:27
+msgid "Informar apenas o número da Nota Fiscal."
+msgstr "Inform only the Invoice number."
+
+#: resources/site/views/pages/AppCertificados/index.blade.php:32
+#: resources/site/views/pages/AppSecondTicket/index.blade.php:113
+msgid "Seu CNPJ ou CPF:"
+msgstr "Your CNPJ or CPF:"
+
+#: resources/site/views/pages/AppCertificados/index.blade.php:34
+#: resources/site/views/pages/AppSecondTicket/index.blade.php:115
+msgid ""
+"Digite todos os dígitos do seu CNPJ ou CPF. Ex.: 00.000.000/0000-00 ou "
+"000.000.000-00."
+msgstr ""
+"Enter all the digits of your National Registry of legal Entities or Social "
+"Security Number. Ex.: 00.000.000/0000-00 or 000.000.000-00."
+
+#: resources/site/views/pages/AppCertificados/index.blade.php:39
+#: resources/site/views/pages/AppDownloads/index.blade.php:89
+#: resources/site/views/pages/AppProductDetail/index.blade.php:376
+msgid "Download"
+msgstr "Download"
+
+#: resources/site/views/pages/AppContact/index.blade.php:28
+#: resources/site/views/pages/AppUnity/index.blade.php:33
+#: resources/site/views/pages/AppUnity/index.blade.php:61
+#: resources/site/views/pages/AppUnity/index.blade.php:89
+#: resources/site/views/pages/AppUnity/index.blade.php:117
+msgid "Telefone:"
+msgstr "Phone:"
+
+#: resources/site/views/pages/AppCustomerService/index.blade.php:41
+msgid "Segunda via do boleto"
+msgstr "Second copy of the bill"
+
+#: resources/site/views/pages/AppCustomerService/index.blade.php:53
+msgid "SAC"
+msgstr "SAC"
+
+#: resources/site/views/pages/AppCustomerService/index.blade.php:56
+msgid "Serviço de atendimento ao consumidor"
+msgstr "Customer Service"
+
+#: resources/site/views/pages/AppCustomerService/index.blade.php:68
+#: resources/site/views/pages/AppFaq/index.blade.php:15
+#: resources/site/views/pages/AppFaq/index.blade.php:21
+msgid "FAQ"
+msgstr "FAQ"
+
+#: resources/site/views/pages/AppCustomerService/index.blade.php:71
+msgid "Perguntas frequentes"
+msgstr "Frequently Asked Questions"
+
+#: resources/site/views/pages/AppCustomerService/index.blade.php:86
+msgid "Telefones e endereços"
+msgstr "Phones and Adresses"
+
+#: resources/site/views/pages/AppCustomerService/index.blade.php:101
+msgid "Central de downloads"
+msgstr "Downloads Center"
+
+#: resources/site/views/pages/AppCustomerService/index.blade.php:121
+msgid "Carrinho de cotação"
+msgstr "Quotation Cart"
+
+#: resources/site/views/pages/AppCustomerService/index.blade.php:136
+msgid "Certificados Fotovoltaicos"
+msgstr "Photovoltaic Certificate"
+
+#: resources/site/views/pages/AppDownloads/index.blade.php:40
+msgid "Unidade"
+msgstr "Unit"
+
+#: resources/site/views/pages/AppDownloads/index.blade.php:52
+msgid "Categoria"
+msgstr "Category"
+
+#: resources/site/views/pages/AppDownloads/index.blade.php:65
+msgid "Selecione uma unidade e categoria"
+msgstr "Select the items you want to download"
+
+#: resources/site/views/pages/AppFindRepresentative/index.blade.php:21
+msgid ""
+"Selecione os dados abaixo para encontrar o representante mais próximo de "
+"você."
+msgstr "Select the data below to find the closest representative sales."
+
+#: resources/site/views/pages/AppFindRepresentative/index.blade.php:27
+msgid "País"
+msgstr "Country"
+
+#: resources/site/views/pages/AppFindRepresentative/index.blade.php:63
+msgid "Deseja refinar ainda mais a sua busca?"
+msgstr "Do you wish to narrow your search?"
+
+#: resources/site/views/pages/AppInstitutional/index.blade.php:40
+msgid "Unidades de negócio"
+msgstr "Business Units"
+
+#: resources/site/views/pages/AppInstitutional/index.blade.php:55
+msgid "Programas sociais"
+msgstr "Social Programs"
+
+#: resources/site/views/pages/AppInstitutional/index.blade.php:70
+msgid "Qualidade e meio ambiente"
+msgstr "Quality and Environment"
+
+#: resources/site/views/pages/AppInstitutional/index.blade.php:85
+msgid "Trabalhe conosco"
+msgstr "Work with us"
+
+#: resources/site/views/pages/AppJobs/index.blade.php:36
+msgid "Preencha seu currículo e cadastre-se nas vagas de seu interesse."
+msgstr "If you are interested in working with us Please fill out your resume."
+
+#: resources/site/views/pages/AppJobs/index.blade.php:37
+msgid "Cadastre-se aqui"
+msgstr "Sign up here"
+
+#: resources/site/views/pages/AppJobs/index.blade.php:47
+msgid "Assista ao vídeo institucional."
+msgstr "Watch the manifest vídeo."
+
+#: resources/site/views/pages/AppJobs/index.blade.php:49
+msgid "Ler mais"
+msgstr "Read more"
+
+#: resources/site/views/pages/AppMaintenance/index.blade.php:8
+msgid "Manutenção Soprano"
+msgstr ""
+
+#: resources/site/views/pages/AppMaintenance/index.blade.php:45
+msgid "Em manutenção, retornamos em breve!"
+msgstr ""
+
+#: resources/site/views/pages/AppPhotovoltaic/index.blade.php:12
+#: resources/site/views/pages/AppPhotovoltaicUnicred/index.blade.php:39
+#, fuzzy
+#| msgid "Atuação"
+msgid "Simulação"
+msgstr "Area"
+
+#: resources/site/views/pages/AppPhotovoltaic/index.blade.php:20
+#: resources/site/views/pages/AppPhotovoltaicUnicred/index.blade.php:47
+msgid "Simule"
+msgstr ""
+
+#: resources/site/views/pages/AppPhotovoltaic/index.blade.php:21
+#: resources/site/views/pages/AppPhotovoltaicUnicred/index.blade.php:48
+msgid "sua economia"
+msgstr ""
+
+#: resources/site/views/pages/AppPhotovoltaic/index.blade.php:47
+#: resources/site/views/pages/AppPhotovoltaicUnicred/index.blade.php:74
+msgid "Informe seus dados"
+msgstr ""
+
+#: resources/site/views/pages/AppPhotovoltaic/index.blade.php:48
+#: resources/site/views/pages/AppPhotovoltaicUnicred/index.blade.php:75
+msgid "e calcule o valor do seu"
+msgstr ""
+
+#: resources/site/views/pages/AppPhotovoltaic/index.blade.php:49
+#: resources/site/views/pages/AppPhotovoltaicUnicred/index.blade.php:76
+msgid "kit Fotovoltaico Soprano"
+msgstr ""
+
+#: resources/site/views/pages/AppPhotovoltaic/index.blade.php:55
+#: resources/site/views/pages/AppPhotovoltaicUnicred/index.blade.php:82
+#: resources/site/views/pages/AppSac/index.blade.php:62
+msgid "*Nome"
+msgstr "*Name"
+
+#: resources/site/views/pages/AppPhotovoltaic/index.blade.php:60
+#: resources/site/views/pages/AppPhotovoltaicUnicred/index.blade.php:87
+#: resources/site/views/pages/AppSac/index.blade.php:123
+msgid "*E-mail"
+msgstr "*E-mail"
+
+#: resources/site/views/pages/AppPhotovoltaic/index.blade.php:73
+#: resources/site/views/pages/AppPhotovoltaicUnicred/index.blade.php:105
+msgid "Informe o valor médio da"
+msgstr ""
+
+#: resources/site/views/pages/AppPhotovoltaic/index.blade.php:74
+#: resources/site/views/pages/AppPhotovoltaicUnicred/index.blade.php:106
+msgid "sua conta atual"
+msgstr ""
+
+#: resources/site/views/pages/AppPhotovoltaic/index.blade.php:75
+#: resources/site/views/pages/AppPhotovoltaicUnicred/index.blade.php:107
+#, fuzzy
+#| msgid "resultados"
+msgid "e seu estado"
+msgstr "results"
+
+#: resources/site/views/pages/AppPhotovoltaic/index.blade.php:81
+#: resources/site/views/pages/AppPhotovoltaicUnicred/index.blade.php:113
+msgid "*Valor médio pago na conta de energia"
+msgstr ""
+
+#: resources/site/views/pages/AppPhotovoltaic/index.blade.php:101
+#: resources/site/views/pages/AppPhotovoltaicUnicred/index.blade.php:133
+msgid "Simular Economia"
+msgstr ""
+
+#: resources/site/views/pages/AppPhotovoltaic/index.blade.php:109
+#: resources/site/views/pages/AppPhotovoltaicUnicred/index.blade.php:141
+msgid "Confira o valor"
+msgstr ""
+
+#: resources/site/views/pages/AppPhotovoltaic/index.blade.php:110
+#: resources/site/views/pages/AppPhotovoltaicUnicred/index.blade.php:142
+msgid "médio de investimento no"
+msgstr ""
+
+#: resources/site/views/pages/AppPhotovoltaic/index.blade.php:111
+#: resources/site/views/pages/AppPhotovoltaicUnicred/index.blade.php:143
+msgid "seu kit Fotovoltaico Soprano"
+msgstr ""
+
+#: resources/site/views/pages/AppPhotovoltaic/index.blade.php:114
+msgid "Simulação no valor de"
+msgstr ""
+
+#: resources/site/views/pages/AppPhotovoltaic/index.blade.php:114
+#: resources/site/views/pages/AppPhotovoltaicUnicred/index.blade.php:146
+#, fuzzy
+#| msgid "resultados"
+msgid "para o estado"
+msgstr "results"
+
+#: resources/site/views/pages/AppPhotovoltaic/index.blade.php:143
+#: resources/site/views/pages/AppPhotovoltaicUnicred/index.blade.php:228
+msgid "Sua estimativa"
+msgstr ""
+
+#: resources/site/views/pages/AppPhotovoltaic/index.blade.php:145
+#: resources/site/views/pages/AppPhotovoltaicUnicred/index.blade.php:230
+msgid ""
+"Os valores apresentados são uma estimativa. Para saber o preço do sistema "
+"instalado, tenha em mãos a sua conta de energia e faça o projeto "
+"personalizado."
+msgstr ""
+
+#: resources/site/views/pages/AppPhotovoltaic/index.blade.php:147
+#: resources/site/views/pages/AppPhotovoltaicUnicred/index.blade.php:232
+msgid "O preenchimento dos dados leva apenas 2 minutos."
+msgstr ""
+
+#: resources/site/views/pages/AppPhotovoltaic/index.blade.php:153
+#: resources/site/views/pages/AppPhotovoltaicUnicred/index.blade.php:238
+msgid "Solicite um <span>projeto</span> personalizado"
+msgstr ""
+
+#: resources/site/views/pages/AppPhotovoltaic/index.blade.php:154
+#: resources/site/views/pages/AppPhotovoltaicUnicred/index.blade.php:239
+msgid "Solicitar"
+msgstr ""
+
+#: resources/site/views/pages/AppPhotovoltaicUnicred/index.blade.php:146
+msgid "Simulação no valor de R$"
+msgstr ""
+
+#: resources/site/views/pages/AppPhotovoltaicUnicred/index.blade.php:173
+msgid "<span>Confira uma</span> simulação de financiamento"
+msgstr ""
+
+#: resources/site/views/pages/AppPhotovoltaicUnicred/index.blade.php:176
+msgid ""
+"O financiamento contempla o valor médio do kit fotovoltaico Soprano e o "
+"valor médio de instalação do sistema."
+msgstr ""
+
+#: resources/site/views/pages/AppPhotovoltaicUnicred/index.blade.php:183
+#: resources/site/views/pages/AppPhotovoltaicUnicred/index.blade.php:187
+#: resources/site/views/pages/AppPhotovoltaicUnicred/index.blade.php:191
+#: resources/site/views/pages/AppPhotovoltaicUnicred/index.blade.php:195
+#: resources/site/views/pages/AppPhotovoltaicUnicred/index.blade.php:199
+#: resources/site/views/pages/AppPhotovoltaicUnicred/index.blade.php:203
+msgid "mês"
+msgstr ""
+
+#: resources/site/views/pages/AppPhotovoltaicUnicred/index.blade.php:184
+#: resources/site/views/pages/AppPhotovoltaicUnicred/index.blade.php:188
+#: resources/site/views/pages/AppPhotovoltaicUnicred/index.blade.php:192
+#: resources/site/views/pages/AppPhotovoltaicUnicred/index.blade.php:196
+#: resources/site/views/pages/AppPhotovoltaicUnicred/index.blade.php:200
+#, fuzzy
+#| msgid "Parcela"
+msgid "parcelas"
+msgstr "Parcel"
+
+#: resources/site/views/pages/AppPhotovoltaicUnicred/index.blade.php:207
+msgid "Selecione um número de parcelas"
+msgstr "Select an area of interest"
+
+#: resources/site/views/pages/AppPhotovoltaicUnicred/index.blade.php:214
+msgid ""
+"Taxa de 0,39%+CDI a.m. com IOF incluso. A parcela apresentada refere-se à "
+"inicial, no sistema de amortização SAC. O valor das parcelas reduz-se ao "
+"longo do período"
+msgstr ""
+
+#: resources/site/views/pages/AppPhotovoltaicUnicred/index.blade.php:217
+msgid ""
+"As condições apresentadas são uma simulação e estão sujeitas a análise de "
+"crédito do cliente e critérios de aprovação da Unicred. A simulação não "
+"configura oferta. Simulação válida por 30 dias. Informe-se sobre condições, "
+"taxas, tarifas, impostos e Custo Efetivo Total (CET), antes de efetivar seu "
+"financiamento. Antes de contratar qualquer modalidade de crédito, verifique "
+"se o valor das parcelas adequa-se à sua renda. Utilize o crédito de forma "
+"consciente."
+msgstr ""
+
+#: resources/site/views/pages/AppProductCategory/index.blade.php:37
+#: resources/site/views/pages/AppProductLine/index.blade.php:46
+#: resources/site/views/pages/AppProductList/index.blade.php:67
+msgid "Download do catálogo"
+msgstr ""
+
+#: resources/site/views/pages/AppProductDetail/index.blade.php:48
+#: resources/site/views/pages/AppProductList/index.blade.php:120
+msgid "Indisponível"
+msgstr "Not available"
+
+#: resources/site/views/pages/AppProductDetail/index.blade.php:53
+#: resources/site/views/pages/AppProductList/index.blade.php:123
+msgid "Lançamento"
+msgstr "New"
+
+#: resources/site/views/pages/AppProductDetail/index.blade.php:99
+msgid "Características:"
+msgstr "Features:"
+
+#: resources/site/views/pages/AppProductDetail/index.blade.php:110
+msgid "Acabamentos:"
+msgstr "Finishings:"
+
+#: resources/site/views/pages/AppProductDetail/index.blade.php:126
+msgid "Mais variações:"
+msgstr "Variations:"
+
+#: resources/site/views/pages/AppProductDetail/index.blade.php:149
+msgid ""
+"A linha Soprano Smart possui um e-commerce exclusivo onde você poderá "
+"comprar os produtos on-line e receber no seu endereço!"
+msgstr ""
+"The Soprano Smart line has a unique e-commerce where you can buy products "
+"online and receive at your address!"
+
+#: resources/site/views/pages/AppProductDetail/index.blade.php:157
+msgid ""
+"Você está sendo direcionado para um link externo da nossa loja virtual "
+"(marketplace)"
+msgstr ""
+"You are being directed to an external link from our online store "
+"(marketplace)."
+
+#: resources/site/views/pages/AppProductDetail/index.blade.php:162
+msgid "Continuar"
+msgstr "Continue"
+
+#: resources/site/views/pages/AppProductDetail/index.blade.php:168
+#: resources/site/views/pages/AppProductDetail/index.blade.php:174
+msgid "Indicado para compra Pessoa Física (CPF)"
+msgstr "Recommended for individual purchase"
+
+#: resources/site/views/pages/AppProductDetail/index.blade.php:171
+#: resources/site/views/pages/AppProductDetail/index.blade.php:176
+msgid "Comprar agora"
+msgstr "Buy now"
+
+#: resources/site/views/pages/AppProductDetail/index.blade.php:181
+msgid "Indicado para compra Pessoa Jurídica (CNPJ)"
+msgstr "Recommended for business purchase"
+
+#: resources/site/views/pages/AppProductDetail/index.blade.php:184
+msgid "Adicionar ao orçamento"
+msgstr "Add to quotation"
+
+#: resources/site/views/pages/AppProductDetail/index.blade.php:199
+msgid "Descrição do Produto"
+msgstr "Product description"
+
+#: resources/site/views/pages/AppProductDetail/index.blade.php:202
+msgid "Tabela Informativa"
+msgstr "Informative Table"
+
+#: resources/site/views/pages/AppProductDetail/index.blade.php:205
+msgid "Arquivos para Download"
+msgstr "Download Files"
+
+#: resources/site/views/pages/AppProductDetail/index.blade.php:220
+msgid "Informações gerais"
+msgstr "General information"
+
+#: resources/site/views/pages/AppProductDetail/index.blade.php:225
+msgid "NCM"
+msgstr ""
+
+#: resources/site/views/pages/AppProductDetail/index.blade.php:230
+msgid "Código de Origem"
+msgstr ""
+
+#: resources/site/views/pages/AppProductDetail/index.blade.php:235
+#, fuzzy
+#| msgid "Unidade de negócio"
+msgid "Unidade de Venda"
+msgstr "Business Units"
+
+#: resources/site/views/pages/AppProductDetail/index.blade.php:239
+msgid "Lote Múltiplo de Venda"
+msgstr ""
+
+#: resources/site/views/pages/AppProductDetail/index.blade.php:244
+msgid "CxLxA (cm)"
+msgstr ""
+
+#: resources/site/views/pages/AppProductDetail/index.blade.php:249
+msgid "Peso Líquido Unitário (Kg)"
+msgstr ""
+
+#: resources/site/views/pages/AppProductDetail/index.blade.php:253
+msgid "EAN 13"
+msgstr ""
+
+#: resources/site/views/pages/AppProductDetail/index.blade.php:258
+#, fuzzy
+#| msgid "Empresa"
+msgid "EAN Impressa"
+msgstr "Company"
+
+#: resources/site/views/pages/AppProductDetail/index.blade.php:267
+msgid "Embalagens do Ítem"
+msgstr ""
+
+#: resources/site/views/pages/AppProductDetail/index.blade.php:272
+msgid "Individual - CxLxA (mm)"
+msgstr ""
+
+#: resources/site/views/pages/AppProductDetail/index.blade.php:276
+msgid "Individual - Peso Bruto (kg)"
+msgstr ""
+
+#: resources/site/views/pages/AppProductDetail/index.blade.php:280
+msgid "Individual - Cubagem (cm³)"
+msgstr ""
+
+#: resources/site/views/pages/AppProductDetail/index.blade.php:285
+msgid "Individual - Tipo Embalagem"
+msgstr ""
+
+#: resources/site/views/pages/AppProductDetail/index.blade.php:296
+msgid "Coletiva - CxLxA (mm)"
+msgstr ""
+
+#: resources/site/views/pages/AppProductDetail/index.blade.php:300
+msgid "Coletiva - Peso Bruto (kg)"
+msgstr ""
+
+#: resources/site/views/pages/AppProductDetail/index.blade.php:304
+msgid "Coletiva - Cubagem Unitário (m³)"
+msgstr ""
+
+#: resources/site/views/pages/AppProductDetail/index.blade.php:308
+msgid "Coletiva - DUN 14"
+msgstr ""
+
+#: resources/site/views/pages/AppProductDetail/index.blade.php:312
+msgid "Coletiva - Quantidade (un)"
+msgstr ""
+
+#: resources/site/views/pages/AppProductDetail/index.blade.php:317
+msgid "Coletiva - Tipo Embalagem"
+msgstr ""
+
+#: resources/site/views/pages/AppProductDetail/index.blade.php:329
+msgid "Master - CxLxA (mm)"
+msgstr ""
+
+#: resources/site/views/pages/AppProductDetail/index.blade.php:333
+msgid "Master - Peso Bruto (kg)"
+msgstr ""
+
+#: resources/site/views/pages/AppProductDetail/index.blade.php:337
+msgid "Master - Cubagem Unitário (m³)"
+msgstr ""
+
+#: resources/site/views/pages/AppProductDetail/index.blade.php:341
+msgid "Master - DUN 14"
+msgstr ""
+
+#: resources/site/views/pages/AppProductDetail/index.blade.php:345
+msgid "Master - Quantidade (un)"
+msgstr ""
+
+#: resources/site/views/pages/AppProductDetail/index.blade.php:350
+msgid "Master - Tipo Embalagem"
+msgstr ""
+
+#: resources/site/views/pages/AppProductDetail/index.blade.php:393
+msgid "Produtos relacionados"
+msgstr "Related products"
+
+#: resources/site/views/pages/AppProductLine/index.blade.php:40
+msgid "Calculadora Solar"
+msgstr ""
+
+#: resources/site/views/pages/AppProductList/index.blade.php:105
+msgid "Este produto contém variações internas para escolha."
+msgstr "This product contains internal variations."
+
+#: resources/site/views/pages/AppQuality/index.blade.php:36
+#: resources/site/views/pages/AppQuality/index.blade.php:66
+#: resources/site/views/pages/AppQuality/index.blade.php:87
+#: resources/site/views/pages/AppQuality/index.blade.php:108
+msgid "Faça o download do certificado"
+msgstr "Download the certificate"
+
+#: resources/site/views/pages/AppQuality/index.blade.php:101
+msgid "Certificação de Produtos"
+msgstr "Product Certification"
+
+#: resources/site/views/pages/AppRepresentativeRegister/index.blade.php:14
+#: resources/site/views/pages/AppRepresentativeRegister/index.blade.php:17
+msgid "Seja um Representante Comercial"
+msgstr "Become a Sales Representative"
+
+#: resources/site/views/pages/AppRepresentativeRegister/index.blade.php:18
+msgid ""
+"Quer ser representante comercial de produtos de alta qualidade e aceitação "
+"no mercado brasileiro? Então preencha o formulário para entrarmos em contato "
+"com você."
+msgstr ""
+"Want to be a commercial representative of high quality products and market "
+"acceptance? Then fill out the form and we will contact you."
+
+#: resources/site/views/pages/AppRepresentativeRegister/index.blade.php:27
+msgid "*Informe o CNPJ"
+msgstr "* Inform the CNPJ"
+
+#: resources/site/views/pages/AppRepresentativeRegister/index.blade.php:33
+msgid "*Qual o regime tributário da sua empresa?"
+msgstr "* What is the tax regime of your company?"
+
+#: resources/site/views/pages/AppRepresentativeRegister/index.blade.php:39
+msgid "*Empresas que representa atualmente"
+msgstr "*Companies you currently represent"
+
+#: resources/site/views/pages/AppRepresentativeRegister/index.blade.php:45
+msgid "*Empresas que já representou"
+msgstr "*Companies you already represented"
+
+#: resources/site/views/pages/AppRepresentativeRegister/index.blade.php:51
+msgid "*Faça uma breve descrição da sua empresa"
+msgstr "*Briefly describe your business"
+
+#: resources/site/views/pages/AppRepresentativeRegister/index.blade.php:62
+msgid "*Nome Completo:"
+msgstr "Full Name:"
+
+#: resources/site/views/pages/AppRepresentativeRegister/index.blade.php:68
+#: resources/site/views/pages/AppSac/index.blade.php:118
+msgid "*Telefone"
+msgstr "Phone"
+
+#: resources/site/views/pages/AppRepresentativeRegister/index.blade.php:74
+msgid "*Email"
+msgstr "E-mail"
+
+#: resources/site/views/pages/AppRepresentativeRegister/index.blade.php:78
+msgid "*Razão Social"
+msgstr "*Company Name"
+
+#: resources/site/views/pages/AppRepresentativeRegister/index.blade.php:84
+msgid "*Área de interesse"
+msgstr "*Area of interest"
+
+#: resources/site/views/pages/AppRepresentativeRegister/index.blade.php:123
+msgid "*Mensagem"
+msgstr "Message"
+
+#: resources/site/views/pages/AppRepresentativeRegister/index.blade.php:128
+msgid "Anexe seu Currículo"
+msgstr "Attach Your Resume"
+
+#: resources/site/views/pages/AppRepresentativeRegister/index.blade.php:132
+msgid "Escolher arquivo pdf ou doc."
+msgstr "Choose PDF or DOC file."
+
+#: resources/site/views/pages/AppRepresentativeRegister/index.blade.php:136
+msgid "Nenhum arquivo foi selecionado"
+msgstr "No files have been selected"
+
+#: resources/site/views/pages/AppRepresentativeRegister/index.blade.php:139
+#: resources/site/views/pages/AppSac/index.blade.php:154
+msgid "Enviar"
+msgstr "Send"
+
+#: resources/site/views/pages/AppSac/index.blade.php:21
+msgid "Fale com a Soprano"
+msgstr "Talk with Soprano"
+
+#: resources/site/views/pages/AppSac/index.blade.php:22
+msgid "Preencha o formulário para entrar em contato."
+msgstr "Fill out the form to contact us."
+
+#: resources/site/views/pages/AppSac/index.blade.php:35
+msgid "*Com qual unidade você deseja entrar em contato?"
+msgstr "*Which business unit do you want to contact?"
+
+#: resources/site/views/pages/AppSac/index.blade.php:52
+msgid "*Assunto"
+msgstr "*Subject"
+
+#: resources/site/views/pages/AppSac/index.blade.php:67
+msgid "Empresa"
+msgstr "Company"
+
+#: resources/site/views/pages/AppSac/index.blade.php:72
+msgid "*CNPJ/CPF"
+msgstr "Document"
+
+#: resources/site/views/pages/AppSac/index.blade.php:136
+msgid "*Mensagem:"
+msgstr "*Message:"
+
+#: resources/site/views/pages/AppSac/index.blade.php:175
+msgid "Contatos diretos"
+msgstr "Direct Contacts"
+
+#: resources/site/views/pages/AppSac/index.blade.php:176
+msgid ""
+"Caso queira tirar suas dúvidas, fazer suas críticas ou sugestões, entre em "
+"contato conosco, utilizando um dos nossos canais de atendimento. Estamos a "
+"sua disposição!"
+msgstr ""
+"If you have any questions, comments or suggestions, please contact us using "
+"one of our service channels. We are at your disposal!"
+
+#: resources/site/views/pages/AppSac/index.blade.php:215
+msgid "Financeiro"
+msgstr "Financial"
+
+#: resources/site/views/pages/AppSac/index.blade.php:251
+msgid "Canal de Ética"
+msgstr "Ethics Channel"
+
+#: resources/site/views/pages/AppSecondTicket/index.blade.php:7
+#: resources/site/views/pages/AppSecondTicket/index.blade.php:16
+#: resources/site/views/pages/AppSecondTicket/index.blade.php:20
+#: resources/site/views/pages/AppSecondTicket/index.blade.php:93
+msgid "2ª Via de Boletos"
+msgstr "Second copy of the bill"
+
+#: resources/site/views/pages/AppSecondTicket/index.blade.php:36
+msgid ""
+"Selecione a parcela referente à 2ª via do boleto que você gostaria de gerar "
+"e confira seus dados."
+msgstr "Select the item you would like to generate and check your data."
+
+#: resources/site/views/pages/AppSecondTicket/index.blade.php:39
+msgid "Nota:"
+msgstr "Invoice:"
+
+#: resources/site/views/pages/AppSecondTicket/index.blade.php:40
+msgid "Estabelecimento:"
+msgstr "Establishment:"
+
+#: resources/site/views/pages/AppSecondTicket/index.blade.php:41
+msgid "Banco:"
+msgstr "Bank:"
+
+#: resources/site/views/pages/AppSecondTicket/index.blade.php:42
+msgid "CNPJ:"
+msgstr "CNPJ:"
+
+#: resources/site/views/pages/AppSecondTicket/index.blade.php:48
+msgid "Parcela"
+msgstr "Parcel"
+
+#: resources/site/views/pages/AppSecondTicket/index.blade.php:49
+msgid "Vencimento"
+msgstr "Expiration"
+
+#: resources/site/views/pages/AppSecondTicket/index.blade.php:69
+msgid "Digite o que você vê na imagem abaixo:"
+msgstr "Type what you see in the image below:"
+
+#: resources/site/views/pages/AppSecondTicket/index.blade.php:96
+msgid ""
+"Antes de prosseguir, tenha em mãos a Nota Fiscal da compra para facilitar o "
+"processo de emissão da 2ª via do boleto."
+msgstr ""
+"Before proceeding, have in hand the Invoice of the purchase to facilitate "
+"the process of emission the 2nd copy of the bill."
+
+#: resources/site/views/pages/AppSecondTicket/index.blade.php:108
+msgid "Informar apenas o número da Nota Fiscal. Ex.: 0000001."
+msgstr "Inform only the invoice number. Ex. 0000001."
+
+#: resources/site/views/pages/AppSocial/index.blade.php:18
+#: resources/site/views/pages/AppSocial/index.blade.php:21
+msgid "Instituto Adelino Miotti"
+msgstr "Instituto Adelino Miotti"
+
+#: resources/site/views/pages/AppSocial/index.blade.php:42
+#: resources/site/views/pages/AppSocial/index.blade.php:45
+#: resources/site/views/pages/AppSocial/index.blade.php:48
+msgid "Programa Recriar"
+msgstr "Recriar program"
+
+#: resources/site/views/pages/AppSocial/index.blade.php:59
+msgid "Respeito"
+msgstr "Respect"
+
+#: resources/site/views/pages/AppSocial/index.blade.php:65
+msgid "Educação"
+msgstr "Education"
+
+#: resources/site/views/pages/AppSocial/index.blade.php:71
+msgid "Cidadania"
+msgstr "Citizenship"
+
+#: resources/site/views/pages/AppSocial/index.blade.php:77
+msgid "Responsabilidade"
+msgstr "Responsibility"
+
+#: resources/site/views/pages/AppSocial/index.blade.php:83
+msgid "Integridade"
+msgstr "Integrity"
+
+#: resources/site/views/pages/AppSocial/index.blade.php:89
+msgid "Empatia"
+msgstr "Appreciation"
+
+#: resources/site/views/pages/AppSocial/index.blade.php:95
+msgid "Determinação"
+msgstr "Determination"
+
+#: resources/site/views/pages/AppSocial/index.blade.php:103
+msgid "Atividades desenvolvidas no programa"
+msgstr "Activities developed in the program"
+
+#: resources/site/views/pages/AppUnity/index.blade.php:16
+#: resources/site/views/pages/AppUnity/index.blade.php:24
+msgid "Unidades no Brasil"
+msgstr "Business Units in Brazil"
+
+#: resources/site/views/pages/AppUnity/index.blade.php:17
+msgid ""
+"Comercializamos uma ampla linha de produtos através de 6 unidades de "
+"negócios: Fechaduras e Ferragens, Materiais Elétricos, Utilidades Térmicas, "
+"Componentes para Móveis, México e Centro América. Conheça nossas unidades:"
+msgstr ""
+"We have a wide range of products through six business units: Locks and "
+"Hardware, Electrical Material, Thermoware, Furniture Components, Soprano "
+"Mexico and Soprano Central America."
+
+#: resources/site/views/pages/AppUnity/index.blade.php:45
+#: resources/site/views/pages/AppUnity/index.blade.php:52
+msgid "Unidades no Exterior"
+msgstr "Units abroad"
+
+#: resources/site/views/pages/AppUnity/index.blade.php:73
+#: resources/site/views/pages/AppUnity/index.blade.php:80
+msgid "Manufaturas"
+msgstr "Manufactures"
+
+#: resources/site/views/pages/AppUnity/index.blade.php:101
+#: resources/site/views/pages/AppUnity/index.blade.php:108
+msgid "Centros de Distribuição"
+msgstr "Distribution Center"
+
+#: resources/site/views/pages/AppHome/index.blade.php
+msgid "Segurança"
+msgstr "Security"
+
+#: resources/site/views/pages/AppHome/index.blade.php
+msgid "Fechaduras, Cadeados e Ferragens"
+msgstr "Padlocks, Locks and Tools"
+
+#: resources/site/views/pages/AppHome/index.blade.php
+msgid "Fechaduras para Portas e Portões"
+msgstr "Door and Gates Lock"
+
+#: resources/site/views/pages/AppHome/index.blade.php
+msgid "Puxadores para Portas de Entrada"
+msgstr "Entrance Door Handles"
+
+#: resources/site/views/pages/AppHome/index.blade.php
+msgid "Molas para Portas e Portões"
+msgstr "Doors and Gates Springs"
+
+#: resources/site/views/pages/AppHome/index.blade.php
+msgid "Cadeados"
+msgstr "Locks"
+
+#: resources/site/views/pages/AppHome/index.blade.php
+msgid "Proteção"
+msgstr "Protection"
+
+#: resources/site/views/pages/AppHome/index.blade.php
+msgid "Energia Solar Fotovoltaica"
+msgstr "Photovoltaic Solar Energy"
+
+#: resources/site/views/pages/AppHome/index.blade.php
+msgid "Interruptor e Tomada"
+msgstr "Circuit Breaker and Socket"
+
+#: resources/site/views/pages/AppHome/index.blade.php
+msgid "Iluminação"
+msgstr "Lighting"
+
+#: resources/site/views/pages/AppHome/index.blade.php
+msgid "Interruptor Diferencial Residual - DR"
+msgstr "Residual Differential Switch – RD"
+
+#: resources/site/views/pages/AppHome/index.blade.php
+msgid "praticidade"
+msgstr "practicality"
+
+#: resources/site/views/pages/AppHome/index.blade.php
+msgid "Utilidades Térmicas: Casa, Lazer e Dia a Dia"
+msgstr "Thermal Utilities: Home, Leisure and Daily Life"
+
+#: resources/site/views/pages/AppHome/index.blade.php
+msgid "Banho"
+msgstr "Bath"
+
+#: resources/site/views/pages/AppHome/index.blade.php
+msgid "Sobre a Pia"
+msgstr "Sink Organizer"
+
+#: resources/site/views/pages/AppHome/index.blade.php
+msgid "Lixeiras"
+msgstr "Trash Cans"
+
+#: resources/site/views/pages/AppHome/index.blade.php
+msgid "Organização"
+msgstr "Organization"
+
+#: resources/site/views/pages/AppHome/index.blade.php
+msgid "solidez"
+msgstr "solidity"
+
+#: resources/site/views/pages/AppHome/index.blade.php
+msgid "Acessórios  e  Componentes para Móveis"
+msgstr "Furniture Accessories and Components"
+
+#: resources/site/views/pages/AppHome/index.blade.php
+msgid "Trilhos Telescópicos"
+msgstr "Ball Bearing Slides"
+
+#: resources/site/views/pages/AppHome/index.blade.php
+msgid "Dobradiças Móveis"
+msgstr "Hinge for Furniture"
+
+#: resources/site/views/pages/AppHome/index.blade.php
+msgid "Pistões"
+msgstr "Pistons"
+
+#: resources/site/views/pages/AppHome/index.blade.php
+msgid "Rodízios"
+msgstr "Casters"
+
+#: resources/site/views/pages/AppBlog/index.blade.php:94
+msgid "tecnologia"
+msgstr "technology"
+
+#: resources/site/views/pages/AppHome/index.blade.php
+msgid "Smart: Fechaduras Digitais"
+msgstr "Smart: Digital locks"
+
+#: resources/site/views/pages/AppHome/index.blade.php
+msgid "Fechadura Smart"
+msgstr "Smart lock"
+
+#: resources/site/views/pages/AppHome/index.blade.php
+msgid "Fechadura Digital"
+msgstr "Digital lock"
+
+#: resources/site/views/pages/AppHome/index.blade.php
+msgid "Fechaduras Digitais para Portas"
+msgstr "Digital Door Locks"
+
+#: resources/site/views/pages/AppHome/index.blade.php
+msgid "Trilho Telescópico"
+msgstr "Telescopic Sliding Rails"
+
+#: resources/site/views/pages/AppHome/index.blade.php
+msgid "Acessórios para Móveis"
+msgstr "Furniture Accessories"
+
+#: resources/site/views/pages/AppHome/index.blade.php
+msgid "Selecionar"
+msgstr "Select"
+
+#: resources/site/views/pages/AppHome/index.blade.php
+msgid "Selecionado"
+msgstr "Selected"
+
+#: resources/site/views/pages/AppHome/index.blade.php
+msgid "Matriz Administrativa"
+msgstr "Administrative Headquarters"
+
+#: resources/site/views/pages/AppHome/index.blade.php
+msgid "Assistências e instaladores de fechaduras digitais"
+msgstr "Digital Locks Assistance and Installers"
+
+#: resources/site/views/pages/AppHome/index.blade.php
+msgid "Dobradiça para móveis"
+msgstr "Hinge for furniture"
+
+#: resources/site/views/pages/AppHome/index.blade.php
+msgid "Pistão para móveis"
+msgstr "Gas Piston for furniture"
+
+#: resources/site/views/pages/AppHome/index.blade.php
+msgid "Rodízios para móveis"
+msgstr "Casters for furniture"
+
+#: resources/site/views/pages/AppHome/index.blade.php
+msgid "Assista ao nosso vídeo institucional"
+msgstr "Watch our institutional video"
+
+#: resources/site/views/pages/AppHome/index.blade.php
+msgid "canal-de-etica"
+msgstr "ethics-channel"
+
+#: resources/site/views/pages/AppHome/index.blade.php
+msgid "Inscreva-se no Programa"
+msgstr "Apply for the Program"
+
+#: resources/site/views/pages/AppHome/index.blade.php
+msgid "Clique aqui"
+msgstr "Click here"
+
+#~ msgid "Você ainda não adicionou nenhum item à sua cotação."
+#~ msgstr "You haven't added any items to your quote yet."
+
+#~ msgid "Status de entrega"
+#~ msgstr "Delivery status"
+
+#~ msgid "Selecione o idioma"
+#~ msgstr "Select the language"
+
+#~ msgid "ERRO 404"
+#~ msgstr "ERROR 404"
+
+#~ msgid "A página que você procura não foi encontrada."
+#~ msgstr "Page not found."
+
+#~ msgid "Dinâmica Comunicação"
+#~ msgstr "Dinâmica Comunicação"
+
+#~ msgid "Olá"
+#~ msgstr "Hello"
+
+#~ msgid "Esqueci minha senha"
+#~ msgstr "Forget password"
+
+#~ msgid "Digite seu e-mail e enviaremos uma nova senha."
+#~ msgstr "Enter your email and we will send you a new password."
+
+#~ msgid "Área Restrita"
+#~ msgstr "Restrict Access"
+
+#~ msgid "E-mail e/ou senha inválidos."
+#~ msgstr "E-mail or password invalid."
+
+#~ msgid "E-mail não encontrado e/ou inválido"
+#~ msgstr "E-mail not found or invalid"
+
+#~ msgid "Enviado!"
+#~ msgstr "Sent!"
+
+#~ msgid "Um e-mail com a nova senha foi enviado."
+#~ msgstr "An email with the new password has been sent."
+
+#~ msgid "Sua senha foi alterada para"
+#~ msgstr "Your password has been changed to"
+
+#~ msgid "Nova senha área restrita"
+#~ msgstr "New password restricted area"
+
+#~ msgid "Bem vindo"
+#~ msgstr "Welcome"
+
+#~ msgid "Sair"
+#~ msgstr "Logout"
+
+#~ msgid "BUSCAR POR NOME"
+#~ msgstr "SEARCH BY NAME"
+
+#~ msgid "Página não Encontrada"
+#~ msgstr "Page not Found"
+
+#~ msgid "Preencha o nome."
+#~ msgstr "Fill up name."
+
+#~ msgid "Obrigado por se cadastrar."
+#~ msgstr "Thanks for register."
+
+#~ msgid "Receba nossas novidades"
+#~ msgstr "Receive our newsletter"
+
+#~ msgid "Acesso Restrito"
+#~ msgstr "Restrict Access"
+
+#~ msgid "Pedidos Online"
+#~ msgstr "Order Online"
+
+#~ msgid "Home"
+#~ msgstr "Home"
+
+#~ msgid "A vinícola"
+#~ msgstr "About Us"
+
+#~ msgid "Onde encontrar"
+#~ msgstr "Where to Find"
+
+#~ msgid "Tente mais tarde e/ou verifique a url"
+#~ msgstr "Try later"
+
+#~ msgid "Preencha o telefone."
+#~ msgstr "Fill up phone."
+
+#~ msgid "Preencha a cidade."
+#~ msgstr "Fill up city."
+
+#~ msgid "Preencha o assunto."
+#~ msgstr "Fill up subject."
+
+#~ msgid "Preencha a mensagem."
+#~ msgstr "Fill up message."
+
+#~ msgid "Fone"
+#~ msgstr "Phone"
+
+#~ msgid "Como podemos ajudar?"
+#~ msgstr "How can we help?"
+
+#~ msgid "Digite sua mensagem"
+#~ msgstr "Enter your message"
+
+#~ msgid "Descer"
+#~ msgstr "Scroll"
+
+#~ msgid "Quero Galiotto"
+#~ msgstr "Want Galiotto"
+
+#~ msgid "Harmoniza com você!"
+#~ msgstr "Harmonizes with you!"
+
+#~ msgid "Abrir"
+#~ msgstr "Open"
+
+#~ msgid "Casa"
+#~ msgstr "House"

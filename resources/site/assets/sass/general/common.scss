@@ -1,0 +1,21 @@
+.form-group{
+	position: relative;
+	margin: 0;
+}
+
+input.error, textarea.error, select.error{
+	background-color: #fce4e4;
+	border: 1px solid #cc0033;
+	outline: none;
+}
+
+label.error{
+	color: red;
+	font-size: 12px;
+	position: absolute;
+	bottom: -20px;
+}
+
+.grecaptcha-badge {
+    display:none !important;
+}

@@ -1,0 +1,23 @@
+// DEFAULT
+@import 'general/reset';
+@import 'general/media-screen';
+@import 'general/variable';
+@import 'general/color';
+@import 'general/fonts';
+@import 'general/mixins';
+@import 'general/common';
+
+// LAYOUTS
+@import 'layout/header';
+@import 'layout/footer';
+
+// COMPONENTS
+@import 'components/zoom_modal.scss';
+@import 'components/fail';
+@import 'components/success';
+
+// PAGES
+@import 'pages/page404';
+@import 'pages/home';
+
+//sass --watch resources/site/assets/sass/main.scss:public/site/css/main.css
