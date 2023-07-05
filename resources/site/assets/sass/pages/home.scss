@@ -1,11 +1,11 @@
 #page-home {
-    // background-image: url(../img/Pixel/home.png);
+    background-image: url(../img/Pixel/home.png);
     background-size: 100%;
     background-repeat: no-repeat;
     height: 1000vh;
 
     .section_herobanner {
-        // opacity: 0.3;
+        opacity: 0.3;
         &--container {
             display: grid;
             grid-template-columns: 53.125vw 1fr;
