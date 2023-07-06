@@ -22,14 +22,17 @@ class FourthSectionController extends AdmController
         $this->title = 'Quarta Seção';
         $this->titlePlural = 'Quarta Seção';
 
-        $this->fields['Geral'] = array(
-            $this->textField('input', 'Título', 'title'),
-            $this->ckEditorSimpleField('Subtítulo', 'subtitle'),
-            $this->ckEditorSimpleField('Descrição', 'description'),
-            $this->imageField('Imagem Esquerda', 'image_left', 'QuartaSecao', true, true),
-            $this->imageField('Imagem Esquerda Mobile', 'image_left_mobile', 'QuartaSecao', true, true),
-            $this->imageField('Imagem Direita', 'image_right', 'QuartaSecao', true, true),
-            $this->imageField('Imagem Direita Mobile', 'image_right_mobile', 'QuartaSecao', true, true),
+        $this->fields['Parte 1'] = array(
+            $this->ckEditorSimpleField('Descrição', 'description_1'),
+            $this->imageField('Imagem', 'image_1', 'QuartaSecao', true, true),
+            $this->imageField('Imagem Mobile', 'image_1_mobile', 'QuartaSecao', true, true),
+        );
+
+        $this->fields['Parte 2'] = array(
+            $this->ckEditorSimpleField('Descrição', 'description_2'),
+            $this->ckEditorSimpleField('Subtítulo', 'subtitle_2'),
+            $this->imageField('Imagem', 'image_2', 'QuartaSecao', true, true),
+            $this->imageField('Imagem Mobile', 'image_2_mobile', 'QuartaSecao', true, true),
         );
     }
 

@@ -23,12 +23,12 @@ class SeventhSectionController extends AdmController
         $this->titlePlural = 'Sétima Seção';
 
         $this->fields['Geral'] = array(
-            $this->textField('input', 'Título', 'title'),
+            $this->ckEditorSimpleField('Título', 'title'),
             $this->ckEditorSimpleField('Subtítulo', 'subtitle'),
             $this->ckEditorSimpleField('Descrição', 'description'),
-            $this->imageField('Imagem', 'image', 'SextaSecao', true, true),
-            $this->imageField('Imagem Mobile', 'image_mobile', 'SextaSecao', true, true),
-            $this->textField('input', 'Botão Texto', 'button_title'),
+            $this->imageField('Imagem', 'image', 'SetimaSecao', true, true),
+            $this->imageField('Imagem Mobile', 'image_mobile', 'SetimaSecao', true, true),
+            $this->textField('input', 'Botão Texto', 'button_text'),
             $this->textField('input', 'Botão Link', 'button_link'),
         );
     }
