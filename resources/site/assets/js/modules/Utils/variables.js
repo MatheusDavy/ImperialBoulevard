@@ -1,0 +1,1 @@
+export const isMobile = window.screen.width < 999 ? true : false

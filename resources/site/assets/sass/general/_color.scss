@@ -2,6 +2,12 @@ $red-error: #95201C;
 $green-success: #2C4325;
 /*  */
 
+// Project Colors
+$accentColor: #D2A671;
+$primaryColor: #f1f1f1;
+$secondColor: #231f20;
+
+
 /*------------- Hover background gradient --------------*/
 
 @property --myColor1 {
@@ -46,3 +52,4 @@ $green-success: #2C4325;
         #ff6196 78%
     );
 }
+

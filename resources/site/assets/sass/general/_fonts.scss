@@ -4,14 +4,15 @@
 
 //SE FOR GOOGLEFONTES COLOCAR NO APP.BLADE.PHP
 
-/*@font-face {
-	font-family: 'Branding-Medium';
-	src: url('../fonts/Branding/Branding-Medium.woff2') format('woff2'),
-	url('../fonts/Branding/Branding-Medium.woff') format('woff'),
-	url('../fonts/Branding/Branding-Medium.eot') format('eot'),
-	url('../fonts/Branding/Branding-Medium.svg') format('svg');
-}*/
+@font-face {
+    font-family: "Butler";
+    src: url("../fonts/Butler/ButlerStencil-Medium.woff") format("woff"),
+         url("../fonts/Butler/ButlerStencil-Medium.woff2") format("woff2");
+    font-weight: 900;
+    font-style: normal;
+}
 
+// Weight
 $thin: 100;
 $extra-light: 200;
 $light: 300;
@@ -22,6 +23,10 @@ $bold: 700;
 $extra-bold: 800;
 $black: 900;
 
+// Family
+$Raleway: "Raleway";
+$Butler: "Butler";
+
 html {
     font-size: 62.5%;
 
@@ -29,7 +34,7 @@ html {
     // 20px = 2.0rem
     // 35px = 3.5rem
     // 46px = 4.6rem
-	// 91px = 9.1rem
+    // 91px = 9.1rem
 }
 
 @mixin fontTemplate($size, $height, $color, $weight, $family, $align: start) {
@@ -38,5 +43,5 @@ html {
     color: $color;
     font-weight: $weight;
     font-family: $family;
-	text-align: $align;
+    text-align: $align;
 }
