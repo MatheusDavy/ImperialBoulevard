@@ -17,7 +17,8 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
     <!-- Gsap -->
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    
     <!-- Font-Awesome - ICONS -->
     <script src="https://kit.fontawesome.com/739b481bf0.js" crossorigin="anonymous"></script>
 

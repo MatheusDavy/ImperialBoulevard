@@ -87,7 +87,7 @@ class Circle {
 ////////////// 2 - Functions /////////////
 
 /////////// 4 - Onloads ///////////////////////
-window.onload = () => new AnimationGradient();
+// window.onload = () => new AnimationGradient();
 
 const swiper = new Swiper('.heroBannerSlider', {
     loop: true,
@@ -96,3 +96,23 @@ const swiper = new Swiper('.heroBannerSlider', {
     delay: 7000,
     effect: 'fade',
 });
+
+
+let zoomImg = document.querySelector(".f-panzoom");
+const options = {
+    panMode: "mousemove",
+    mouseMoveFactor: 3,
+    click: false,
+    wheel: false
+};
+
+const fp = new Panzoom(zoomImg, options);
+
+zoomImg.addEventListener('mouseenter', () => {
+    fp.zoomTo(2)
+});
+
+zoomImg.addEventListener('mouseleave', () => {
+    fp.zoomToFit()
+});
+

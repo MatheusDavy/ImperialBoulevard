@@ -1,11 +1,11 @@
 #page-home {
-    background-image: url(../img/Pixel/home.png);
+    // background-image: url(../img/Pixel/home.png);
     background-size: 100%;
     background-repeat: no-repeat;
     height: 1000vh;
 
     .section_herobanner {
-        opacity: 0.3;
+        // opacity: 0.3;
         &--container {
             display: grid;
             grid-template-columns: 53.125vw 1fr;
@@ -13,7 +13,7 @@
             height: auto;
         }
 
-        &--background{
+        &--background {
             width: 100%;
             height: 100%;
             position: absolute;
@@ -26,14 +26,13 @@
         .box_slider {
             width: 100%;
             height: 100vh;
-            
-           
-            &--content{
+
+            &--content {
                 width: 100%;
                 height: 100%;
                 display: flex;
                 position: relative;
-                img{
+                img {
                     position: absolute;
                     inset: 0;
                     width: 100%;
@@ -110,7 +109,7 @@
                 height: fit-content;
                 transition: $transition;
 
-                &:hover{
+                &:hover {
                     background-color: $accentColor;
                     color: $primaryColor;
                 }
@@ -141,8 +140,8 @@
                     background-color: $accentColor;
                     position: relative;
 
-                    &::before{
-                        content: '';
+                    &::before {
+                        content: "";
                         width: 1.7vw;
                         aspect-ratio: 1;
                         border-radius: 50%;
@@ -152,7 +151,7 @@
                         transform: translateY(-50%);
                     }
                 }
-                &_two{
+                &_two {
                     width: 100%;
                     width: -webkit-fill-available;
                     height: 1px;
@@ -162,8 +161,8 @@
         }
 
         // Details
-        &::after{
-            content: '';
+        &::after {
+            content: "";
             position: absolute;
             left: 0;
             bottom: 0;
@@ -172,6 +171,601 @@
             aspect-ratio: 2.8;
             background-color: $accentColor;
             z-index: 10;
+        }
+    }
+
+    .section_region {
+        // opacity: 0.3;
+        background-color: #231f20;
+        &--container {
+            padding-top: 9.6vh;
+            padding-left: 15vw;
+            padding-bottom: 12.3vh;
+            display: grid;
+            grid-template-columns: 1fr 24.68vw;
+            gap: 30px;
+        }
+
+        .box_text {
+            display: grid;
+            grid-template-columns: 1fr 23.22vw;
+            gap: 4vw;
+
+            .grid-one {
+                display: flex;
+                flex-direction: column;
+            }
+
+            &--text {
+                margin-bottom: 0.1vh;
+                @include fontTemplate(
+                    2.4rem,
+                    1,
+                    $accentColor,
+                    $regular,
+                    $Raleway
+                );
+                text-transform: uppercase;
+            }
+
+            &--title {
+                margin-bottom: 9.8vh;
+                @include fontTemplate(
+                    4.8rem,
+                    1.5,
+                    $primaryColor,
+                    $extra-bold,
+                    $Butler
+                );
+            }
+
+            &--list {
+                display: flex;
+                flex-direction: column;
+                gap: 1.4vh;
+                list-style: disc outside;
+                margin-bottom: 11vh;
+                @include fontTemplate(
+                    2.4rem,
+                    1.5,
+                    $primaryColor,
+                    $light,
+                    $Raleway
+                );
+
+                li {
+                    list-style: disc outside;
+                }
+            }
+
+            &--image {
+                height: 87%;
+                align-self: end;
+            }
+        }
+
+        .box_image {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 3.617;
+        }
+
+        .box_grid {
+            &--one {
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+            }
+
+            &--two {
+                height: 100%;
+                width: 100%;
+                align-self: end;
+            }
+        }
+    }
+
+    .section_convention {
+        position: relative;
+        background-color: $primaryColor;
+        // opacity: 0.3;
+        &--container {
+            padding-left: 15vw;
+            display: grid;
+            grid-template-columns: 1fr 41.09vw;
+            gap: 0px;
+        }
+
+        .box_text {
+            padding-top: 10vh;
+            display: flex;
+            flex-direction: column;
+
+            &--text {
+                margin-bottom: 0.2vh;
+                @include fontTemplate(
+                    2.4rem,
+                    1,
+                    $accentColor,
+                    $regular,
+                    $Raleway
+                );
+                text-transform: uppercase;
+            }
+
+            &--title {
+                margin-bottom: 6.7vh;
+                @include fontTemplate(
+                    4.8rem,
+                    1.5,
+                    $accentColor,
+                    $extra-bold,
+                    $Butler
+                );
+            }
+
+            &--description {
+                margin-bottom: 6.1vh;
+                @include fontTemplate(
+                    3.6rem,
+                    1.4,
+                    $secondColor,
+                    $medium,
+                    $Raleway
+                );
+            }
+
+            &--list {
+                display: flex;
+                flex-direction: column;
+                gap: 1.4vh;
+                list-style: disc outside;
+                margin-bottom: 39vh;
+                @include fontTemplate(
+                    2.4rem,
+                    1.5,
+                    $secondColor,
+                    $light,
+                    $Raleway
+                );
+
+                li {
+                    list-style: disc outside;
+                    &::marker {
+                        color: $accentColor;
+                    }
+                }
+            }
+        }
+
+        .box_image {
+            width: 100%;
+            height: 100%;
+
+            .box-detail {
+                position: absolute;
+                left: 0;
+                bottom: 5.8vh;
+                transform: translateX(-72%);
+                width: 22.3vw;
+                aspect-ratio: 1;
+            }
+        }
+
+        // Details
+        &::before {
+            content: "";
+            position: absolute;
+            background-color: $accentColor;
+            width: 5vw;
+            top: 0;
+            left: 6.7vw;
+            aspect-ratio: 0.6;
+        }
+    }
+
+    .section_about {
+        background-color: #231f20;
+        // opacity: 0.3;
+        &--container {
+            display: flex;
+            flex-direction: column;
+            gap: 0px;
+        }
+
+        .box_grid {
+            display: grid;
+            grid-template-columns: 1fr 38.43vw;
+            gap: 0;
+            &--one {
+                .box_text {
+                    padding-left: 15vw;
+                    padding-top: 8.7vh;
+                    padding-right: 11vw;
+                    display: flex;
+                    flex-direction: column;
+
+                    &--logo {
+                        width: 23.6vw;
+                        height: auto;
+                        object-fit: contain;
+                        margin-bottom: 13vh;
+                    }
+
+                    &--description {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 2.8vh;
+
+                        p {
+                            @include fontTemplate(
+                                2.4rem,
+                                1.5,
+                                $primaryColor,
+                                $light,
+                                $Raleway
+                            );
+                        }
+                    }
+                }
+
+                .box_image {
+                    width: 100%;
+                    height: 100%;
+                    position: relative;
+
+                    img {
+                        position: absolute;
+                        inset: 0;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+
+            &--two {
+                display: flex;
+                flex-direction: column;
+
+                .box_card {
+                    &--one {
+                        align-self: flex-end;
+                        width: 48%;
+                        height: auto;
+                        display: flex;
+                        flex-direction: column;
+                        background-color: $primaryColor;
+                        padding: 8.8vh 14.8vw 9.3vh 5.5vw;
+                        position: relative;
+
+                        .box_card--description {
+                            @include fontTemplate(
+                                2.4rem,
+                                1.36,
+                                $secondColor,
+                                $light,
+                                $Raleway,
+                                end
+                            );
+
+                            strong {
+                                font-size: 3.4rem;
+                                font-weight: bold;
+                            }
+
+                            span {
+                                color: $accentColor;
+                            }
+                        }
+                    }
+                    &--two {
+                        margin-top: -15vh;
+                        width: 54%;
+                        height: auto;
+                        display: flex;
+                        flex-direction: column;
+                        background-color: $accentColor;
+                        padding: 8vh 4vw 12.5vh 21vw;
+                        position: relative;
+
+                        .box_card--logo {
+                            width: 15.46vw;
+                            height: auto;
+                            object-fit: contain;
+                        }
+
+                        .box_card--description {
+                            @include fontTemplate(
+                                2.4rem,
+                                1.5,
+                                $primaryColor,
+                                $light,
+                                $Raleway
+                            );
+                        }
+                    }
+                }
+            }
+        }
+
+        .box_plant {
+            width: 71vw;
+            margin: 5.5vh auto 12vh;
+            img {
+                width: 100%;
+                height: auto;
+                object-fit: contain;
+            }
+        }
+    }
+
+    .section_differential {
+        position: relative;
+        background-color: $secondColor;
+        padding-bottom: 12vh;
+        &--container {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .box_text {
+            display: grid;
+            grid-template-columns: 36vw 1fr;
+            gap: 0;
+
+            &--title {
+                padding-top: 14vh;
+                padding-left: 15vw;
+                @include fontTemplate(3.6rem, 1, $primaryColor, $bold, $Butler);
+                text-transform: uppercase;
+            }
+
+            &--description {
+                display: flex;
+                align-items: center;
+                padding-left: 2.5vw;
+                height: 100%;
+                @include fontTemplate(
+                    2.4rem,
+                    1.5,
+                    $primaryColor,
+                    $light,
+                    $Raleway
+                );
+            }
+
+            // Grid
+
+            .box_grid {
+                &--one {
+                    border-left: 1px solid $accentColor;
+                }
+            }
+
+            // Details
+            .details {
+                &--line {
+                    margin-top: 1vh;
+                    margin-bottom: 15.3vh;
+                    width: -webkit-fill-available;
+                    height: 1px;
+                    background-color: $accentColor;
+                    position: relative;
+
+                    &::before {
+                        content: "";
+                        width: 1.5vw;
+                        aspect-ratio: 1;
+                        border-radius: 50%;
+                        background-color: $accentColor;
+                        position: absolute;
+                        top: 50%;
+                        right: 0;
+                        transform: translate(50%, -50%);
+                    }
+                }
+            }
+        }
+
+        .box_image {
+            display: grid;
+            grid-template-columns: 56.56vw 1fr;
+            gap: 0.83vw;
+
+            &--grid-one {
+                display: flex;
+                flex-direction: column;
+                gap: 0.83vw;
+
+                .item-one {
+                    display: grid;
+                    grid-template-columns: 41.15vw 1fr;
+                    gap: 0.83vw;
+
+                    .image-one {
+                        width: 100%;
+                        aspect-ratio: 2;
+                    }
+                    .image-two {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .item-two {
+                    display: grid;
+                    grid-template-columns: 27.86vw 1fr;
+                    gap: 0.83vw;
+
+                    .image-one {
+                        width: 100%;
+                        aspect-ratio: 1.24;
+                    }
+
+                    .image-two {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+
+            &--grid-two {
+                display: flex;
+                flex-direction: column;
+                gap: 0.83vw;
+
+                .item-one {
+                    display: grid;
+                    grid-template-columns: 20.8vw 1fr;
+                    gap: 0.83vw;
+
+                    .image-one {
+                        width: 100%;
+                        aspect-ratio: 0.83;
+                    }
+                    .image-two {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .item-two {
+                    display: flex;
+                    height: -webkit-fill-available;
+                    .image {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+
+        // Background - Layer
+        &::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.8;
+            z-index: 0;
+            background: url(../img/Home/Differentials/bg-overlayer.png),
+                lightgray 50% / cover no-repeat;
+        }
+    }
+
+    .section_investing {
+        position: relative;
+        background-color: $primaryColor;
+        // opacity: 0.3;
+        &--container {
+            padding-left: 15vw;
+            display: grid;
+            grid-template-columns: 1fr 38.4vw;
+            gap: 0px;
+        }
+
+        .box_text {
+            padding-top: 9.8vh;
+            padding-right: 5vw;
+            display: flex;
+            flex-direction: column;
+
+            &--text {
+                @include fontTemplate(
+                    2.4rem,
+                    1,
+                    $accentColor,
+                    $regular,
+                    $Raleway
+                );
+                text-transform: uppercase;
+            }
+
+            &--title {
+                margin-bottom: 10vh;
+                @include fontTemplate(
+                    4.8rem,
+                    1.1,
+                    $secondColor,
+                    $extra-bold,
+                    $Butler
+                );
+
+                span{
+                    color: $accentColor
+                }
+            }
+
+            &--description {
+                margin-bottom: 11.5vh;
+                display: flex;
+                flex-direction: column;
+                gap: 2.6vh;
+                p {
+                    @include fontTemplate(
+                        2.4rem,
+                        1.5,
+                        $secondColor,
+                        $medium,
+                        $Raleway
+                    );
+                }
+            }
+
+            &--link {
+                margin-bottom: 37.4vh;
+                @include fontTemplate(
+                    2.4rem,
+                    1.5,
+                    $accentColor,
+                    $medium,
+                    $Raleway
+                );
+                padding-inline: 3.1vw;
+                padding-top: 2vh;
+                padding-bottom: 2vh;
+                border: 2px solid $accentColor;
+                text-decoration: none;
+                text-transform: uppercase;
+                width: fit-content;
+                height: fit-content;
+                transition: $transition;
+
+                &:hover {
+                    background-color: $accentColor;
+                    color: $primaryColor;
+                }
+            }
+        }
+
+        .box_image {
+            align-self: flex-end;
+            justify-self: flex-end;
+            width: 100%;
+            height: 68%;
+
+            .box-detail {
+                position: absolute;
+                left: 0;
+                bottom: 0vh;
+                transform: translateX(-83%);
+                width: 18vw;
+                aspect-ratio: 1;
+            }
+        }
+
+        // Details
+        &::before {
+            content: "";
+            position: absolute;
+            background-color: $accentColor;
+            width: 5vw;
+            top: 0;
+            left: 6.7vw;
+            aspect-ratio: 0.6;
         }
     }
 }
