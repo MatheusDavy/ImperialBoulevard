@@ -271,11 +271,7 @@ class AdmModel extends Model
             }
         }
 
-        if (Schema::hasColumn($this->table, 'created_at')) {
-            $data['updated_at'] = Carbon::now();
-        }
-
-        $update = $this->update($id, $data);
+        $update = $this->query()->where('id', $id)->update($data);
 
         if (isset($this->list) && !empty($list)) {
             DB::beginTransaction();
