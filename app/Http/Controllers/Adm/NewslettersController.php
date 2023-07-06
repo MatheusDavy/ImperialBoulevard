@@ -30,6 +30,8 @@ class NewslettersController extends AdmController
         $this->modalFields = array(
             $this->makeFields(null, 'Nome', 'name'),
             $this->makeFields(null, 'E-mail', 'email'),
+            $this->makeFields(null, 'Telefone', 'phone'),
+            $this->makeFields(null, 'Mensagem', 'message'),
             $this->makeFields(null, 'Data', 'datef'),
         );
 
