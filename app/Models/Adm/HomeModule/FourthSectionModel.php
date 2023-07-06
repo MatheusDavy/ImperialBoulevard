@@ -5,11 +5,11 @@ namespace App\Models\Adm\HomeModule;
 use App\Models\Adm\AdmModel;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
-class BannersModel extends AdmModel
+class FourthSectionModel extends AdmModel
 {
     use HasFactory;
 
-    protected $table = 'site_banners';
+    protected $table = 'site_fourth_section';
 
-    public $timestamps = false;
+    public $timestamps = true;
 }
