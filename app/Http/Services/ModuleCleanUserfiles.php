@@ -50,7 +50,6 @@ class ModuleCleanUserfiles
                 }
             }
         }
-
         $this->setFolder($folder);
         $this->setFieldNames($fieldNames);
         $this->setFieldNamesMultilang($fieldNamesMultilang);
@@ -58,7 +57,7 @@ class ModuleCleanUserfiles
 
     private function getFiles()
     {
-        $modelItems = $this->model->query()->get();
+        $modelItems = $this->model->get();
         $files = [];
 
         foreach ($modelItems as $k => $item) {
