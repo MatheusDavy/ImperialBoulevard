@@ -251,11 +251,84 @@
 			</div>
 
 			<div class="box_image image-block">
-				<img src="{{ asset('site/img/Home/Convention/image-1.png') }}" alt="">
+				<img src="{{ asset('site/img/Home/Investing/image-1.png') }}" alt="">
 
 				<div class="box-detail">
-					<img src="{{ asset('site/img/Home/Convention/image-2.png') }}" alt="">
+					<img src="{{ asset('site/img/Home/Investing/image-2.png') }}" alt="">
 				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="section_events">
+		<div class="section_events--container">
+			<div class="box_text">
+				<span class="box_text--text">COMO FAZER</span>
+				<h2 class="box_text--title">
+					UM SÁBIO INVESTIMENTO <br>
+					<span>AGORA EM EVENTOS</span>
+				</h2>
+
+				<div class="box_text--description">
+					<p>Invista na área Plus do maior Centro de <br> Convenções em hotelaria do Sul do Brasil.</p>
+					<p>A região do Vale dos Vinhedos recebe mais de 1200 eventos anualmente. E nós criamos o primeiro ecossistema integrado de eventos, negócios e reuniões da Serra Gaúcha.</p>
+				</div>
+
+				<a class="box_text--link">SAIBA COMO INVESTIR</a>
+			</div>
+
+			<div class="box_image image-block">
+				<img src="{{ asset('site/img/Home/Investing/image-3.png') }}" alt="">
+
+				<div class="box-detail">
+					<img src="{{ asset('site/img/Home/Investing/Logo.png') }}" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="section_contact">
+		<div class="section_contact--container">
+			<div class="box_grid">
+				<div class="box_text">
+					<span class="box_text--text">VAMOS CONVERSAR</span>
+					<h2 class="box_text--title">
+						ENTRE EM CONTATO
+					</h2>
+
+					<div class="box_text--description">
+						<p>Use o formulário abaixo para entrar em contato conosco ou apenas para dizer Olá!</p>
+					</div>
+				</div>
+				<form action="">
+					<div class="box_grid">
+						<div class="input-group">
+							<input fieldName="Name" idError='wwu-error-name' fieldType="name" isRequired="required" type="text" name="name" placeholder="Nome">
+							<span class="error--message message-error-forms" id="wwu-error-name">Digite um nome válido !</span>
+						</div>
+						<div class="input-group">
+							<input fieldName="Name" idError='wwu-error-phone' fieldType="phone" isRequired="required" type="text" name="name" placeholder="Telefone">
+							<span class="error--message message-error-forms" id="wwu-error-phone">Digite um telefone válido !</span>
+						</div>
+					</div>
+					<div class="input-group">
+						<input fieldName="Name" idError='wwu-error-email' fieldType="email" isRequired="required" type="text" name="name" placeholder="Email">
+						<span class="error--message message-error-forms" id="wwu-error-email">Digite um email válido !</span>
+					</div>
+					<div class="input-group">
+						<textarea rows="1" fieldName="Name" idError='wwu-error-subject' fieldType="notNull" isRequired="required" type="text" name="name" placeholder="Mensagem"></textarea>
+						<span class="error--message message-error-forms" id="wwu-error-subject">Digite um nome válido !</span>
+					</div>
+
+					<div class="checkbox-group">
+						<label for="cb">Ao informar meus dados, eu concordo com a <a href="">Política de Privacidade</a> e com os <a href="">Termos de Uso</a>.</label>
+					</div>
+
+					<button type="submit" class="btn-submit">ENVIAR</button>
+				</form>
+			</div>
+			<div class="box_image image-block">
+				<img src="{{ asset('site/img/Home/Contact/image-1.png') }}" alt="">
 			</div>
 		</div>
 	</div>
