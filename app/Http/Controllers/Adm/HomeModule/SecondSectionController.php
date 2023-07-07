@@ -23,7 +23,8 @@ class SecondSectionController extends AdmController
         $this->titlePlural = 'Segunda Seção';
 
         $this->fields['Geral'] = array(
-            $this->ckEditorSimpleField('Título', 'title'),
+            $this->textField('input', 'Título Acima', 'above_title'),
+            $this->textField('input', 'Título', 'title'),
             $this->ckEditorSimpleField('Descrição', 'description'),
             $this->imageField('Imagem Topo', 'image_top', 'SegundaSecao', true, true),
             $this->imageField('Imagem Topo Mobile', 'image_top_mobile', 'SegundaSecao', true, true),

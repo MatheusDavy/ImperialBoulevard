@@ -11,5 +11,6 @@ class FourthSectionModel extends AdmModel
 
     protected $table = 'site_fourth_section';
 
+    public $folder = 'userfiles/QuartaSecao/';
     public $timestamps = true;
 }

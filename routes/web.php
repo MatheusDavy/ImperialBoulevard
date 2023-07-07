@@ -136,14 +136,9 @@ if (Schema::hasTable('adm_modules')) {
     Route::get('cronBackup/{password}', [CronBackupController::class, 'doProductsBackup'])->name('site.cronBackup');
 
     Route::get('/', [HomeController::class, 'index'])->name('site.home');
-    Route::get('/contato', [ContactController::class, 'index'])->name('site.contact');
-    Route::get('/blog', [BlogController::class, 'index'])->name('site.blog');
-    Route::get('/blog/{slug}', [BlogController::class, 'detail'])->name('site.blogDetalhe');
-    Route::get('/draft/{slug}', [BlogController::class, 'draft'])->name('site.draft');
 
     Route::post('/changeLang', [SiteController::class, 'changeLang'])->name('site.changeLang');
     Route::post('/newsletter', [FormsController::class, 'newsletterForm'])->name('site.newsletter');
-    Route::post('/contactForm', [FormsController::class, 'contactForm'])->name('site.contactForm');
 } else {
     // echo "Precisa de migration";
 }

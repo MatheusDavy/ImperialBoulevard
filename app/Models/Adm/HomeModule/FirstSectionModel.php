@@ -10,6 +10,14 @@ class FirstSectionModel extends AdmModel
     use HasFactory;
 
     protected $table = 'site_first_section';
+    protected $galleryTable = 'site_first_section_gallery';
+    protected $foreignKey = 'id_section';
 
+    public $folder = 'userfiles/PrimeiraSecao/';
     public $timestamps = true;
+
+    public function gallery()
+    {
+        return $this->hasMany(FirstSectionGalleryModel::class, 'id_section');
+    }
 }

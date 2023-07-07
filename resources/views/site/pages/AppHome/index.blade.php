@@ -5,36 +5,28 @@
 		<div class="section_herobanner--container">
 			<div class="box_slider swiper heroBannerSlider">
 				<div class="swiper-wrapper">
-					<div class="swiper-slide box_slider--content">
-						<img src="{{ asset('site/img/Home/Banner/roof.png') }}" alt="">
-					</div>
-					<div class="swiper-slide box_slider--content">
-						<img src="{{ asset('site/img/Home/Banner/reception.png') }}" alt="">
-					</div>
-					<div class="swiper-slide box_slider--content">
-						<img src="{{ asset('site/img/Home/Banner/meeting-room.png') }}" alt="">
-					</div>
-					<div class="swiper-slide box_slider--content">
-						<img src="{{ asset('site/img/Home/Banner/coffee-space.png') }}" alt="">
-					</div>
+					@foreach ($firstSection->gallery as $gallery)
+						<div class="swiper-slide box_slider--content">
+							<img src="{{ assetJson([$firstSection->folder,$gallery->image]) }}" alt="{{imgAltJson($gallery->image)}}" title="{{imgTitleJson($gallery->image)}}">
+						</div>	
+					@endforeach
 				</div>
 			</div>
 
 			<div class="box_text">
-				<span class="box_text--text">CONHEÇA O</span>
+				<span class="box_text--text">{{$firstSection->above_title}}</span>
 				<div class="style style_one">
 
 				</div>
 				<img class="box_text--logo" src="{{ asset('site/img/Home/Banner/logo-text.png') }}" />
 				<p class="box_text--description">
-					UM SÁBIO INVESTIMENTO <br>
-					<span>AGORA EM EVENTOS</span>
+					{!! ignoreTags($firstSection->subtitle) !!}
 				</p>
-				<a href="#" class="box_text--link" aria-label="Ir para a sessão de Saiba Mais">SAIBA MAIS</a>
+				<a href="{{$firstSection->button_link}}" class="box_text--link" aria-label="Ir para a sessão de Saiba Mais">{{$firstSection->button_title}}</a>
 
 				<a href="" class="box_text--locale">
 					<img src="{{ asset('site/img/Icons/pinner.svg') }}" alt="">
-					<span style="opacity: 0.6;">Vale dos Vinhedos</span>
+					<span style="opacity: 0.6;">{{$firstSection->location}}</span>
 				</a>
 				<div class="style style_two"></div>
 
@@ -49,33 +41,30 @@
 			<div class="box_grid box_grid--one">
 				<div class="box_text">
 					<div class="grid-one">
-						<span class="box_text--text">CONHEÇA</span>
-						<h2 class="box_text--title">REGIÃO UVA E VINHO</h2>
+						<span class="box_text--text">{{$secondSection->above_title}}</span>
+						<h2 class="box_text--title">{{ $secondSection->title }}</h2>
 
-						<ul class="box_text--list">
-							<li>Mais de 2 milhões de visitantes anualmente</li>
-							<li>O destino que mais cresce no Estado</li>
-							<li>1.700 eventos anualmente</li>
-							<li>Integração única de lazer e negócios em meio ao principal destino enoturístico do Brasil.</li>
-						</ul>
+						<div class="box_text--list">
+							{!! $secondSection->description !!}
+						</div>
 					</div>
 					<div class="box_text--image image-block reveal">
 						<div class="image-wrap">
-							<img src="{{ asset('site/img/Home/Region/image-1.jpg') }}" alt="">
+							<img src="{{ assetJson([$secondSection->folder,$secondSection->image_top]) }}" alt="{{imgAltJson($secondSection->image_top)}}" title="{{imgTitleJson($secondSection->image_top)}}">
 						</div>
 					</div>
 				</div>
 
 				<div class="box_image image-block reveal">
 					<div class="image-wrap">
-						<img src="{{ asset('site/img/Home/Region/image-3.jpg') }}" alt="">
+						<img src="{{ assetJson([$secondSection->folder,$secondSection->image_bottom]) }}" alt="{{imgAltJson($secondSection->image_bottom)}}" title="{{imgTitleJson($secondSection->image_bottom)}}">
 					</div>
 				</div>
 			</div>
 
 			<div class="box_grid box_grid--two image-block reveal">
 				<div class="image-wrap">
-					<img src="{{ asset('site/img/Home/Region/image-2.jpg') }}" alt="">
+					<img src="{{ assetJson([$secondSection->folder,$secondSection->image_right]) }}" alt="{{imgAltJson($secondSection->image_right)}}" title="{{imgTitleJson($secondSection->image_right)}}">
 				</div>
 			</div>
 		</div>
@@ -84,30 +73,24 @@
 	<div class="section_convention" id="boulevard-convention">
 		<div class="section_convention--container">
 			<div class="box_text">
-				<span class="box_text--text">CONHEÇA O</span>
-				<h2 class="box_text--title">BOULEVARD CONVENTION</h2>
+				<span class="box_text--text">{{ $thirdSection->above_title }}</span>
+				<h2 class="box_text--title">{{ $thirdSection->title }}</h2>
 
 				<p class="box_text--description">
-					Eventos, Hotelaria, Compras, Facilities e Enogastronomia e no Vale dos Vinhedos
+					{{ $thirdSection->subtitle }}
 				</p>
 
-				<ul class="box_text--list">
-					<li>211 apartamentos Plaza Hoteis, Resorts & Spas</li>
-					<li>Mall de Compras</li>
-					<li>Centro de Eventos principal</li>
-					<li>Área enogastronômica</li>
-					<li>Estacionamentos</li>
-					<li>Capela e bosque</li>
-				</ul>
+				<div class="box_text--list">
+					{!! $thirdSection->description !!}
+				</div>
 			</div>
 
 			<div class="box_image image-block">
-				<img src="{{ asset('site/img/Home/Convention/image-1.png') }}" alt="">
+				<img src="{{ assetJson([$thirdSection->folder,$thirdSection->image_right]) }}" alt="{{imgAltJson($thirdSection->image_right)}}" title="{{imgTitleJson($thirdSection->image_right)}}">
 
-
-				<div class="box-detail reveal">
+				<div class="box-detail">
 					<div class="image-wrap">
-						<img src="{{ asset('site/img/Home/Convention/image-2.png') }}" alt="">
+						<img src="{{ assetJson([$thirdSection->folder,$thirdSection->image_left]) }}" alt="{{imgAltJson($thirdSection->image_left)}}" title="{{imgTitleJson($thirdSection->image_left)}}">
 					</div>
 				</div>
 			</div>
@@ -156,26 +139,20 @@
 					</svg>
 
 					<div class="box_text--description">
-						<p>Desde o início do projeto, o Boulevard Convention Vale dos
-							Vinhedos foi pensado, planejado e desenvolvido nos mínimos detalhes.</p>
-
-						<p>E com o sucesso na comercialização dos apartamentos do Condo Hotel para
-							investidores, sentimos a demanda crescente de clientes que buscavam algo mais.</p>
+						{!! $fourthSection->description_1 !!}
 					</div>
 
 				</div>
 
 				<div class="box_image image-block">
-					<img src="{{ asset('site/img/Home/About/image-1.png') }}" />
+					<img src="{{ assetJson([$fourthSection->folder,$fourthSection->image_1]) }}" alt="{{imgAltJson($fourthSection->image_1)}}" title="{{imgTitleJson($fourthSection->image_1)}}">
 				</div>
 
 			</div>
 			<div class="box_grid box_grid--two">
 				<div class="box_card box_card--one">
 					<p class="box_card--description">
-						Foi por isso que criamos o <strong>Boulevard Convention <span>Meeting Plus</span></strong>
-						<br>
-						o primeiro ecossistema integrado de eventos, negócios e reuniões da Serra Gaúcha, com serviços e design de ponta, feito para momentos decisivos.
+						{!! ignoreTags($fourthSection->description_2) !!}
 					</p>
 				</div>
 
@@ -183,7 +160,7 @@
 				<div class="box_card  box_card--two">
 					<img class="box_card--logo" src="{{ asset('site/img/Home/Banner/logo-text.png') }}" />
 					<p class="box_card--description">
-						É uma área de eventos premium junto ao maior Centro de Convenções em hotelaria do Sul do Brasil.
+						{!! ignoreTags($fourthSection->subtitle_2) !!}
 					</p>
 				</div>
 			</div>
@@ -191,7 +168,7 @@
 			<div class="box_plant">
 				<div class="f-panzoom" id="myPanzoom" data-lenis-prevent>
 					<div class="f-panzoom__viewport">
-						<img class="f-panzoom__content" src="{{ asset('site/img/Home/About/image-plant.png') }}">
+						<img class="f-panzoom__content" src="{{ assetJson([$fourthSection->folder,$fourthSection->image_2]) }}" alt="{{imgAltJson($fourthSection->image_2)}}" title="{{imgTitleJson($fourthSection->image_2)}}">
 					</div>
 				</div>
 			</div>

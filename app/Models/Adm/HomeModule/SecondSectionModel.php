@@ -11,5 +11,6 @@ class SecondSectionModel extends AdmModel
 
     protected $table = 'site_second_section';
 
+    public $folder = 'userfiles/SegundaSecao/';
     public $timestamps = true;
 }

@@ -11,5 +11,6 @@ class ThirdSectionModel extends AdmModel
 
     protected $table = 'site_third_section';
 
+    public $folder = 'userfiles/TerceiraSecao/';
     public $timestamps = true;
 }
