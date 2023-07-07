@@ -1,11 +1,57 @@
-.image-block{
+.image-block {
     position: relative;
-    
-    img{
+
+    img {
         position: absolute;
         inset: 0;
         width: 100%;
         height: 100%;
         object-fit: cover;
     }
+}
+
+// Images
+body:not(.no-js) .reveal {
+    position: relative;
+    overflow: hidden;
+}
+body:not(.no-js) .image-wrap {
+    transition: 1s ease-out;
+    transition-delay: 0.2s;
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+    visibility: hidden;
+}
+body:not(.no-js) .image-wrap img {
+    transform: scale(1.3);
+    transition: 2s ease-out;
+    position: relative !important;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+body:not(.no-js) .image-wrap .enter-image-style {
+    transform: scale(1.3);
+    transition: 2s ease-out;
+    position: relative !important;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+body:not(.no-js) .animating .image-wrap {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    visibility: visible;
+    transform: skewY(0);
+}
+body:not(.no-js) .animating img {
+    transform: scale(1);
+    transition: 4s ease-out;
+}
+body:not(.no-js) .animating .enter-image-style {
+    transform: scale(1);
+    transition: 4s ease-out;
 }

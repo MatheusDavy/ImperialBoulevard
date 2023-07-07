@@ -15,7 +15,7 @@
 export default function zoomImages() {
     /*------------------ 0 - functions ---------------*/
     function addSourceToImageModal(imageClicked) {
-        const sourceImage = imageClicked.target.getAttribute('src')
+        const sourceImage = imageClicked.dataset.src
         const imageModal = document.getElementById('image__zoom-modal')
 
         openCloseZoomModal(true)
@@ -41,8 +41,8 @@ export default function zoomImages() {
     // open zoom modal when clicked in images
     const imagesZoom = document.querySelectorAll('.images--zoom')
     imagesZoom.forEach((image)=>{
-        image.addEventListener("click", (imageClicked) => {
-            addSourceToImageModal(imageClicked)
+        image.addEventListener("click", () => {
+            addSourceToImageModal(image)
         })
     })
     

@@ -86,6 +86,7 @@
             width: 100%;
             text-align: end;
             border-bottom: 1px solid $primaryColor;
+            transition: $transition;
 
             a{
                 @include fontTemplate(
@@ -96,6 +97,14 @@
                     $Raleway
                 );
                 text-decoration: none;
+                transition: $transition;
+            }
+
+            &:hover{
+                border-bottom: 1px solid $accentColor;
+                a{
+                    color: $accentColor;
+                }
             }
         }
     }

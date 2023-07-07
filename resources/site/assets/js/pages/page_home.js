@@ -3,10 +3,10 @@ import initCarousel from '../modules/initCarousel';
 
 initCarousel();
 
-////////// 0 - Const / Variable /////////////
+/*------------ 0 - Const / Variable ---------------*/
 
 
-////////////// 1 - Classes /////////////
+/*------------  1 - Classes ---------------*/
 class AnimationGradient {
     constructor() {
 
@@ -61,7 +61,6 @@ class AnimationGradient {
         this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
     }
 }
-
 class Circle {
     constructor({ width, height, minRadius, maxRadius, fills }) {
         this.fills = fills
@@ -84,11 +83,30 @@ class Circle {
     }
 }
 
-////////////// 2 - Functions /////////////
+/*------------ 2 - Functions ---------------*/
+function animateSVG(element) {
+    anime({
+        targets: `${element} path`,
+        strokeDashoffset: [anime.setDashoffset, 0],
+        easing: 'easeInOutSine',
+        duration: 2000,
+        delay: 0,
+        loop: false
+    });
 
-/////////// 4 - Onloads ///////////////////////
+    anime({
+        targets: element,
+        easing: 'easeInOutSine',
+        duration: 1000,
+        delay: 0,
+        loop: false
+    });
+}
+
+/*------------ 4 - Onloads ---------------*/
 // window.onload = () => new AnimationGradient();
 
+/*------------ 5 Banner Home ---------------*/
 const swiper = new Swiper('.heroBannerSlider', {
     loop: true,
     autoplay: true,
@@ -97,22 +115,27 @@ const swiper = new Swiper('.heroBannerSlider', {
     effect: 'fade',
 });
 
-
+/*------------ 6 - Zoom Image ---------------*/
 let zoomImg = document.querySelector(".f-panzoom");
-const options = {
+const optionsZoom = {
     panMode: "mousemove",
     mouseMoveFactor: 3,
     click: false,
     wheel: false
 };
-
-const fp = new Panzoom(zoomImg, options);
-
+const fp = new Panzoom(zoomImg, optionsZoom);
 zoomImg.addEventListener('mouseenter', () => {
     fp.zoomTo(2)
 });
-
 zoomImg.addEventListener('mouseleave', () => {
     fp.zoomToFit()
 });
+
+/*-------------/ 7 - Animations SVG /-----------*/
+window.onscroll = ()=>{
+    const SVGSToBeAnimated = document.querySelectorAll('.svg-path-animate')
+    SVGSToBeAnimated.forEach(svg => {
+        
+    })
+}
 
