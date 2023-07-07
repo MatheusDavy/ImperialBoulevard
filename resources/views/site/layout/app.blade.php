@@ -69,7 +69,7 @@
     <div class='fail-message'></div>
     <div class='success-message'></div>
 
-    @include('site.components.zoom_modal')
+    @include('site.components.Modal.zoom_modal')
 
     @include('site.layout.header')
     <main id="main">

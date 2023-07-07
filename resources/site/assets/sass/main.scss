@@ -12,9 +12,10 @@
 @import 'layout/footer';
 
 // COMPONENTS
-@import 'components/zoom_modal.scss';
-@import 'components/fail';
-@import 'components/success';
+@import 'components/modal/zoom_modal.scss';
+@import 'components/forms/fail.scss';
+@import 'components/forms/success.scss';
+@import 'components/fixed/back_to_top.scss';
 
 // LIBS
 @import 'libs/panzoom.scss';
@@ -27,3 +28,9 @@
 @import 'pages/home';
 
 //sass --watch resources/site/assets/sass/main.scss:public/site/css/main.css
+
+body{
+    &.block-scroll{
+        overflow: hidden !important;
+    }
+}

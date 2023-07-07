@@ -1,0 +1,25 @@
+#back-to-top{
+    position: absolute;
+    bottom: 10vh;
+    right: 0;
+    z-index: 10;
+    width: 17vw;
+    aspect-ratio: 3.26;
+    background-color: $secondColor;
+    display: flex;
+    align-items: center;
+    padding-left: 2.2vw;
+    transition: 1s;
+    opacity: 0;
+    transform: translateY(-600%);
+
+    &.animated{
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    svg{
+        width: 3.3vw;
+        height: auto;
+    }
+}
