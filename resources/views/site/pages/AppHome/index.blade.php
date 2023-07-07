@@ -1,7 +1,7 @@
 @extends('site.layout.app')
 @section('content')
-<section id="page-home">
-	<div class="section_herobanner">
+<section id="page-home" id='topo'>
+	<div class="section_herobanner" id="inicio">
 		<div class="section_herobanner--container">
 			<div class="box_slider swiper heroBannerSlider">
 				<div class="swiper-wrapper">
@@ -35,7 +35,7 @@
 		</div>
 	</div>
 
-	<div class="section_region">
+	<div class="section_region" id="regiao">
 		<div class="section_region--container">
 
 			<div class="box_grid box_grid--one">
@@ -70,7 +70,7 @@
 		</div>
 	</div>
 
-	<div class="section_convention">
+	<div class="section_convention" id="boulevard-convention">
 		<div class="section_convention--container">
 			<div class="box_text">
 				<span class="box_text--text">{{ $thirdSection->above_title }}</span>
@@ -97,7 +97,7 @@
 		</div>
 	</div>
 
-	<div class="section_about">
+	<div class="section_about" id="meeting-plus">
 		<div class="section_about--container">
 			<div class="box_grid box_grid--one">
 				<div class="box_text">
@@ -176,7 +176,7 @@
 		</div>
 	</div>
 
-	<div class="section_differential">
+	<div class="section_differential" id="diferenciais">
 		<div class="section_differential--container">
 			<div class="box_text">
 				<div class="box_grid box_grid--one">
@@ -245,7 +245,7 @@
 
 	</div>
 
-	<div class="section_investing">
+	<div class="section_investing" id="invista">
 		<div class="section_investing--container">
 			<div class="box_text">
 				<span class="box_text--text">DESCUBRA COMO</span>
@@ -303,8 +303,7 @@
 		</div>
 	</div>
 
-
-	<div class="section_contact">
+	<div class="section_contact" id="contato">
 		<div class="section_contact--container">
 			<div class="box_grid">
 				<div class="box_text">
@@ -351,9 +350,14 @@
 				<img src="{{ asset('site/img/Home/Contact/image-1.png') }}" alt="">
 			</div>
 		</div>
+
+		@include('site.components.Fixed.back_to_top')
 	</div>
 
 </section>
+
+
+
 @endsection
 
 @section('js')

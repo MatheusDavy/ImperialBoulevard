@@ -1,5 +1,5 @@
 body {
-    // background-image: url(../img/Pixel/home.png);
+    background-image: url(../img/Pixel/home.png);
     background-size: 100%;
     background-repeat: no-repeat;
 }
@@ -544,7 +544,7 @@ body {
 
             .box_grid {
                 &--one {
-                    border-left: 1px solid $accentColor;
+                    border-right: 1px solid $accentColor;
                 }
             }
 
@@ -930,6 +930,7 @@ body {
 
     .section_contact {
         background-color: $primaryColor;
+        position: relative;
         // opacity: 0.3;
         &--container {
             display: grid;

@@ -1,4 +1,4 @@
-import { isMobile } from "./variables";
+import { isMobile } from "./variables_functions";
 
 export default function FontSize() {
     const fontConfig = () => {
