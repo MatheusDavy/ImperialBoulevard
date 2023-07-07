@@ -1,7 +1,6 @@
 @extends('site.layout.app')
 @section('content')
 <section id="page-home">
-	<!-- Home Banner -->
 	<div class="section_herobanner">
 		<div class="section_herobanner--container">
 			<div class="box_slider swiper heroBannerSlider">
@@ -49,18 +48,24 @@
 							{!! $secondSection->description !!}
 						</div>
 					</div>
-					<div class="box_text--image image-block">
-						<img src="{{ assetJson([$secondSection->folder,$secondSection->image_top]) }}" alt="{{imgAltJson($secondSection->image_top)}}" title="{{imgTitleJson($secondSection->image_top)}}">
+					<div class="box_text--image image-block reveal">
+						<div class="image-wrap">
+							<img src="{{ assetJson([$secondSection->folder,$secondSection->image_top]) }}" alt="{{imgAltJson($secondSection->image_top)}}" title="{{imgTitleJson($secondSection->image_top)}}">
+						</div>
 					</div>
 				</div>
 
-				<div class="box_image image-block">
-					<img src="{{ assetJson([$secondSection->folder,$secondSection->image_bottom]) }}" alt="{{imgAltJson($secondSection->image_bottom)}}" title="{{imgTitleJson($secondSection->image_bottom)}}">
+				<div class="box_image image-block reveal">
+					<div class="image-wrap">
+						<img src="{{ assetJson([$secondSection->folder,$secondSection->image_bottom]) }}" alt="{{imgAltJson($secondSection->image_bottom)}}" title="{{imgTitleJson($secondSection->image_bottom)}}">
+					</div>
 				</div>
 			</div>
 
-			<div class="box_grid box_grid--two image-block">
-				<img src="{{ assetJson([$secondSection->folder,$secondSection->image_right]) }}" alt="{{imgAltJson($secondSection->image_right)}}" title="{{imgTitleJson($secondSection->image_right)}}">
+			<div class="box_grid box_grid--two image-block reveal">
+				<div class="image-wrap">
+					<img src="{{ assetJson([$secondSection->folder,$secondSection->image_right]) }}" alt="{{imgAltJson($secondSection->image_right)}}" title="{{imgTitleJson($secondSection->image_right)}}">
+				</div>
 			</div>
 		</div>
 	</div>
@@ -84,7 +89,9 @@
 				<img src="{{ assetJson([$thirdSection->folder,$thirdSection->image_right]) }}" alt="{{imgAltJson($thirdSection->image_right)}}" title="{{imgTitleJson($thirdSection->image_right)}}">
 
 				<div class="box-detail">
-					<img src="{{ assetJson([$thirdSection->folder,$thirdSection->image_left]) }}" alt="{{imgAltJson($thirdSection->image_left)}}" title="{{imgTitleJson($thirdSection->image_left)}}">
+					<div class="image-wrap">
+						<img src="{{ assetJson([$thirdSection->folder,$thirdSection->image_left]) }}" alt="{{imgAltJson($thirdSection->image_left)}}" title="{{imgTitleJson($thirdSection->image_left)}}">
+					</div>
 				</div>
 			</div>
 		</div>
@@ -94,7 +101,7 @@
 		<div class="section_about--container">
 			<div class="box_grid box_grid--one">
 				<div class="box_text">
-					<svg class="box_text--logo" width="458" height="86" viewBox="0 0 458 86" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<svg class="box_text--logo svg-path-animate" width="458" height="86" viewBox="0 0 458 86" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<mask id="mask0_145_358" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="458" height="86">
 							<path d="M458 0.80542H0V85.4996H458V0.80542Z" fill="white" />
 						</mask>
@@ -188,22 +195,100 @@
 			<div class="box_image">
 				<div class="box_image--grid-one">
 					<div class="item-one">
-						<div class="image-one image-block"><img src="{{ asset('site/img/Home/Differentials/image-1.png') }}" alt=""></div>
-						<div class="image-two image-block"><img src="{{ asset('site/img/Home/Differentials/image-2.png') }}" alt=""></div>
+						<div class="image-one image-block">
+							<img src="{{ asset('site/img/Home/Differentials/image-1.png') }}" alt="">
+							<div class="image-description">
+								<button class="image-description--zoom images--zoom" data-src="{{ asset('site/img/Home/Differentials/image-1.png') }}">
+									<img src="{{ asset('site/img/Home/Differentials/zoom.svg') }}" alt="">
+								</button>
+
+								<p class="image-description--description">
+									Integração com espaços para eventos.
+								</p>
+							</div>
+						</div>
+						<div class="image-two image-block">
+							<img src="{{ asset('site/img/Home/Differentials/image-2.png') }}" alt="">
+							<div class="image-description">
+								<button class="image-description--zoom images--zoom" data-src="{{ asset('site/img/Home/Differentials/image-2.png') }}">
+									<img src="{{ asset('site/img/Home/Differentials/zoom.svg') }}" alt="">
+								</button>
+
+								<p class="image-description--description">
+									Integração com espaços para eventos.
+								</p>
+							</div>
+						</div>
 					</div>
 					<div class="item-two">
-						<div class="image-one image-block"><img src="{{ asset('site/img/Home/Differentials/image-5.png') }}" alt=""></div>
-						<div class="image-two image-block"><img src="{{ asset('site/img/Home/Differentials/image-6.png') }}" alt=""></div>
+						<div class="image-one image-block">
+							<img src="{{ asset('site/img/Home/Differentials/image-5.png') }}" alt="">
+							<div class="image-description">
+								<button class="image-description--zoom images--zoom" data-src="{{ asset('site/img/Home/Differentials/image-5.png') }}">
+									<img src="{{ asset('site/img/Home/Differentials/zoom.svg') }}" alt="">
+								</button>
+
+								<p class="image-description--description">
+									Integração com espaços para eventos.
+								</p>
+							</div>
+						</div>
+						<div class="image-two image-block">
+							<img src="{{ asset('site/img/Home/Differentials/image-6.png') }}" alt="">
+							<div class="image-description">
+								<button class="image-description--zoom images--zoom" data-src="{{ asset('site/img/Home/Differentials/image-6.png') }}">
+									<img src="{{ asset('site/img/Home/Differentials/zoom.svg') }}" alt="">
+								</button>
+
+								<p class="image-description--description">
+									Integração com espaços para eventos.
+								</p>
+							</div>
+						</div>
 					</div>
 				</div>
 
 				<div class="box_image--grid-two">
 					<div class="item-one">
-						<div class="image-one image-block"><img src="{{ asset('site/img/Home/Differentials/image-3.png') }}" alt=""></div>
-						<div class="image-two image-block"><img src="{{ asset('site/img/Home/Differentials/image-4.png') }}" alt=""></div>
+						<div class="image-one image-block">
+							<img src="{{ asset('site/img/Home/Differentials/image-3.png') }}" alt="">
+
+							<div class="image-description">
+								<button class="image-description--zoom images--zoom" data-src="{{ asset('site/img/Home/Differentials/image-3.png') }}">
+									<img src="{{ asset('site/img/Home/Differentials/zoom.svg') }}" alt="">
+								</button>
+
+								<p class="image-description--description">
+									Integração com espaços para eventos.
+								</p>
+							</div>
+						</div>
+						<div class="image-two image-block">
+							<img src="{{ asset('site/img/Home/Differentials/image-4.png') }}" alt="">
+							<div class="image-description">
+								<button class="image-description--zoom images--zoom" data-src="{{ asset('site/img/Home/Differentials/image-4.png') }}">
+									<img src="{{ asset('site/img/Home/Differentials/zoom.svg') }}" alt="">
+								</button>
+
+								<p class="image-description--description">
+									Integração com espaços para eventos.
+								</p>
+							</div>
+						</div>
 					</div>
 					<div class="item-two">
-						<div class="image image-block"><img src="{{ asset('site/img/Home/Differentials/image-7.png') }}" alt=""></div>
+						<div class="image image-block">
+							<img src="{{ asset('site/img/Home/Differentials/image-7.png') }}" alt="">
+							<div class="image-description">
+								<button class="image-description--zoom images--zoom" data-src="{{ asset('site/img/Home/Differentials/image-7.png') }}">
+									<img src="{{ asset('site/img/Home/Differentials/zoom.svg') }}" alt="">
+								</button>
+
+								<p class="image-description--description">
+									Integração com espaços para eventos.
+								</p>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -231,8 +316,10 @@
 			<div class="box_image image-block">
 				<img src="{{ asset('site/img/Home/Investing/image-1.png') }}" alt="">
 
-				<div class="box-detail">
-					<img src="{{ asset('site/img/Home/Investing/image-2.png') }}" alt="">
+				<div class="box-detail reveal">
+					<div class="image-wrap">
+						<img src="{{ asset('site/img/Home/Investing/image-2.png') }}" alt="">
+					</div>
 				</div>
 			</div>
 		</div>
@@ -258,12 +345,15 @@
 			<div class="box_image image-block">
 				<img src="{{ asset('site/img/Home/Investing/image-3.png') }}" alt="">
 
-				<div class="box-detail">
-					<img src="{{ asset('site/img/Home/Investing/Logo.png') }}" alt="">
+				<div class="box-detail reveal">
+					<div class="image-wrap">
+						<img src="{{ asset('site/img/Home/Investing/Logo.png') }}" alt="">
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+
 
 	<div class="section_contact">
 		<div class="section_contact--container">
@@ -299,7 +389,10 @@
 					</div>
 
 					<div class="checkbox-group">
-						<label for="cb">Ao informar meus dados, eu concordo com a <a href="">Política de Privacidade</a> e com os <a href="">Termos de Uso</a>.</label>
+						<div class="checkbox">
+
+						</div>
+						<label for="checkbox">Ao informar meus dados, eu concordo com a <a href="">Política de Privacidade</a> e com os <a href="">Termos de Uso</a>.</label>
 					</div>
 
 					<button type="submit" class="btn-submit">ENVIAR</button>

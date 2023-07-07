@@ -1,8 +1,10 @@
-#page-home {
+body {
     // background-image: url(../img/Pixel/home.png);
     background-size: 100%;
     background-repeat: no-repeat;
+}
 
+#page-home {
     .section_herobanner {
         // opacity: 0.3;
         &--container {
@@ -385,6 +387,7 @@
                     flex-direction: column;
 
                     &--logo {
+                        opacity: 0;
                         width: 23.6vw;
                         height: auto;
                         object-fit: contain;
@@ -501,7 +504,8 @@
 
     .section_differential {
         position: relative;
-        background-color: $secondColor;
+        background: url(../img/Home/Differentials/bg-overlayer.webp),
+            lightgray 50% / cover no-repeat;
         padding-bottom: 12vh;
         &--container {
             position: relative;
@@ -638,20 +642,58 @@
                     }
                 }
             }
-        }
 
-        // Background - Layer
-        &::before {
-            content: "";
-            position: absolute;
-            inset: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            opacity: 0.8;
-            z-index: 0;
-            background: url(../img/Home/Differentials/bg-overlayer.png),
-                lightgray 50% / cover no-repeat;
+            .image-block {
+                overflow: hidden;
+                
+                &:hover{
+                    .image-description{
+                        transform: translateY(0);
+                    }
+                }
+            }
+
+            .image-description {
+                transform: translateY(-110%);
+                transition: 0.4s;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background: rgba(35, 31, 32, 0.7);
+                display: flex;
+                align-items: end;
+                padding: 0 5vw 6.2vh 2vw;
+
+                &--zoom {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    cursor: pointer;
+                    padding: 1.3vw;
+                    background-color: transparent;
+                    border: 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    img {
+                        width: 1.3vw;
+                        height: auto;
+                        object-fit: contain;
+                        position: relative;
+                    }
+                }
+
+                &--description{
+                    @include fontTemplate(
+                        2.4rem,
+                        1.5,
+                        $primaryColor,
+                        $light,
+                        $Raleway
+                    );
+                }
+            }
         }
     }
 
@@ -877,7 +919,10 @@
                 img {
                     width: 62%;
                     object-fit: contain;
-                    position: relative;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
                 }
             }
         }
@@ -888,11 +933,11 @@
         // opacity: 0.3;
         &--container {
             display: grid;
-            grid-template-columns: 50vw 50vw;
+            grid-template-columns: 50% 50%;
             gap: 0;
         }
 
-        .box_grid{
+        .box_grid {
             position: relative;
             z-index: 2;
         }
@@ -948,6 +993,7 @@
             padding-top: 12.3vh;
             padding-left: 15vw;
             padding-right: 16vw;
+            margin-bottom: 12vh;
             width: 135%;
             background-color: $accentColor;
 
@@ -993,6 +1039,16 @@
 
             .checkbox-group {
                 margin-top: 3.2vh;
+                display: grid;
+                grid-template-columns: 1fr auto;
+                gap: 2vw;
+                align-items: center;
+
+                $checkbox-size: 1.5vw;
+                $checkbox-animation-ripple: 700ms;
+                $checkbox-animation-check: 0.3s;
+                $lightbg-text: $primaryColor;
+                $checked-colour: $primaryColor;
 
                 label {
                     @include fontTemplate(
@@ -1002,13 +1058,12 @@
                         $light,
                         $Raleway
                     );
-
                 }
             }
 
-            .btn-submit{
+            .btn-submit {
                 margin-top: 6.2vh;
-                margin-bottom: 9.7vh;
+                margin-bottom: 12.5vh;
                 @include fontTemplate(
                     2.4rem,
                     1.5,

@@ -15,12 +15,15 @@
     <!-- Swiper Slider -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-
     <!-- Gsap -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    
-    <!-- Font-Awesome - ICONS -->
-    <script src="https://kit.fontawesome.com/739b481bf0.js" crossorigin="anonymous"></script>
+    <!-- ION ICONS - ICONS -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- SCROLL -->
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
+    <!-- ANIME SVG -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     @if (isset($gtm) && $gtm)
     <script>
@@ -55,7 +58,7 @@
     <link href="{{ asset('site/css/main.css') }}" rel="stylesheet">
     <link href="{{ asset(mix('site/css/plugins/cropper.css')) }}" rel="stylesheet">
 
-    
+
 
 </head>
 

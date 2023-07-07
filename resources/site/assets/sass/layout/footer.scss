@@ -1,0 +1,154 @@
+.footer {
+    background: url(../img/Home/Differentials/bg-overlayer.webp),
+    lightgray 50% / cover no-repeat;
+    display: flex;
+    flex-direction: column;
+
+    &--container {
+        margin: 0 auto;
+        max-width: 70vw;
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-between;
+
+        &.item-one {
+            padding-bottom: 5vh;
+        }
+
+        &.item-two {
+            align-items: center;
+        }
+    }
+
+    .box_text {
+        padding-top: 8.2vh;
+        display: flex;
+        flex-direction: column;
+
+        &--title {
+            margin-bottom: 4.2vh;
+            @include fontTemplate(2.4rem, 1, $primaryColor, $bold, $Raleway);
+            text-transform: uppercase;
+        }
+
+        &--list {
+            margin-bottom: 4.1vh;
+            ul {
+                display: flex;
+                flex-direction: column;
+                gap: 3.7vh;
+                margin: 0;
+                padding: 0;
+
+                li {
+                    display: flex;
+                    align-items: center;
+                    gap: 1.46vw;
+                }
+
+                a {
+                    text-decoration: none;
+                    @include fontTemplate(
+                        2.4rem,
+                        1.4,
+                        $primaryColor,
+                        $medium,
+                        $Raleway
+                    );
+                }
+
+                .icon {
+                }
+            }
+        }
+
+        &--social {
+            display: flex;
+            gap: 0.8vw;
+
+            a {
+                background-color: #6060603a;
+                width: 3.8vw;
+                aspect-ratio: 1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                svg,
+                img,
+                ion-icon {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                    color: $accentColor;
+                    fill: $accentColor;
+                }
+            }
+        }
+    }
+
+    .box_logos {
+        padding-top: 12.7vh;
+        display: flex;
+        flex-direction: column;
+        gap: 2.5vh;
+        align-items: end;
+
+        &--main {
+            width: 27.5vw;
+            height: auto;
+            object-fit: contain;
+        }
+
+        &--group {
+            display: flex;
+            align-items: center;
+            gap: 5vw;
+
+            img {
+                height: auto;
+                object-fit: contain;
+
+                &:nth-child(1) {
+                    width: 7.6vw;
+                }
+                &:nth-child(2) {
+                    width: 9vw;
+                }
+                &:nth-child(3) {
+                    width: 3.5vw;
+                }
+            }
+        }
+    }
+
+    &-bottom {
+        background-color: #d2a6710c;
+        padding: 3vh 0;
+        &--copyright {
+            @include fontTemplate(
+                1.4rem,
+                1,
+                $primaryColor,
+                $semi-bold,
+                $Raleway
+            );
+        }
+
+        &--weecom {
+            transition: $transition;
+            width: 2.2vw;
+            height: auto;
+
+            &:hover {
+                transform: rotate(360deg);
+
+                path {
+                    color: $accentColor;
+                    fill: $accentColor;
+                }
+            }
+        }
+    }
+}
