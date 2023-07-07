@@ -23,6 +23,7 @@ class SeventhSectionController extends AdmController
         $this->titlePlural = 'Sétima Seção';
 
         $this->fields['Geral'] = array(
+            $this->textField('input', 'Título Acima', 'above_title'),
             $this->ckEditorSimpleField('Título', 'title'),
             $this->ckEditorSimpleField('Subtítulo', 'subtitle'),
             $this->ckEditorSimpleField('Descrição', 'description'),

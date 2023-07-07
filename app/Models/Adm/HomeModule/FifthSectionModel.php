@@ -13,5 +13,6 @@ class FifthSectionModel extends AdmModel
     protected $galleryTable = 'site_fifth_section_gallery';
     protected $foreignKey = 'id_section';
 
+    public $folder = 'userfiles/QuintaSecao/';
     public $timestamps = true;
 }

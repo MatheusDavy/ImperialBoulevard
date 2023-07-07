@@ -23,8 +23,9 @@ class ThirdSectionController extends AdmController
         $this->titlePlural = 'Terceira Seção';
 
         $this->fields['Geral'] = array(
-            $this->ckEditorSimpleField('Título', 'title'),
-            $this->ckEditorSimpleField('Subtítulo', 'subtitle'),
+            $this->textField('input', 'Título Acima', 'above_title'),
+            $this->textField('input', 'Título', 'title'),
+            $this->textField('input', 'Subtítulo', 'subtitle'),
             $this->ckEditorSimpleField('Descrição', 'description'),
             $this->imageField('Imagem Esquerda', 'image_left', 'TerceiraSecao', true, true),
             $this->imageField('Imagem Esquerda Mobile', 'image_left_mobile', 'TerceiraSecao', true, true),

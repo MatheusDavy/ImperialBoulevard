@@ -23,14 +23,16 @@ class FirstSectionController extends AdmController
         $this->titlePlural = 'Primeira Seção';
 
         $this->fields['Geral'] = array(
-            $this->imageField('Imagem', 'image', 'PrimeiraSecao', true, true),
-            $this->imageField('Imagem Mobile', 'image_mobile', 'PrimeiraSecao', true, true),
             $this->textField('input', 'Título Acima', 'above_title'),
-            $this->textField('input', 'Título', 'title'),
+            // $this->textField('input', 'Título', 'title'),
             $this->ckEditorSimpleField('Subtítulo', 'subtitle'),
             $this->textField('input', 'Local', 'location'),
             $this->textField('input', 'Botão Texto', 'button_title'),
             $this->textField('input', 'Botão Link', 'button_link'),
+        );
+
+        $this->fields['Galeria'] = array(
+            $this->galleryField('Galeria', 'gallery', 'PrimeiraSecao'),
         );
     }
 

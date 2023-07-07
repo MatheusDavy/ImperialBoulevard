@@ -223,7 +223,7 @@ function initSimpleCk(element) {
         // https://ckeditor.com/docs/ckeditor5/latest/features/toolbar/toolbar.html#extended-toolbar-configuration-format
         toolbar: {
             items: [
-                'bold', 'italic', 'strikethrough', 'underline', 'removeFormat', '|',
+                'bold', 'italic', 'strikethrough', 'underline', 'removeFormat', 'fontColor', '|',
                 'bulletedList', 'numberedList', 'todoList', '|',
                 'alignment', 'link', '|',
                 'undo', 'redo',
@@ -267,6 +267,14 @@ function initSimpleCk(element) {
                 'Verdana, Geneva, sans-serif'
             ],
             supportAllValues: true
+        },
+        fontColor: {
+            colors: [
+                {
+                    color: '#D2A671',
+                    label: 'Marrom Claro'
+                }
+            ]
         },
         // https://ckeditor.com/docs/ckeditor5/latest/features/font.html#configuring-the-font-size-feature
         fontSize: {

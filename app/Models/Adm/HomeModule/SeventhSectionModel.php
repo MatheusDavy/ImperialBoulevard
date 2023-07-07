@@ -11,5 +11,6 @@ class SeventhSectionModel extends AdmModel
 
     protected $table = 'site_seventh_section';
 
+    public $folder = 'SetimaSecao';
     public $timestamps = true;
 }
