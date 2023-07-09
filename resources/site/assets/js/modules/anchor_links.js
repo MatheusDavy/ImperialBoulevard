@@ -9,7 +9,7 @@
         3.2 - Internal
 */
 
-export default function anchorLinks() {
+export default function AnchorLinks() {
 
     /*-------------------- 0 - Global Variables ------------------*/
     let prevHref

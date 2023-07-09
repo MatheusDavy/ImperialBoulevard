@@ -6,9 +6,9 @@
 			<div class="box_slider swiper heroBannerSlider">
 				<div class="swiper-wrapper">
 					@foreach ($firstSection->gallery as $gallery)
-						<div class="swiper-slide box_slider--content">
-							<img src="{{ assetJson([$firstSection->folder,$gallery->image]) }}" alt="{{imgAltJson($gallery->image)}}" title="{{imgTitleJson($gallery->image)}}">
-						</div>	
+					<div class="swiper-slide box_slider--content">
+						<img src="{{ assetJson([$firstSection->folder,$gallery->image]) }}" alt="{{imgAltJson($gallery->image)}}" title="{{imgTitleJson($gallery->image)}}">
+					</div>
 					@endforeach
 				</div>
 			</div>
@@ -41,10 +41,10 @@
 			<div class="box_grid box_grid--one">
 				<div class="box_text">
 					<div class="grid-one">
-						<span class="box_text--text">{{$secondSection->above_title}}</span>
-						<h2 class="box_text--title">{{ $secondSection->title }}</h2>
+						<span class="box_text--text" data-animation>{{$secondSection->above_title}}</span>
+						<h2 class="box_text--title" data-animation='right'>{{ $secondSection->title }}</h2>
 
-						<div class="box_text--list">
+						<div class="box_text--list" data-animation>
 							{!! $secondSection->description !!}
 						</div>
 					</div>
@@ -73,14 +73,14 @@
 	<div class="section_convention" id="boulevard-convention">
 		<div class="section_convention--container">
 			<div class="box_text">
-				<span class="box_text--text">{{ $thirdSection->above_title }}</span>
-				<h2 class="box_text--title">{{ $thirdSection->title }}</h2>
+				<span class="box_text--text" data-animation>{{ $thirdSection->above_title }}</span>
+				<h2 class="box_text--title" data-animation='right'>{{ $thirdSection->title }}</h2>
 
-				<p class="box_text--description">
+				<p class="box_text--description" data-animation='left'>
 					{{ $thirdSection->subtitle }}
 				</p>
 
-				<div class="box_text--list">
+				<div class="box_text--list" data-animation>
 					{!! $thirdSection->description !!}
 				</div>
 			</div>
@@ -101,7 +101,7 @@
 		<div class="section_about--container">
 			<div class="box_grid box_grid--one">
 				<div class="box_text">
-					<svg class="box_text--logo svg-path-animate" width="458" height="86" viewBox="0 0 458 86" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<svg data-animation='up' class="box_text--logo" width="458" height="86" viewBox="0 0 458 86" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<mask id="mask0_145_358" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="458" height="86">
 							<path d="M458 0.80542H0V85.4996H458V0.80542Z" fill="white" />
 						</mask>
@@ -138,7 +138,7 @@
 						</g>
 					</svg>
 
-					<div class="box_text--description">
+					<div class="box_text--description" data-animation>
 						{!! $fourthSection->description_1 !!}
 					</div>
 
@@ -149,7 +149,7 @@
 				</div>
 
 			</div>
-			<div class="box_grid box_grid--two">
+			<div class="box_grid box_grid--two" data-animation='left'>
 				<div class="box_card box_card--one">
 					<p class="box_card--description">
 						{!! ignoreTags($fourthSection->description_2) !!}
@@ -157,7 +157,7 @@
 				</div>
 
 
-				<div class="box_card  box_card--two">
+				<div class="box_card  box_card--two" data-animation='right'>
 					<img class="box_card--logo" src="{{ asset('site/img/Home/Banner/logo-text.png') }}" />
 					<p class="box_card--description">
 						{!! ignoreTags($fourthSection->subtitle_2) !!}
@@ -180,11 +180,11 @@
 		<div class="section_differential--container">
 			<div class="box_text">
 				<div class="box_grid box_grid--one">
-					<h2 class="box_text--title">DIFERENCIAIS</h2>
+					<h2 class="box_text--title" data-animation='right'>DIFERENCIAIS</h2>
 					<div class="details details--line"></div>
 				</div>
 				<div class="box_grid box_grid--one">
-					<p class="box_text--description">
+					<p class="box_text--description" data-animation='left'>
 						PARA GERAR <br>
 						OS MELHORES RESULTADOS <br>
 						EM OCUPAÇÃO <br>
@@ -192,7 +192,7 @@
 				</div>
 			</div>
 
-			<div class="box_image">
+			<div class="box_image" data-animation='up'>
 				<div class="box_image--grid-one">
 					<div class="item-one">
 						<div class="image-one image-block">
@@ -299,22 +299,22 @@
 	<div class="section_investing" id="invista">
 		<div class="section_investing--container">
 			<div class="box_text">
-				<span class="box_text--text">DESCUBRA COMO</span>
-				<h2 class="box_text--title">
+				<span class="box_text--text" data-animation>DESCUBRA COMO</span>
+				<h2 class="box_text--title" data-animation='right'>
 					SEU INVESTIMENTO <br>
 					<span>GANHOU UM PLUS</span>
 				</h2>
 
-				<div class="box_text--description">
+				<div class="box_text--description" data-animation>
 					<p>No maior Centro de Convenções do Sul do Brasil, criamos o primeiro ecossistema integrado de eventos, negócios e reuniões da Serra Gaúcha.</p>
 					<p>A região do Vale dos Vinhedos recebe mais de 1200 eventos anualmente.</p>
 				</div>
 
-				<a class="box_text--link">SAIBA COMO INVESTIR</a>
+				<a class="box_text--link" data-animation='up'>SAIBA COMO INVESTIR</a>
 			</div>
 
 			<div class="box_image image-block">
-				<img src="{{ asset('site/img/Home/Investing/image-1.png') }}" alt="">
+				<img data-animation src="{{ asset('site/img/Home/Investing/image-1.png') }}" alt="">
 
 				<div class="box-detail reveal">
 					<div class="image-wrap">
@@ -328,22 +328,22 @@
 	<div class="section_events">
 		<div class="section_events--container">
 			<div class="box_text">
-				<span class="box_text--text">COMO FAZER</span>
-				<h2 class="box_text--title">
+				<span class="box_text--text" data-animation>COMO FAZER</span>
+				<h2 class="box_text--title" data-animation='right'>
 					UM SÁBIO INVESTIMENTO <br>
 					<span>AGORA EM EVENTOS</span>
 				</h2>
 
-				<div class="box_text--description">
+				<div class="box_text--description" data-animation>
 					<p>Invista na área Plus do maior Centro de <br> Convenções em hotelaria do Sul do Brasil.</p>
 					<p>A região do Vale dos Vinhedos recebe mais de 1200 eventos anualmente. E nós criamos o primeiro ecossistema integrado de eventos, negócios e reuniões da Serra Gaúcha.</p>
 				</div>
 
-				<a class="box_text--link">SAIBA COMO INVESTIR</a>
+				<a class="box_text--link" data-animation='up'>SAIBA COMO INVESTIR</a>
 			</div>
 
 			<div class="box_image image-block">
-				<img src="{{ asset('site/img/Home/Investing/image-3.png') }}" alt="">
+				<img data-animation src="{{ asset('site/img/Home/Investing/image-3.png') }}" alt="">
 
 				<div class="box-detail reveal">
 					<div class="image-wrap">
@@ -358,57 +358,25 @@
 		<div class="section_contact--container">
 			<div class="box_grid">
 				<div class="box_text">
-					<span class="box_text--text">VAMOS CONVERSAR</span>
-					<h2 class="box_text--title">
+					<span class="box_text--text" data-animation>VAMOS CONVERSAR</span>
+					<h2 class="box_text--title" data-animation='right'>
 						ENTRE EM CONTATO
 					</h2>
 
-					<div class="box_text--description">
+					<div class="box_text--description" data-animation>
 						<p>Use o formulário abaixo para entrar em contato conosco ou apenas para dizer Olá!</p>
 					</div>
 				</div>
-				<form action="">
-					<div class="box_grid">
-						<div class="input-group">
-							<input fieldName="Name" idError='wwu-error-name' fieldType="name" isRequired="required" type="text" name="name" placeholder="Nome">
-							<span class="error--message message-error-forms" id="wwu-error-name">Digite um nome válido !</span>
-						</div>
-						<div class="input-group">
-							<input fieldName="Name" idError='wwu-error-phone' fieldType="phone" isRequired="required" type="text" name="name" placeholder="Telefone">
-							<span class="error--message message-error-forms" id="wwu-error-phone">Digite um telefone válido !</span>
-						</div>
-					</div>
-					<div class="input-group">
-						<input fieldName="Name" idError='wwu-error-email' fieldType="email" isRequired="required" type="text" name="name" placeholder="Email">
-						<span class="error--message message-error-forms" id="wwu-error-email">Digite um email válido !</span>
-					</div>
-					<div class="input-group">
-						<textarea rows="1" fieldName="Name" idError='wwu-error-subject' fieldType="notNull" isRequired="required" type="text" name="name" placeholder="Mensagem"></textarea>
-						<span class="error--message message-error-forms" id="wwu-error-subject">Digite um nome válido !</span>
-					</div>
-
-					<div class="checkbox-group">
-						<div class="checkbox">
-
-						</div>
-						<label for="checkbox">Ao informar meus dados, eu concordo com a <a href="">Política de Privacidade</a> e com os <a href="">Termos de Uso</a>.</label>
-					</div>
-
-					<button type="submit" class="btn-submit">ENVIAR</button>
-				</form>
+				@include('site.components.Forms.forms_contact')
 			</div>
 			<div class="box_image image-block">
-				<img src="{{ asset('site/img/Home/Contact/image-1.png') }}" alt="">
+				<img data-animation src="{{ asset('site/img/Home/Contact/image-1.png') }}" alt="">
 			</div>
 		</div>
 
 		@include('site.components.Fixed.back_to_top')
 	</div>
-
 </section>
-
-
-
 @endsection
 
 @section('js')

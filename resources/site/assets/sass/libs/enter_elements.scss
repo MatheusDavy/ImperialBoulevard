@@ -1,0 +1,48 @@
+// --------------------/ 2 - Enter Animations /-----------------//
+.animated-element[data-animation] {
+    opacity: 1 !important;
+    transform: translate(0, 0) !important;
+}
+// default = (opacity 0) to (opacity 1)
+[data-animation] {
+    opacity: 0 !important;
+    transition: 1s;
+}
+// (left) to (right)
+[data-animation="right"] {
+    transform: translateX(-50px);
+}
+// (right) to (left)
+[data-animation="left"] {
+    transform: translateX(50px);
+
+    @media (max-width: 999px) {
+        transform: translateX(-50px) !important;
+    }
+}
+// (down) to (up)
+[data-animation="up"] {
+    transform: translateY(50px);
+}
+// (up) to (down)
+[data-animation="down"] {
+    transform: translateY(-50px);
+}
+// Sequencial Staggers
+[data-sequencial] {
+    [data-sequencial-stagger] {
+        opacity: 0;
+    }
+    [data-sequencial-stagger="right"] {
+        transform: translateX(-50px);
+    }
+    [data-sequencial-stagger="left"] {
+        transform: translateX(50px);
+    }
+    [data-sequencial-stagger="up"] {
+        transform: translateY(50px);
+    }
+    [data-sequencial-stagger="down"] {
+        transform: translateY(50px);
+    }
+}

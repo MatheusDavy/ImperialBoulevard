@@ -1,5 +1,5 @@
 body {
-    background-image: url(../img/Pixel/home.png);
+    // background-image: url(../img/Pixel/home.png);
     background-size: 100%;
     background-repeat: no-repeat;
 }
@@ -372,6 +372,7 @@ body {
             display: flex;
             flex-direction: column;
             gap: 0px;
+            overflow: hidden;
         }
 
         .box_grid {
@@ -387,7 +388,6 @@ body {
                     flex-direction: column;
 
                     &--logo {
-                        opacity: 0;
                         width: 23.6vw;
                         height: auto;
                         object-fit: contain;
@@ -512,6 +512,7 @@ body {
             z-index: 1;
             display: flex;
             flex-direction: column;
+            overflow: hidden;
         }
 
         .box_text {
@@ -645,9 +646,9 @@ body {
 
             .image-block {
                 overflow: hidden;
-                
-                &:hover{
-                    .image-description{
+
+                &:hover {
+                    .image-description {
                         transform: translateY(0);
                     }
                 }
@@ -662,7 +663,7 @@ body {
                 background: rgba(35, 31, 32, 0.7);
                 display: flex;
                 align-items: end;
-                padding: 0 5vw 6.2vh 2vw;
+                padding: 0 2vw 6.2vh 2vw;
 
                 &--zoom {
                     position: absolute;
@@ -684,7 +685,7 @@ body {
                     }
                 }
 
-                &--description{
+                &--description {
                     @include fontTemplate(
                         2.4rem,
                         1.5,
@@ -936,6 +937,7 @@ body {
             display: grid;
             grid-template-columns: 50% 50%;
             gap: 0;
+            overflow: hidden;
         }
 
         .box_grid {
@@ -990,103 +992,5 @@ body {
             z-index: 1;
         }
 
-        form {
-            padding-top: 12.3vh;
-            padding-left: 15vw;
-            padding-right: 16vw;
-            margin-bottom: 12vh;
-            width: 135%;
-            background-color: $accentColor;
-
-            display: flex;
-            flex-direction: column;
-            gap: 3vh;
-
-            .box_grid {
-                display: grid;
-                grid-template-columns: 19.6vw 1fr;
-                gap: 3vw;
-            }
-
-            .input-group {
-                input,
-                textarea {
-                    border: 0;
-                    width: 100%;
-                    padding-bottom: 1.5vh;
-                    padding-left: 1.5vw;
-                    border-bottom: 1px solid $primaryColor;
-                    background-color: transparent;
-                    @include fontTemplate(
-                        2.4rem,
-                        1.5,
-                        $primaryColor,
-                        $medium,
-                        $Raleway
-                    );
-                    &::placeholder {
-                        color: $primaryColor;
-                    }
-                }
-
-                textarea {
-                    margin-top: 7.3vh;
-                }
-
-                .error--message {
-                    display: none;
-                }
-            }
-
-            .checkbox-group {
-                margin-top: 3.2vh;
-                display: grid;
-                grid-template-columns: 1fr auto;
-                gap: 2vw;
-                align-items: center;
-
-                $checkbox-size: 1.5vw;
-                $checkbox-animation-ripple: 700ms;
-                $checkbox-animation-check: 0.3s;
-                $lightbg-text: $primaryColor;
-                $checked-colour: $primaryColor;
-
-                label {
-                    @include fontTemplate(
-                        2.4rem,
-                        1.5,
-                        $primaryColor,
-                        $light,
-                        $Raleway
-                    );
-                }
-            }
-
-            .btn-submit {
-                margin-top: 6.2vh;
-                margin-bottom: 12.5vh;
-                @include fontTemplate(
-                    2.4rem,
-                    1.5,
-                    $primaryColor,
-                    $medium,
-                    $Raleway
-                );
-                padding-inline: 7.6vw;
-                padding-top: 2vh;
-                padding-bottom: 2vh;
-                border: 2px solid $primaryColor;
-                text-decoration: none;
-                text-transform: uppercase;
-                width: fit-content;
-                height: fit-content;
-                transition: $transition;
-
-                &:hover {
-                    background-color: $primaryColor;
-                    color: $accentColor;
-                }
-            }
-        }
     }
 }

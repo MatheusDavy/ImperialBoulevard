@@ -1,0 +1,114 @@
+.error-message-forms{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    inset: 0;
+    background-color: #0029577d;
+    z-index: 10000;
+    display: none;
+    opacity: 1;
+
+    &.open-modal{
+        display: flex;
+    }    
+
+    &--container{
+        position: absolute;
+        transform: translateY(-65%) translateX(-50%);
+        background-color: $primaryColor;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+        top: 50%;
+        left: 50%;
+
+        width: 30vw;
+        // opacity: 0.3;
+        padding: 6vh 3vw;
+        gap: 3vh;
+
+        #btn--close-error-message{
+            position: absolute;
+            top: 2vw;
+            right: 2vw;
+            
+            ion-icon{
+                font-size: 3.4rem;
+                color: $accentColor;
+            }
+            
+        }
+
+        .icon{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 5vw;
+            aspect-ratio: 1;
+            border-radius: 50%;
+            background-color: $accentColor;
+            font-size: 4.5rem;
+            color: $primaryColor;
+
+        }
+
+        .description{
+            
+            @include fontTemplate(2rem, 1.7, $accentColor, $regular, $Raleway, center);
+        }
+
+        .confirm{
+           
+            @include fontTemplate(1.6rem, 1, $accentColor, $bold, $Raleway, center);
+            padding: 2vh 3vw;
+            background-color: transparent;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: $transition;
+            border: 1px solid $accentColor;
+            &:hover{
+                background-color:  $accentColor;
+                color: $primaryColor;
+            }
+            @media (max-width: 799px) {
+                margin-top: 40px;
+            }
+        }
+    }
+
+    @media (max-width: 799px) {
+        &--container{
+            width: 95%;
+            padding-inline: 20px;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            gap: 30px;
+
+            #btn--close-error-message {
+                img {
+                    width: 20px;
+                }
+            }
+
+            .icon{
+                width: 65px;
+                height: 65px;
+            }
+
+            .description {
+                font-size: 1.4rem;
+                line-height: 20px;
+            }
+
+            .confirm {
+                margin-top: 0px;
+                width: 150px;
+                height: 50px;
+            }
+        }
+    }
+}

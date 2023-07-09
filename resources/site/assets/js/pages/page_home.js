@@ -1,7 +1,6 @@
 // FUNÇÕES/MÓDULOS SITE
-import initCarousel from '../modules/initCarousel';
-
-initCarousel();
+import FormsContact from "../modules/Forms/contact"
+gsap.registerPlugin(ScrollTrigger);
 
 /*------------ 0 - Const / Variable ---------------*/
 
@@ -84,24 +83,7 @@ class Circle {
 }
 
 /*------------ 2 - Functions ---------------*/
-function animateSVG(element) {
-    anime({
-        targets: `${element} path`,
-        strokeDashoffset: [anime.setDashoffset, 0],
-        easing: 'easeInOutSine',
-        duration: 2000,
-        delay: 0,
-        loop: false
-    });
-
-    anime({
-        targets: element,
-        easing: 'easeInOutSine',
-        duration: 1000,
-        delay: 0,
-        loop: false
-    });
-}
+FormsContact()
 
 /*------------ 4 - Onloads ---------------*/
 // window.onload = () => new AnimationGradient();
@@ -138,4 +120,17 @@ window.onscroll = ()=>{
         
     })
 }
+
+const SVGSToBeAnimated = document.querySelectorAll('.svg-path-animate')
+SVGSToBeAnimated.forEach(svg =>{
+  gsap.to(svg, {
+    scrollTrigger: {
+      trigger: svg,
+      start: "top 90%",
+    },
+    duration: 3,
+    delay: 3,
+    filter: 'grayscale(0%)'
+  });
+})
 

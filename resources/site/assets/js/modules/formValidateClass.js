@@ -3,7 +3,7 @@ export default class FormValidate {
     fields;
     lang;
     error;
-    errorMessage;
+    errorMessageId;
     element;
 
     //fields = form.serializeArray()
@@ -11,7 +11,8 @@ export default class FormValidate {
         this.fields = fields;
         this.lang = lang;
         this.error = false;
-        this.errorMessage = '';
+        this.errorMessageId = '';
+        this.element
     }
 
     validateAll() {
@@ -34,96 +35,66 @@ export default class FormValidate {
 
         let fieldName = element.attr('fieldName');
         let fieldType = element.attr('fieldType');
-
-        if (!value && fieldType !== 'checkbox') {
-            this.error = true;
-            this.errorMessage = this.notFilledMessage(fieldName);
-            return;
+        let fiedlIdError = element.attr("idError")
+        if (!fiedlIdError) {
+            fiedlIdError = element.attr("name");
         }
 
-        if (fieldType == 'email') {
-            this.error = FormValidate.validateEmail(value);
-            this.errorMessage = this.notFilledMessage(fieldName);
-            return;
-        }
-
-        if (fieldType == 'checkbox') {
-            let checked = FormValidate.validateCheckboxIsChecked(element);
-            if (!checked) {
-                this.error = true;
+        switch (fieldType) {
+            case 'email': {
+                this.error = FormValidate.validateEmail(value);
+                this.errorMessageId = fiedlIdError;
+                return;
             }
-            this.errorMessage = this.notFilledMessage(fieldName);
-            return;
-        }
-
-        if (fieldType == 'cnpj') {
-            this.error = FormValidate.validateCNPJ(value);
-            this.errorMessage = this.invalidMessage(fieldName);
-            return;
-        }
-
-        if (fieldType == 'cpf') {
-            this.error = FormValidate.validateCPF(value);
-            this.errorMessage = this.invalidMessage(fieldName);
-            return;
-        }
-
-        if (fieldType == 'cnpj|cpf') {
-            this.error = FormValidate.validateCNPJ_CPF(value);
-            this.errorMessage = this.invalidMessage(fieldName);
-            return;
+            case 'checkbox': {
+                let checked = FormValidate.validateCheckboxIsChecked(element);
+                if (!checked) {
+                    this.error = true;
+                }
+                this.errorMessageId = fiedlIdError;
+                return;
+            }
+            case 'phone': {
+                this.error = FormValidate.validatePhone(value);
+                this.errorMessageId = fiedlIdError;
+                
+                return;
+            }
+            case 'notNull': {
+                this.error = FormValidate.validateNotNull(value);
+                this.errorMessageId = fiedlIdError;
+                
+                return;
+            }
+            case 'name': {
+                this.error = FormValidate.validateName(value);
+                this.errorMessageId = fiedlIdError;
+                return;
+            }
         }
 
         return;
     }
 
     hasError() {
-        return this.error == true;
+        return this.error;
     }
 
-    getErrorMessage() {
-        let message = this.errorMessage;
-        if (!message) {
+    getErrorId() {
+        let id = this.errorMessageId;
+        if (!id) {
             return false;
         }
 
-        return message;
+        return id;
     }
 
     getElement() {
         return this.element;
     }
 
-    invalidMessage(fieldName) {
-        let message = `Formato inválido de ${fieldName}`;
-
-        if (this.lang == 'en' || this.lang == 2) {
-            message = `Invalid ${fieldName} format.`;
-        }
-
-        if (this.lang == 'es' || this.lang == 3) {
-            message = `Formato de ${fieldName} no válido.`;
-        }
-
-        return message;
-    }
-
-    notFilledMessage(fieldName) {
-        let message = `O campo ${fieldName} precisa ser preenchido.`;
-
-        if (this.lang == 'en' || this.lang == 2) {
-            message = `The field ${fieldName} needs to be filled in.`;
-        }
-
-        if (this.lang == 'es' || this.lang == 3) {
-            message = `El campo de ${fieldName} debe completarse.`;
-        }
-
-        return message;
-    }
-
     fieldIsNotRequired(element) {
-        return element.attr('isRequired') == false;
+        return element.attr('isRequired') == null;
     }
 
     static validateEmail(email) {
@@ -135,32 +106,23 @@ export default class FormValidate {
         return element.prop('checked') == true;
     }
 
-    static validateCPF(cpf) {
-        let cpfLength = 14;
-        if (cpf.length == cpfLength) {
+    static validateName(name) {
+        const regex = /[0-9]/;
+        if (regex.test(name) || name.length < 3) {
             return true;
         }
-
         return false;
     }
 
-    static validateCNPJ(cnpj) {
-        let cnpjLength = 18;
-        if (cnpj.length == cnpjLength) {
-            return true;
-        }
-
-        return false;
+    static validateNotNull(value) {
+        const verify = value == '' ? true : false
+        return verify;
     }
 
-    static validateCNPJ_CPF(cpfOrcnpj) {
-        let isCpf = FormValidate.validateCPF(cpfOrcnpj);
-        let isCnpj = FormValidate.validateCNPJ(cpfOrcnpj);
-        if (isCpf || isCnpj) {
-            return true;
-        }
-
-        return false;
+    static validatePhone(value) {
+        const verify = value == '' || value.length < 14 ? true : false
+        return verify;
     }
+
 
 }

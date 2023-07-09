@@ -12,11 +12,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{csrf_token()}}">
     <!----------------------- LIBRARY ---------------->
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <!-- Swiper Slider -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <!-- Gsap -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
     <!-- ION ICONS - ICONS -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -66,10 +69,9 @@
     @if (isset($gtm) && $gtm)
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{$gtm}}" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     @endif
-    <div class='fail-message'></div>
-    <div class='success-message'></div>
 
     @include('site.components.Modal.zoom_modal')
+    @include('site.components.Modal.Forms.error_message')
 
     @include('site.layout.header')
     <main id="main">
