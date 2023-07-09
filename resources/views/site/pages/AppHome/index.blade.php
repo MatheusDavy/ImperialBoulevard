@@ -1,6 +1,6 @@
 @extends('site.layout.app')
 @section('content')
-<section id="page-home" id='topo'>
+<section id="page-home">
 	<div class="section_herobanner" id="inicio">
 		<div class="section_herobanner--container">
 			<div class="box_slider swiper heroBannerSlider">
@@ -33,6 +33,8 @@
 				<canvas class="section_herobanner--background"></canvas>
 			</div>
 		</div>
+
+		@include('site.components.Fixed.next_section')
 	</div>
 
 	<div class="section_region" id="regiao">

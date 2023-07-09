@@ -6,7 +6,7 @@ body {
 
 #page-home {
     .section_herobanner {
-        // opacity: 0.3;
+        position: relative;
         &--container {
             display: grid;
             grid-template-columns: 53.125vw 1fr;

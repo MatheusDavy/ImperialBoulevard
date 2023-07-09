@@ -25,3 +25,8 @@ export function setSmoothScrollTo(endX, endY, duration) {
         window.scroll(newX, newY);
     }, 1000 / 60);
 }
+
+export function anchorVerify(id){
+    var targetOffset = document.getElementById(id).offsetTop
+    setSmoothScrollTo(0, targetOffset, 1000)
+}

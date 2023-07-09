@@ -8,6 +8,7 @@ import ScrollSmooth from './modules/Animation/scrollLenis';
 import { Menu } from './modules/Layouts/menu';
 import ZoomImages from './modules/Utils/zoom_images';
 import AnimationElements from './modules/Animation/enterElements';
+import AnchorLinks from './modules/Utils/anchor_links';
 
 changeLang();
 newsletter();
@@ -19,3 +20,4 @@ FontSize()
 ImageEnter()
 ScrollSmooth()
 ZoomImages()
+AnchorLinks()
