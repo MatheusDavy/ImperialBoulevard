@@ -85,6 +85,18 @@ class Circle {
 /*------------ 2 - Functions ---------------*/
 FormsContact()
 
+function whatsappIcon(){
+    const button = document.getElementById('whatsapp-link')
+    const sectionToAppear = document.getElementById('inicio').offsetTop + (window.screen.height * 0.2)
+    const sectionToDisappear = document.getElementById('eventos').offsetTop
+    const scroll = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+    if(sectionToAppear < scroll && scroll < sectionToDisappear){
+        button.classList.add('show-button')
+    }else{
+        button.classList.remove('show-button')
+    }
+}
+
 /*------------ 4 - Onloads ---------------*/
 // window.onload = () => new AnimationGradient();
 
@@ -115,10 +127,7 @@ zoomImg.addEventListener('mouseleave', () => {
 
 /*-------------/ 7 - Animations SVG /-----------*/
 window.onscroll = ()=>{
-    const SVGSToBeAnimated = document.querySelectorAll('.svg-path-animate')
-    SVGSToBeAnimated.forEach(svg => {
-        
-    })
+    whatsappIcon()
 }
 
 const SVGSToBeAnimated = document.querySelectorAll('.svg-path-animate')
@@ -133,4 +142,6 @@ SVGSToBeAnimated.forEach(svg =>{
     filter: 'grayscale(0%)'
   });
 })
+
+/*-------------/ 8 - Button Whatsapp /-----------*/
 

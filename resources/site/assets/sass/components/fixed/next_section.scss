@@ -9,5 +9,11 @@
         width: 10.6vh;
         object-fit: contain;
         height: auto;
+
+        @media (max-width: 799px) {
+            width: 70px !important;
+        }
     }
+
+    
 }

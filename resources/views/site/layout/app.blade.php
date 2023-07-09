@@ -72,6 +72,7 @@
 
     @include('site.components.Modal.zoom_modal')
     @include('site.components.Modal.Forms.error_message')
+    @include('site.components.Fixed.whatsapp_icon')
 
     @include('site.layout.header')
     <main id="main">

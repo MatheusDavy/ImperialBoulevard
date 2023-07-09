@@ -69,6 +69,24 @@
 					<img src="{{ assetJson([$secondSection->folder,$secondSection->image_right]) }}" alt="{{imgAltJson($secondSection->image_right)}}" title="{{imgTitleJson($secondSection->image_right)}}">
 				</div>
 			</div>
+
+			<div class="box_grid_mobile">
+				<div class="box_grid_mobile--image image-block reveal">
+					<div class="image-wrap">
+						<img src="{{ assetJson([$secondSection->folder,$secondSection->image_top]) }}" alt="{{imgAltJson($secondSection->image_top)}}" title="{{imgTitleJson($secondSection->image_top)}}">
+					</div>
+				</div>
+				<div class="box_grid_mobile--image image-block reveal">
+					<div class="image-wrap">
+						<img src="{{ assetJson([$secondSection->folder,$secondSection->image_bottom]) }}" alt="{{imgAltJson($secondSection->image_bottom)}}" title="{{imgTitleJson($secondSection->image_bottom)}}">
+					</div>
+				</div>
+				<div class="box_grid_mobile--image image-block reveal">
+					<div class="image-wrap">
+						<img src="{{ assetJson([$secondSection->folder,$secondSection->image_right]) }}" alt="{{imgAltJson($secondSection->image_right)}}" title="{{imgTitleJson($secondSection->image_right)}}">
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 
@@ -192,55 +210,83 @@
 				</div>
 			</div>
 
-			<div class="box_image" data-animation='up'>
-				<div class="box_image--grid-one">
+			<div class="box_image_desktop" data-animation='up'>
+				<div class="box_image_desktop--grid-one">
 					<div class="item-one">
 						@php $gallery = $fifthSection->gallery @endphp
 						@if (isset($gallery[0]) && $gallery[0])
-							<div class="image-one image-block">
-								@include('site.components.ImagesDiferencias', ['gallery' => $gallery[0]])
-							</div>
+						<div class="image-one image-block">
+							@include('site.components.ImagesDiferencias', ['gallery' => $gallery[0]])
+						</div>
 						@endif
 						@if (isset($gallery[1]) && $gallery[1])
-							<div class="image-two image-block">
-								@include('site.components.ImagesDiferencias', ['gallery' => $gallery[1]])
-							</div>
+						<div class="image-two image-block">
+							@include('site.components.ImagesDiferencias', ['gallery' => $gallery[1]])
+						</div>
 						@endif
 					</div>
 					<div class="item-two">
 						@if (isset($gallery[2]) && $gallery[2])
-							<div class="image-one image-block">
-								@include('site.components.ImagesDiferencias', ['gallery' => $gallery[2]])
-							</div>
+						<div class="image-one image-block">
+							@include('site.components.ImagesDiferencias', ['gallery' => $gallery[2]])
+						</div>
 						@endif
 						@if (isset($gallery[3]) && $gallery[3])
-							<div class="image-two image-block">
-								@include('site.components.ImagesDiferencias', ['gallery' => $gallery[3]])
-							</div>
+						<div class="image-two image-block">
+							@include('site.components.ImagesDiferencias', ['gallery' => $gallery[3]])
+						</div>
 						@endif
 					</div>
 				</div>
 
-				<div class="box_image--grid-two">
+				<div class="box_image_desktop--grid-two">
 					<div class="item-one">
 						@if (isset($gallery[4]) && $gallery[4])
-							<div class="image-one image-block">
-								@include('site.components.ImagesDiferencias', ['gallery' => $gallery[4]])
-							</div>
+						<div class="image-one image-block">
+							@include('site.components.ImagesDiferencias', ['gallery' => $gallery[4]])
+						</div>
 						@endif
 						@if (isset($gallery[5]) && $gallery[5])
-							<div class="image-two image-block">
-								@include('site.components.ImagesDiferencias', ['gallery' => $gallery[5]])
-							</div>
+						<div class="image-two image-block">
+							@include('site.components.ImagesDiferencias', ['gallery' => $gallery[5]])
+						</div>
 						@endif
 					</div>
 					<div class="item-two">
 						@if (isset($gallery[6]) && $gallery[6])
-							<div class="image image-block">
-								@include('site.components.ImagesDiferencias', ['gallery' => $gallery[6]])
-							</div>
+						<div class="image image-block">
+							@include('site.components.ImagesDiferencias', ['gallery' => $gallery[6]])
+						</div>
 						@endif
 					</div>
+				</div>
+			</div>
+
+			<div class="box_image_mobile" data-animation='up'>
+				<div class="image-one image-block">
+					@include('site.components.ImagesDiferencias', ['gallery' => $gallery[0]])
+				</div>
+				<div class="box_image_mobile--grid-one">
+					<div class="image-two image-block">
+						@include('site.components.ImagesDiferencias', ['gallery' => $gallery[1]])
+					</div>
+					<div class="image-three image-block">
+						@include('site.components.ImagesDiferencias', ['gallery' => $gallery[2]])
+					</div>
+				</div>
+				<div class="box_image_mobile--grid-two">
+					<div class="image-four image-block">
+						@include('site.components.ImagesDiferencias', ['gallery' => $gallery[3]])
+					</div>
+					<div class="image-five image-block">
+						@include('site.components.ImagesDiferencias', ['gallery' => $gallery[4]])
+					</div>
+					<div class="image-six image-block">
+						@include('site.components.ImagesDiferencias', ['gallery' => $gallery[5]])
+					</div>
+				</div>
+				<div class="image-seven image-block">
+					@include('site.components.ImagesDiferencias', ['gallery' => $gallery[0]])
 				</div>
 			</div>
 		</div>
@@ -276,7 +322,7 @@
 		</div>
 	</div>
 
-	<div class="section_events">
+	<div class="section_events" id="eventos">
 		<div class="section_events--container">
 			<div class="box_text">
 				<span class="box_text--text" data-animation>COMO FAZER</span>

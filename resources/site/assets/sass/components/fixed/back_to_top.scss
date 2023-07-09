@@ -22,4 +22,15 @@
         width: 3.3vw;
         height: auto;
     }
-}
+
+    @media (max-width: 799px) {
+        opacity: 0;
+        transform: translateY(0%);
+        width: 163px;
+        height: 60px;
+
+        svg{
+            width: 40px;
+        }
+    }
+}  

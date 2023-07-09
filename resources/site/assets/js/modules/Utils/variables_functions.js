@@ -1,4 +1,4 @@
-export const isMobile = window.screen.width < 999 ? true : false
+export const isMobile = window.screen.width < 799 ? true : false
 
 export function setSmoothScrollTo(endX, endY, duration) {
     const startX = window.scrollX || window.pageXOffset;
