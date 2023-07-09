@@ -15,4 +15,9 @@ class FifthSectionModel extends AdmModel
 
     public $folder = 'userfiles/QuintaSecao/';
     public $timestamps = true;
+
+    public function gallery()
+    {
+        return $this->hasMany(FifthSectionGalleryModel::class, 'id_section');
+    }
 }

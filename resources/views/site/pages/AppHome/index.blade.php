@@ -180,14 +180,12 @@
 		<div class="section_differential--container">
 			<div class="box_text">
 				<div class="box_grid box_grid--one">
-					<h2 class="box_text--title" data-animation='right'>DIFERENCIAIS</h2>
+					<h2 class="box_text--title" data-animation='right'>{{$fifthSection->title}}</h2>
 					<div class="details details--line"></div>
 				</div>
-				<div class="box_grid box_grid--one">
-					<p class="box_text--description" data-animation='left'>
-						PARA GERAR <br>
-						OS MELHORES RESULTADOS <br>
-						EM OCUPAÇÃO <br>
+				<div class="box_grid box_grid--one" data-animation>
+					<p class="box_text--description">
+						{!! ignoreTags($fifthSection->subtitle) !!}
 					</p>
 				</div>
 			</div>
@@ -195,100 +193,51 @@
 			<div class="box_image" data-animation='up'>
 				<div class="box_image--grid-one">
 					<div class="item-one">
-						<div class="image-one image-block">
-							<img src="{{ asset('site/img/Home/Differentials/image-1.png') }}" alt="">
-							<div class="image-description">
-								<button class="image-description--zoom images--zoom" data-src="{{ asset('site/img/Home/Differentials/image-1.png') }}">
-									<img src="{{ asset('site/img/Home/Differentials/zoom.svg') }}" alt="">
-								</button>
-
-								<p class="image-description--description">
-									Integração com espaços para eventos.
-								</p>
+						@php $gallery = $fifthSection->gallery @endphp
+						@if (isset($gallery[0]) && $gallery[0])
+							<div class="image-one image-block">
+								@include('site.components.ImagesDiferencias', ['gallery' => $gallery[0]])
 							</div>
-						</div>
-						<div class="image-two image-block">
-							<img src="{{ asset('site/img/Home/Differentials/image-2.png') }}" alt="">
-							<div class="image-description">
-								<button class="image-description--zoom images--zoom" data-src="{{ asset('site/img/Home/Differentials/image-2.png') }}">
-									<img src="{{ asset('site/img/Home/Differentials/zoom.svg') }}" alt="">
-								</button>
-
-								<p class="image-description--description">
-									Integração com espaços para eventos.
-								</p>
+						@endif
+						@if (isset($gallery[1]) && $gallery[1])
+							<div class="image-two image-block">
+								@include('site.components.ImagesDiferencias', ['gallery' => $gallery[1]])
 							</div>
-						</div>
+						@endif
 					</div>
 					<div class="item-two">
-						<div class="image-one image-block">
-							<img src="{{ asset('site/img/Home/Differentials/image-5.png') }}" alt="">
-							<div class="image-description">
-								<button class="image-description--zoom images--zoom" data-src="{{ asset('site/img/Home/Differentials/image-5.png') }}">
-									<img src="{{ asset('site/img/Home/Differentials/zoom.svg') }}" alt="">
-								</button>
-
-								<p class="image-description--description">
-									Integração com espaços para eventos.
-								</p>
+						@if (isset($gallery[2]) && $gallery[2])
+							<div class="image-one image-block">
+								@include('site.components.ImagesDiferencias', ['gallery' => $gallery[2]])
 							</div>
-						</div>
-						<div class="image-two image-block">
-							<img src="{{ asset('site/img/Home/Differentials/image-6.png') }}" alt="">
-							<div class="image-description">
-								<button class="image-description--zoom images--zoom" data-src="{{ asset('site/img/Home/Differentials/image-6.png') }}">
-									<img src="{{ asset('site/img/Home/Differentials/zoom.svg') }}" alt="">
-								</button>
-
-								<p class="image-description--description">
-									Integração com espaços para eventos.
-								</p>
+						@endif
+						@if (isset($gallery[3]) && $gallery[3])
+							<div class="image-two image-block">
+								@include('site.components.ImagesDiferencias', ['gallery' => $gallery[3]])
 							</div>
-						</div>
+						@endif
 					</div>
 				</div>
 
 				<div class="box_image--grid-two">
 					<div class="item-one">
-						<div class="image-one image-block">
-							<img src="{{ asset('site/img/Home/Differentials/image-3.png') }}" alt="">
-
-							<div class="image-description">
-								<button class="image-description--zoom images--zoom" data-src="{{ asset('site/img/Home/Differentials/image-3.png') }}">
-									<img src="{{ asset('site/img/Home/Differentials/zoom.svg') }}" alt="">
-								</button>
-
-								<p class="image-description--description">
-									Integração com espaços para eventos.
-								</p>
+						@if (isset($gallery[4]) && $gallery[4])
+							<div class="image-one image-block">
+								@include('site.components.ImagesDiferencias', ['gallery' => $gallery[4]])
 							</div>
-						</div>
-						<div class="image-two image-block">
-							<img src="{{ asset('site/img/Home/Differentials/image-4.png') }}" alt="">
-							<div class="image-description">
-								<button class="image-description--zoom images--zoom" data-src="{{ asset('site/img/Home/Differentials/image-4.png') }}">
-									<img src="{{ asset('site/img/Home/Differentials/zoom.svg') }}" alt="">
-								</button>
-
-								<p class="image-description--description">
-									Integração com espaços para eventos.
-								</p>
+						@endif
+						@if (isset($gallery[5]) && $gallery[5])
+							<div class="image-two image-block">
+								@include('site.components.ImagesDiferencias', ['gallery' => $gallery[5]])
 							</div>
-						</div>
+						@endif
 					</div>
 					<div class="item-two">
-						<div class="image image-block">
-							<img src="{{ asset('site/img/Home/Differentials/image-7.png') }}" alt="">
-							<div class="image-description">
-								<button class="image-description--zoom images--zoom" data-src="{{ asset('site/img/Home/Differentials/image-7.png') }}">
-									<img src="{{ asset('site/img/Home/Differentials/zoom.svg') }}" alt="">
-								</button>
-
-								<p class="image-description--description">
-									Integração com espaços para eventos.
-								</p>
+						@if (isset($gallery[6]) && $gallery[6])
+							<div class="image image-block">
+								@include('site.components.ImagesDiferencias', ['gallery' => $gallery[6]])
 							</div>
-						</div>
+						@endif
 					</div>
 				</div>
 			</div>
