@@ -6,12 +6,11 @@
     bottom: 3vw;
 
     opacity: 0;
-    pointer-events: none;
     transition: $transition;
 
     &.show-button{
         opacity: 1;
-        pointer-events: none;
+
     }
 
     img{

@@ -45,7 +45,7 @@
             <div class="item">
                 <div class="image" style="background-image: url('{{ $fileResize }}');"
                     data-href="{{ $fileHref }}" data-name="{{ $input['name'] }}"></div>
-                {{-- <input hidden type="text" class="form-control title" name="{{ $input['name'] }}[title][]" value="{{ $image->title }}"> --}}
+                <input type="text" class="form-control title" name="{{ $input['name'] }}[title][]" value="{{ $image->title }}">
                 <label class="checkbox"><input type="checkbox" class="gallery-checkbox"><span class="icon"></span></label>
                 <div class="favorite {{ $image->highlighted == '1' ? 'on' : '' }}">
                     <input type="hidden" name="{{ $input['name'] }}[highlighted][]" value="{{ $image->highlighted == '1' ? '1' : '0' }}">

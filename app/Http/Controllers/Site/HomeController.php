@@ -30,6 +30,27 @@ class HomeController extends SiteController
         $this->data['sixthSection'] = SixthSectionModel::query()->first();
         $this->data['seventhSection'] = SeventhSectionModel::query()->first();
 
+        $this->getMobileImages();
+
         return view('site.pages.AppHome.index', $this->data);
+    }
+
+    private function getMobileImages()
+    {
+        if (checkMobile()) {
+            $this->data['secondSection']->image_top = $this->data['secondSection']->image_top_mobile;
+            $this->data['secondSection']->image_right = $this->data['secondSection']->image_right_mobile;
+            $this->data['secondSection']->image_bottom = $this->data['secondSection']->image_bottom_mobile;
+
+            $this->data['thirdSection']->image_left = $this->data['thirdSection']->image_left_mobile;
+            $this->data['thirdSection']->image_right = $this->data['thirdSection']->image_right_mobile;
+            
+            $this->data['fourthSection']->image_2 = $this->data['fourthSection']->image_2_mobile;
+
+            $this->data['sixthSection']->image_left = $this->data['sixthSection']->image_left_mobile;
+            $this->data['sixthSection']->image_right = $this->data['sixthSection']->image_right_mobile;
+
+            $this->data['seventhSection']->image = $this->data['fourthSection']->image_mobile;
+        }
     }
 }

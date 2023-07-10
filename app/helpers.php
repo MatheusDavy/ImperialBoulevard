@@ -182,13 +182,17 @@ if (!function_exists('formatDateDiaMes')) {
         date_default_timezone_set('America/Sao_Paulo');
         $dia = ucwords(strftime('%d', strtotime($date)));
         $mes = ucwords(strftime('%m', strtotime($date)));
-        $meses = meses();
-        $mes = $meses[$mes];
-        $data = "$dia | " . $mes;
+        $ano = ucwords(strftime('%Y', strtotime($date)));
+        $data = "$dia/$mes/$ano";
         return $data;
     }
 }
-
+if (!function_exists('formatWpp')) {
+    function formatWpp(string $phone)
+    {
+        return str_replace([' ', '-', '(', ')', '.'], ['', '', '', '', ''], $phone);
+    }
+}
 if (!function_exists('lang')) {
     require_once('Libraries/gettext/gettext.inc');
     function lang($data)
