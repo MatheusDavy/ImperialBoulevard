@@ -42,7 +42,7 @@ class CompaniesController extends AdmController
         );
 
         $this->fields['Endereço'] = array(
-            $this->makeFields('ckEditor', 'Endereço', 'address'),
+            $this->ckEditorSimpleField('Endereço', 'address'),
             $this->makeFields('position', 'Posição', 'position'),
         );
 
