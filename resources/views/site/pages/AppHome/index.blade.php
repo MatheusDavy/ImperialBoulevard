@@ -363,7 +363,7 @@
 				@include('site.components.Forms.forms_contact')
 			</div>
 			<div class="box_image image-block">
-				<img data-animation src="{{ asset('site/img/Home/Contact/image-1.png') }}" alt="">
+				<img data-animation src="{{ asset('site/img/Home/Contact/image-contact.webp') }}" alt="">
 			</div>
 		</div>
 

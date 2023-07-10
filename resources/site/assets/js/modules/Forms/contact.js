@@ -28,8 +28,10 @@ export default function FormsContact () {
         }
 
         if (!error) {
+            if ($(this).attr('disabled') == 'disabled') {
+                return false;
+            }
             $(this).attr('disabled', 'disabled');
-            $("#Form-Click").attr('disabled', 'disabled');
             let type = 'POST';
             let url = $(this).attr('action');
             let dataType = 'json';
@@ -41,18 +43,16 @@ export default function FormsContact () {
                         $('#forms_contact').trigger("reset");
                         modalDescription.innerHTML = data.txt;
                         modal.classList.add("open-modal");
+                        $(this).removeAttr('disabled');
                     } else {
                         modalDescription.innerHTML = data.txt;
                         modal.classList.add("open-modal");
+                        $(this).removeAttr('disabled');
                     }
                 };
             }
             let ajax = new Contact(form, type, url, dataType, form.serialize());
             ajax.send();
-            setTimeout(() => {
-                $("#Form-Click").removeAttr('disabled');
-                $(this).removeAttr('disabled');
-            }, 2000);
         }
         return false;
     });
