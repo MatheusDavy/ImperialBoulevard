@@ -4,6 +4,10 @@ import AjaxClass from '../ajaxClass';
 import '../Utils/inputMask'
 
 export default function FormsContact () {
+    $("#Form-Click").on('click', function (e) {
+        $("#forms_contact").trigger('submit');
+    });
+
     /*-------------/ Input Mask /--------------------*/
     $('#phone-input').mask('(00) 00000-0000')
 
@@ -24,6 +28,8 @@ export default function FormsContact () {
         }
 
         if (!error) {
+            $(this).attr('disabled', 'disabled');
+            $("#Form-Click").attr('disabled', 'disabled');
             let type = 'POST';
             let url = $(this).attr('action');
             let dataType = 'json';
@@ -43,8 +49,11 @@ export default function FormsContact () {
             }
             let ajax = new Contact(form, type, url, dataType, form.serialize());
             ajax.send();
+            setTimeout(() => {
+                $("#Form-Click").removeAttr('disabled');
+                $(this).removeAttr('disabled');
+            }, 2000);
         }
-
         return false;
     });
 }

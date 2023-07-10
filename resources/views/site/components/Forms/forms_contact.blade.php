@@ -5,7 +5,7 @@
             <span class="error--message message-error-forms" id="wwu-error-name">Digite um nome válido !</span>
         </div>
         <div class="input-group">
-            <input fieldName="Telefone" idError='wwu-error-phone' fieldType="phone" isRequired="required" type="text" name="phone" placeholder="Telefone">
+            <input fieldName="Telefone" id="phone-input" idError='wwu-error-phone' fieldType="phone" isRequired="required" type="text" name="phone" placeholder="Telefone">
             <span class="error--message message-error-forms" id="wwu-error-phone">Digite um telefone válido !</span>
         </div>
     </div>
@@ -26,5 +26,6 @@
         <label for="checkbox">Ao informar meus dados, eu concordo com a <a href="">Política de Privacidade</a> e com os <a href="">Termos de Uso</a>.</label>
     </div>
 
-    <button type="submit" class="btn-submit">ENVIAR</button>
+    <button type="submit" hidden id="actual-submit">ENVIAR</button>
+    <button type="button" id="Form-Click" class="btn-submit">ENVIAR</button>
 </form>
