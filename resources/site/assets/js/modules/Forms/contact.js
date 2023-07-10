@@ -43,12 +43,17 @@ export default function FormsContact () {
                         $('#forms_contact').trigger("reset");
                         modalDescription.innerHTML = data.txt;
                         modal.classList.add("open-modal");
-                        $(this).removeAttr('disabled');
+                        $("#forms_contact").removeAttr('disabled');
                     } else {
                         modalDescription.innerHTML = data.txt;
                         modal.classList.add("open-modal");
-                        $(this).removeAttr('disabled');
+                        $("#forms_contact").removeAttr('disabled');
                     }
+                };
+                errorFunction(xhr, textStatus, errorThrown){
+                    modalDescription.innerHTML = "Ocorreu um erro. Tente novamente mais tarde.";
+                    modal.classList.add("open-modal");
+                    $("#forms_contact").removeAttr('disabled');
                 };
             }
             let ajax = new Contact(form, type, url, dataType, form.serialize());

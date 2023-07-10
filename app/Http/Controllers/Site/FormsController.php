@@ -36,6 +36,23 @@ class FormsController extends SiteController
         $json['txt'] = "Sucesso!";
         try {
             DB::table('site_contacts')->insert($dados);
+            $body = [];
+            $body[] = "Nome: " . $dados['name'];
+            $body[] = "E-mail: " . $dados['email'];
+            $body[] = "Telefone: " . $dados['phone'];
+            $body[] = "Mensagem: " . $dados['message'];
+            
+            $to = $dados['email'];
+            
+            if (env('APP_ENV') == 'production') {
+                $to = [$dados['email'], 'contato@boulevardconvention.com'];
+            }
+            newSendMail([
+                'to' => $to,
+                'body' => $body,
+                'from' => $this->data['main_title'],
+                'subject' => $this->data['main_title'] . ' - ' . 'Contato',
+            ]);
         } catch (\Throwable $th) {
             logger($th);
             $json['status'] = false;
