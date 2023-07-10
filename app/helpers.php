@@ -10,6 +10,8 @@ use Illuminate\Support\Facades\Request;
 use PHPMailer\PHPMailer\Exception;
 use Illuminate\Support\Str;
 use App\Mail\Form;
+use App\Models\Adm\CompaniesModel;
+use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Mail;
 
 if (!function_exists('explodeLines')) {
@@ -486,6 +488,13 @@ if (!function_exists('send_email')) {
 if (! function_exists('newSendMail')) {
     function newSendMail($params = array())
     {
+        $empresa = CompaniesModel::first();
+        Config::set(['mail.mailers.smtp.transport' => 'smtp']);
+        Config::set(['mail.mailers.smtp.host' => str_replace('tls://', '', $empresa->mail_host)]);
+        Config::set(['mail.mailers.smtp.port' => $empresa->mail_port]);
+        Config::set(['mail.mailers.smtp.username' => $empresa->mail_user]);
+        Config::set(['mail.mailers.smtp.password' => $empresa->mail_pass]);
+        Config::set(['mail.mailers.smtp.encryption' => 'tls']);
         Mail::to($params['to'])->send(
             new Form($params['body'], $params['subject'], $params['from']));
     }

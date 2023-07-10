@@ -4,9 +4,9 @@ namespace App\Http\Controllers\Adm;
 
 use App\Http\Controllers\Adm\Traits\FieldsTraits;
 use App\Http\Controllers\Adm\Traits\ListFieldTraits;
-use App\Models\Adm\NewslettersModel;
+use App\Models\Adm\ContactsModel;
 
-class NewslettersController extends AdmController
+class ContactsController extends AdmController
 {
     use ListFieldTraits;
     use FieldsTraits;
@@ -14,10 +14,10 @@ class NewslettersController extends AdmController
     public function __construct()
     {
         parent::__construct();
-        $this->model = new NewslettersModel();
-        $this->title = 'Newsletter';
-        $this->titlePlural = 'Newsletters';
-        $this->searchField = 'name';
+        $this->model = new ContactsModel();
+        $this->title = 'Contato';
+        $this->titlePlural = 'Contatos';
+        $this->searchField = ['name', 'email', 'phone'];
         $this->justView = true;
         $this->export = true;
 

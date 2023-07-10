@@ -9,48 +9,6 @@ use Illuminate\Support\Facades\DB;
 
 class FormsController extends SiteController
 {
-    public function newsletterForm(Request $request)
-    {
-        $gRecaptchaResponse = $request->input('gRecaptchaResponse');
-        $error = $this->testRecaptchaResponse($gRecaptchaResponse);
-        if ($error) {
-            $json['txt'] = $error;
-            $json['status'] = false;
-            echo json_encode($json);
-            exit;
-        }
-
-        $email = $request->input('email');
-        $name = $request->input('name');
-        $checaSeExiste = DB::table('site_newsletters')->where('email', $email)->first();
-        $dados = array();
-        $dt = Carbon::now('UTC')->addHour(-3)->format('Y-m-d h:i:s');
-
-        $dados['name'] = $name;
-        $dados['email'] = $email;
-        $dados['created'] = $dt;
-
-        $json['status'] = false;
-        $json['txt'] = "Email já existe";
-
-        if ($checaSeExiste == null) {
-            $json['status'] = true;
-            $json['txt'] = "Sucesso!";
-            try {
-                DB::table('site_newsletters')->insert($dados);
-            } catch (\Throwable $th) {
-                logger($th);
-                $json['status'] = false;
-                $json['txt'] = "Algo deu errado";
-            }
-        }
-
-        unset($dados['email']);
-
-        echo json_encode($json);
-        exit;
-    }
-
     public function contactForm(Request $request)
     {
         $gRecaptchaResponse = $request->input('gRecaptchaResponse');
@@ -62,38 +20,44 @@ class FormsController extends SiteController
             exit;
         }
 
-        $email = $request->input('email');
-        $name = $request->input('name');
-        $phone = $request->input('phone');
-        $subject = $request->input('subject');
-        $message = $request->input('message');
-        $checaSeExiste = DB::table('site_contacts')->where('email', $email)->first();
         $dados = array();
         $dt = Carbon::now('UTC')->addHour(-3)->format('Y-m-d h:i:s');
 
-        $dados['name'] = $name;
-        $dados['email'] = $email;
-        $dados['phone'] = $phone;
-        $dados['subject'] = $subject;
-        $dados['message'] = $message;
+        $dados['name'] = $request->input('name');
+        $dados['email'] = $request->input('email');
+        $dados['phone'] = $request->input('phone');
+        $dados['message'] = $request->input('message');
         $dados['created'] = $dt;
 
         $json['status'] = false;
         $json['txt'] = "Email já existe";
 
-        if ($checaSeExiste == null) {
-            $json['status'] = true;
-            $json['txt'] = "Sucesso!";
-            try {
-                DB::table('site_contacts')->insert($dados);
-            } catch (\Throwable $th) {
-                logger($th);
-                $json['status'] = false;
-                $json['txt'] = "Algo deu errado";
+        $json['status'] = true;
+        $json['txt'] = "Sucesso!";
+        try {
+            DB::table('site_contacts')->insert($dados);
+            $body = [];
+            $body[] = "Nome: " . $dados['name'];
+            $body[] = "E-mail: " . $dados['email'];
+            $body[] = "Telefone: " . $dados['phone'];
+            $body[] = "Mensagem: " . $dados['message'];
+            
+            $to = $dados['email'];
+            
+            if (env('APP_ENV') == 'production') {
+                $to = [$dados['email'], 'contato@boulevardconvention.com'];
             }
+            newSendMail([
+                'to' => $to,
+                'body' => $body,
+                'from' => $this->data['main_title'],
+                'subject' => $this->data['main_title'] . ' - ' . 'Contato',
+            ]);
+        } catch (\Throwable $th) {
+            logger($th);
+            $json['status'] = false;
+            $json['txt'] = "Algo deu errado";
         }
-
-        unset($dados['email']);
 
         echo json_encode($json);
         exit;

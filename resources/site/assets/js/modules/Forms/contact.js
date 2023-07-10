@@ -4,6 +4,10 @@ import AjaxClass from '../ajaxClass';
 import '../Utils/inputMask'
 
 export default function FormsContact () {
+    $("#Form-Click").on('click', function (e) {
+        $("#forms_contact").trigger('submit');
+    });
+
     /*-------------/ Input Mask /--------------------*/
     $('#phone-input').mask('(00) 00000-0000')
 
@@ -24,25 +28,37 @@ export default function FormsContact () {
         }
 
         if (!error) {
+            if ($(this).attr('disabled') == 'disabled') {
+                return false;
+            }
+            $(this).attr('disabled', 'disabled');
             let type = 'POST';
             let url = $(this).attr('action');
             let dataType = 'json';
-            class WorkWithUsForm extends AjaxClass {
+            const modal = document.getElementById('error-message-forms');
+            const modalDescription = document.querySelector('#error-message-forms .description');
+            class Contact extends AjaxClass {
                 successFunction(data, form) {
                     if (data.status == true) {
-                        window.location = $("#trabalheConoscoForm").attr('success-page');
-                    } else {
-                        const modal = document.getElementById('error-message-forms');
-                        const modalDescription = document.querySelector('#error-message-forms .description');
+                        $('#forms_contact').trigger("reset");
                         modalDescription.innerHTML = data.txt;
                         modal.classList.add("open-modal");
+                        $("#forms_contact").removeAttr('disabled');
+                    } else {
+                        modalDescription.innerHTML = data.txt;
+                        modal.classList.add("open-modal");
+                        $("#forms_contact").removeAttr('disabled');
                     }
                 };
+                errorFunction(xhr, textStatus, errorThrown){
+                    modalDescription.innerHTML = "Ocorreu um erro. Tente novamente mais tarde.";
+                    modal.classList.add("open-modal");
+                    $("#forms_contact").removeAttr('disabled');
+                };
             }
-            let ajax = new WorkWithUsForm(form, type, url, dataType, form.serialize());
+            let ajax = new Contact(form, type, url, dataType, form.serialize());
             ajax.send();
         }
-
         return false;
     });
 }

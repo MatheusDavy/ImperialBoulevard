@@ -28,14 +28,6 @@ class Form extends Mailable
     public function __construct(array $data, $subject, $from)
     {
         $empresa = CompaniesModel::first();
-        Config::set(['MAIL_MAILER' => 'smtp']);
-        Config::set(['MAIL_HOST' => $empresa->mail_host]);
-        Config::set(['MAIL_PORT' => $empresa->mail_port]);
-        Config::set(['MAIL_USERNAME' => $empresa->mail_user]);
-        Config::set(['MAIL_PASSWORD' => $empresa->mail_pass]);
-        Config::set(['MAIL_ENCRYPTION' => 'tls']);
-        Config::set(['MAIL_FROM_ADDRESS' => $empresa->mail_from]);
-        Config::set(['MAIL_FROM_NAME' => $from]);
 
         array_unshift($data, 'Seus dados:');
         array_unshift($data, 'Obrigado por entrar em contato conosco!');

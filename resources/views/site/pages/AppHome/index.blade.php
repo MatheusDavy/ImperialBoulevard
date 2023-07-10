@@ -296,26 +296,24 @@
 	<div class="section_investing" id="invista">
 		<div class="section_investing--container">
 			<div class="box_text">
-				<span class="box_text--text" data-animation>DESCUBRA COMO</span>
+				<span class="box_text--text" data-animation>{{$sixthSection->above_title}}</span>
 				<h2 class="box_text--title" data-animation='right'>
-					SEU INVESTIMENTO <br>
-					<span>GANHOU UM PLUS</span>
+					{!! ignoreTags($sixthSection->title) !!}
 				</h2>
 
 				<div class="box_text--description" data-animation>
-					<p>No maior Centro de Convenções do Sul do Brasil, criamos o primeiro ecossistema integrado de eventos, negócios e reuniões da Serra Gaúcha.</p>
-					<p>A região do Vale dos Vinhedos recebe mais de 1200 eventos anualmente.</p>
+					{!! $sixthSection->description !!}
 				</div>
 
-				<a class="box_text--link" data-animation='up'>SAIBA COMO INVESTIR</a>
+				<a class="box_text--link" data-animation='up' href="{{$sixthSection->button_link}}">{{$sixthSection->button_text}}</a>
 			</div>
 
 			<div class="box_image image-block">
-				<img data-animation src="{{ asset('site/img/Home/Investing/image-1.png') }}" alt="">
+				<img src="{{ assetJson([$sixthSection->folder,$sixthSection->image_right]) }}" alt="{{imgAltJson($sixthSection->image_right)}}" title="{{imgTitleJson($sixthSection->image_right)}}">
 
 				<div class="box-detail reveal">
 					<div class="image-wrap">
-						<img src="{{ asset('site/img/Home/Investing/image-2.png') }}" alt="">
+						<img src="{{ assetJson([$sixthSection->folder,$sixthSection->image_left]) }}" alt="{{imgAltJson($sixthSection->image_left)}}" title="{{imgTitleJson($sixthSection->image_left)}}">
 					</div>
 				</div>
 			</div>
@@ -325,22 +323,20 @@
 	<div class="section_events" id="eventos">
 		<div class="section_events--container">
 			<div class="box_text">
-				<span class="box_text--text" data-animation>COMO FAZER</span>
+				<span class="box_text--text" data-animation>{{$seventhSection->above_title}}</span>
 				<h2 class="box_text--title" data-animation='right'>
-					UM SÁBIO INVESTIMENTO <br>
-					<span>AGORA EM EVENTOS</span>
+					{!! ignoreTags($seventhSection->title) !!}
 				</h2>
 
 				<div class="box_text--description" data-animation>
-					<p>Invista na área Plus do maior Centro de <br> Convenções em hotelaria do Sul do Brasil.</p>
-					<p>A região do Vale dos Vinhedos recebe mais de 1200 eventos anualmente. E nós criamos o primeiro ecossistema integrado de eventos, negócios e reuniões da Serra Gaúcha.</p>
+					{!! $seventhSection->description !!}
 				</div>
 
-				<a class="box_text--link" data-animation='up'>SAIBA COMO INVESTIR</a>
+				<a class="box_text--link" data-animation='up' href="{{$seventhSection->button_link}}">{{$seventhSection->button_text}}</a>
 			</div>
 
 			<div class="box_image image-block">
-				<img data-animation src="{{ asset('site/img/Home/Investing/image-3.png') }}" alt="">
+				<img src="{{ assetJson([$seventhSection->folder,$seventhSection->image]) }}" alt="{{imgAltJson($seventhSection->image)}}" title="{{imgTitleJson($seventhSection->image)}}">
 
 				<div class="box-detail reveal">
 					<div class="image-wrap">
@@ -367,7 +363,7 @@
 				@include('site.components.Forms.forms_contact')
 			</div>
 			<div class="box_image image-block">
-				<img data-animation src="{{ asset('site/img/Home/Contact/image-1.png') }}" alt="">
+				<img data-animation src="{{ asset('site/img/Home/Contact/image-contact.webp') }}" alt="">
 			</div>
 		</div>
 
