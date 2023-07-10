@@ -47,7 +47,7 @@
         </svg>
     </div>
 
-    <div class="section_questions" data-appearBackToTop data-sequencial>
+    <div class="section_questions" id="questions" data-appearBackToTop data-sequencial>
         <div class="section_questions--container">
             @foreach ($lista as $card)
             <div class="section_questions--card" data-sequencial-stagger="right">
