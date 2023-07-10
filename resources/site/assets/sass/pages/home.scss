@@ -255,6 +255,7 @@
     .section_region {
         background-color: #231f20;
         position: relative;
+        overflow: hidden;
         .region_line-1{
             position: absolute;
             width: 100%;
