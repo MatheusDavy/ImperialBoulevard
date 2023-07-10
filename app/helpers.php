@@ -182,9 +182,8 @@ if (!function_exists('formatDateDiaMes')) {
         date_default_timezone_set('America/Sao_Paulo');
         $dia = ucwords(strftime('%d', strtotime($date)));
         $mes = ucwords(strftime('%m', strtotime($date)));
-        $meses = meses();
-        $mes = $meses[$mes];
-        $data = "$dia | " . $mes;
+        $ano = ucwords(strftime('%Y', strtotime($date)));
+        $data = "$dia/$mes/$ano";
         return $data;
     }
 }

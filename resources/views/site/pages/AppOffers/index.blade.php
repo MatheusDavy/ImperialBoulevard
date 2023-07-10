@@ -46,7 +46,7 @@
                 <div class="response">
                     <a href={{assetJson([$card->folder, $card->file])}} download class="response--folder">
                         <img src="{{ asset('site/img/Icons/folder-download.svg') }}" alt="">
-                        <span class="date">{{$card->created}}</span>
+                        <span class="date">{{formatDateDiaMes($card->created)}}</span>
                     </a>
                     <p class="response--description">
                         {{$card->description}}
