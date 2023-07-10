@@ -49,6 +49,7 @@ class SiteController extends Controller
         $routeParams = array_values(Route::current()->parameters());
         $company = CompaniesModel::first();
 
+        $this->data['empresa'] = $company;
         $this->data['routeParams'] = $routeParams;
         $this->data['gtm'] = $company->gtm;
         $this->data['rd'] = $company->rd;

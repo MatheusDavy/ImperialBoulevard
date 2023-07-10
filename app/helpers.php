@@ -187,7 +187,12 @@ if (!function_exists('formatDateDiaMes')) {
         return $data;
     }
 }
-
+if (!function_exists('formatWpp')) {
+    function formatWpp(string $phone)
+    {
+        return str_replace([' ', '-', '(', ')', '.'], ['', '', '', '', ''], $phone);
+    }
+}
 if (!function_exists('lang')) {
     require_once('Libraries/gettext/gettext.inc');
     function lang($data)
