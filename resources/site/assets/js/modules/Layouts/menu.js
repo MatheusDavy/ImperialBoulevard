@@ -14,10 +14,12 @@ export class Menu {
         this.menu = document.querySelector('.menu-button');
         this.html = document.querySelector('html')
         this.body = document.body
+        this.prevHref = ''
         this.setMenuTimeline()
         this.anchorLinks()
+        this.anchorHref()
     }
-    
+
     static tl = gsap.timeline({ paused: true });
 
     setMenuTimeline() {
@@ -66,18 +68,54 @@ export class Menu {
     anchorActions(id) {
         var targetOffset = document.getElementById(id).offsetTop
         this.menu.click()
-        setTimeout(()=>{
+        setTimeout(() => {
             setSmoothScrollTo(0, targetOffset, 1000)
         }, 1000)
     }
 
+    anchorHref(){
+        const url = window.location.href
+        const arrayUrl = url.split("")
+        arrayUrl.forEach((element, index) => {
+            let initialIndex
+            const finalIndex = arrayUrl.length
+            if (element === '#') {
+                initialIndex = index + 1
+                const idArray = (arrayUrl.slice(initialIndex, finalIndex))
+                if (arrayUrl[index - 1] == '/') {
+                    this.prevHref = arrayUrl.slice(0, index).join('')
+                } else {
+                    this.prevHref = arrayUrl.slice(0, index).join('') + '/'
+                }
+            }
+        })
+        if (!arrayUrl.includes('#')) {
+            this.prevHref = arrayUrl.slice(0, arrayUrl.length - 1).join('') + '/'
+        }
+    }
+
     anchorLinks() {
         const links = document.querySelectorAll(".menu-content--nav .menu-content--item a")
-        links.forEach(link => {
-            link.addEventListener('click', (event) => {
-                event.preventDefault()
-                const id = link.getAttribute('href').replace('#', '')
-                this.anchorActions(id)
+        links.forEach(element => {
+            element.addEventListener('click', (event) => {
+                const link = element.getAttribute('href')
+                if (link) {
+                    const linkArray = link.split('')
+                    linkArray.forEach((element, index) => {
+                        let initialIndex
+                        const finalIndex = linkArray.length
+                        if (element === '#') {
+                            initialIndex = index + 1
+                            const idArray = (linkArray.slice(initialIndex, finalIndex))
+                            const href = linkArray.slice(0, index).join('')
+                            if (href == this.prevHref) {
+                                event.preventDefault()
+                                const id = idArray.join('')
+                                this.anchorActions(id)
+                            }
+                        }
+                    })
+                }
             })
         })
     }

@@ -1,0 +1,246 @@
+body {
+    // background-image: url(../img/Pixel/offers.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#page-offers {
+    // opacity: 0.3;
+    .section_navigation {
+        display: flex;
+
+        &--container {
+            margin: 0 auto;
+            width: 100%;
+            max-width: 71vw;
+            padding-top: 6vh;
+            padding-bottom: 9vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .box_list {
+            display: flex;
+            margin-bottom: 7vh;
+
+            a {
+                @include fontTemplate(
+                    2.4rem,
+                    1,
+                    $secondColor,
+                    $regular,
+                    $Raleway
+                );
+                display: flex;
+                padding-bottom: 1.4vh;
+                text-decoration: none;
+
+                &:first-child {
+                    padding-right: 1vw;
+                    border-bottom: 3px solid #d2a6715e;
+                }
+                &:last-child {
+                    padding-left: 1vw;
+                    border-bottom: 3px solid $accentColor;
+                }
+            }
+        }
+
+        .title {
+            @include fontTemplate(4.8rem, 1, $accentColor, $bold, $Butler);
+        }
+    }
+
+    .section_folders {
+        &--container {
+            display: grid;
+            grid-template-columns: 49.63vw 1fr;
+        }
+
+        .box_description {
+            width: 100%;
+            padding-left: 14.6vw;
+            padding-top: 7.4vh;
+            padding-bottom: 5vh;
+            padding-right: 5.6vw;
+            background-color: $secondColor;
+            height: fit-content;
+
+            p {
+                @include fontTemplate(
+                    2.4rem,
+                    1.5,
+                    $primaryColor,
+                    $bold,
+                    $Raleway
+                );
+            }
+        }
+
+        .box_folders {
+            align-self: flex-end;
+            justify-self: flex-end;
+            margin-top: 5.6vh;
+
+            &--title {
+                @include fontTemplate(2.4rem, 1, $accentColor, $bold, $Butler);
+                margin-bottom: 3.8vh;
+            }
+
+            &--grid {
+                align-self: flex-end;
+                justify-self: flex-end;
+                width: 38.4vw;
+                height: auto;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                gap: 0.8vw;
+                grid-auto-flow: row;
+                grid-template-areas:
+                    "top-left top-left top-right"
+                    "bottom-left bottom-right bottom-right";
+            }
+
+            .card {
+                width: 100%;
+                min-height: 19.6vh;
+                height: auto;
+                position: relative;
+                padding-top: 6vh;
+                padding-inline: 1.5vw;
+                padding-bottom: 3vh;
+                background-color: $accentColor;
+                display: flex;
+                justify-content: end;
+                text-decoration: none;
+                
+                @include fontTemplate(
+                    2.4rem,
+                    1.5,
+                    $primaryColor,
+                    $light,
+                    $Raleway
+                );
+
+                &:nth-child(1) {
+                    grid-area: top-left;
+                }
+                &:nth-child(2) {
+                    grid-area: top-right;
+                    width: 14.58vw;
+                }
+                &:nth-child(3) {
+                    grid-area: bottom-left;
+                    width: 14.58vw;
+                }
+                &:nth-child(4) {
+                    grid-area: bottom-right;
+                }
+
+                img {
+                    position: absolute;
+                    right: 1.5vw;
+                    top: 1.5vw;
+                    width: 3vw;
+                    height: auto;
+                    object-fit: contain;
+                }
+
+                
+            }
+        }
+    }
+
+    .section_questions{
+        position: relative;
+        padding-top: 9.5vh;
+        padding-bottom: 36vh;
+        display: flex;
+        &--container{
+            margin: 0 auto;
+            width: 100%;
+            max-width: 71vw;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &--card{
+            border-bottom: 1px solid $accentColor;
+            .question{
+                padding: 3vh 1.8vw;
+                cursor: pointer;
+                background-color: transparent;
+                border: 0;
+                display: grid;
+                grid-template-columns: auto 1fr;
+                gap: 3vw;
+                align-items: center;
+
+                img{
+                    width: 1.3vw;
+                    height: auto;
+                    object-fit: contain;
+                    transition: $transition;
+                }
+
+                @include fontTemplate(
+                    2.4rem,
+                    1.5,
+                    $secondColor,
+                    $medium,
+                    $Raleway
+                );
+            }
+
+            .response{
+                width: 100%;
+                height: 0px;
+                overflow: hidden;
+                padding: 0 5vw;
+                transition: $transition;
+
+                display: grid;
+                grid-template-columns: auto 1fr;
+                gap: 4vw;
+                align-items: center;
+
+                &--folder{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 1.5vh;
+                    text-decoration: none;
+
+                    img{
+
+                    }
+                }
+
+                &--description, .date{
+                    @include fontTemplate(
+                        2.4rem,
+                        1.5,
+                        $secondColor,
+                        $medium,
+                        $Raleway
+                    );
+                }
+                
+            }
+
+            &.show-response{
+                .question{
+                    img{
+                        transform: rotate(-90deg);
+                    }
+                }
+
+                .response{
+                    height: auto !important;
+                    padding: 1.5vh 2vw 4vh 5vw;
+                }
+            }
+        }
+    }
+}

@@ -109,6 +109,12 @@
         }
     }
 
+    // Another Pages
+    &.page-offers{
+        background-color: $secondColor;
+        position: relative;
+    }
+
     @media (max-width: 799px) {
         &--container {
             max-width: 100%;

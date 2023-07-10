@@ -351,7 +351,7 @@
 		</div>
 	</div>
 
-	<div class="section_contact" id="contato">
+	<div class="section_contact" id="contato" data-appearBackToTop>
 		<div class="section_contact--container">
 			<div class="box_grid">
 				<div class="box_text">

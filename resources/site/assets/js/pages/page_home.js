@@ -100,7 +100,7 @@ function whatsappIcon(){
 
 /*------------ 4 - Onloads ---------------*/
 window.onload = () => {
-    if (!isMobile) new AnimationGradient();
+    // if (!isMobile) new AnimationGradient();
 }
 window.onscroll = ()=>{
     whatsappIcon()

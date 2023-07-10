@@ -11,6 +11,7 @@ use App\Http\Controllers\Site\ContactController;
 use App\Http\Controllers\Site\CronBackupController;
 use App\Http\Controllers\Site\HomeController;
 use App\Http\Controllers\Site\FormsController;
+use App\Http\Controllers\Site\OffersController;
 use App\Http\Controllers\Site\SiteController;
 use App\Http\Services\ExcelScript;
 use Illuminate\Support\Facades\DB;
@@ -136,6 +137,7 @@ if (Schema::hasTable('adm_modules')) {
     Route::get('cronBackup/{password}', [CronBackupController::class, 'doProductsBackup'])->name('site.cronBackup');
 
     Route::get('/', [HomeController::class, 'index'])->name('site.home');
+    Route::get('/ofertas', [OffersController::class, 'index'])->name('site.offers');
 
     Route::post('/changeLang', [SiteController::class, 'changeLang'])->name('site.changeLang');
     Route::post('/newsletter', [FormsController::class, 'newsletterForm'])->name('site.newsletter');

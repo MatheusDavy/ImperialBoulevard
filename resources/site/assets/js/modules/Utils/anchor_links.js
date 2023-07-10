@@ -39,7 +39,7 @@ export default function AnchorLinks() {
     }
 
     /*-------------------- 2 - Href Anchor  ------------------*/
-    window.onload = () => anchorHref()
+    anchorHref()
 
     /*-------------------- 3 - Default Anchor -----------------*/
     const anchors = document.querySelectorAll(".anchor--link")
@@ -55,6 +55,8 @@ export default function AnchorLinks() {
                         initialIndex = index + 1
                         const idArray = (linkArray.slice(initialIndex, finalIndex))
                         const href = linkArray.slice(0, index).join('')
+                        console.log(href)
+                        console.log(prevHref)
                         if (href == prevHref) {
                             event.preventDefault()
                             const id = idArray.join('')

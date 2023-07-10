@@ -37,6 +37,7 @@ mix.setPublicPath('public')
 .js('resources/site/assets/js/vendor.js', 'site/js/vendor.js')
 .js('resources/site/assets/js/main.js', 'site/js/main.js')
 .js('resources/site/assets/js/pages/page_home.js', 'public/site/js/pages/page_home.js')
+.js('resources/site/assets/js/pages/page_offers.js', 'public/site/js/pages/page_offers.js')
 .sourceMaps();
 
 
