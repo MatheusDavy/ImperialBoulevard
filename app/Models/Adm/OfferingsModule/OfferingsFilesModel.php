@@ -12,5 +12,6 @@ class OfferingsFilesModel extends AdmModel
     protected $table = 'site_public_offerings';
     protected $customSelect = 'created as regular_date, date_format(created, "%d/%m/%Y") as created';
 
+    public $folder = 'userfiles/OfertasPublicas/';
     public $timestamps = true;
 }
