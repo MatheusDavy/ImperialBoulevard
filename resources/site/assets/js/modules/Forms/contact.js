@@ -27,19 +27,21 @@ export default function FormsContact () {
             let type = 'POST';
             let url = $(this).attr('action');
             let dataType = 'json';
-            class WorkWithUsForm extends AjaxClass {
+            const modal = document.getElementById('error-message-forms');
+            const modalDescription = document.querySelector('#error-message-forms .description');
+            class Contact extends AjaxClass {
                 successFunction(data, form) {
                     if (data.status == true) {
-                        window.location = $("#trabalheConoscoForm").attr('success-page');
+                        $('#forms_contact').trigger("reset");
+                        modalDescription.innerHTML = data.txt;
+                        modal.classList.add("open-modal");
                     } else {
-                        const modal = document.getElementById('error-message-forms');
-                        const modalDescription = document.querySelector('#error-message-forms .description');
                         modalDescription.innerHTML = data.txt;
                         modal.classList.add("open-modal");
                     }
                 };
             }
-            let ajax = new WorkWithUsForm(form, type, url, dataType, form.serialize());
+            let ajax = new Contact(form, type, url, dataType, form.serialize());
             ajax.send();
         }
 

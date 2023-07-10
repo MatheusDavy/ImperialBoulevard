@@ -6,8 +6,6 @@ use App\Http\Controllers\Adm\CommonController;
 use App\Http\Controllers\Adm\DashboardController;
 use App\Http\Controllers\Adm\LogController;
 use App\Http\Controllers\Adm\PagesController;
-use App\Http\Controllers\Site\BlogController;
-use App\Http\Controllers\Site\ContactController;
 use App\Http\Controllers\Site\CronBackupController;
 use App\Http\Controllers\Site\HomeController;
 use App\Http\Controllers\Site\FormsController;
@@ -138,7 +136,7 @@ if (Schema::hasTable('adm_modules')) {
     Route::get('/', [HomeController::class, 'index'])->name('site.home');
 
     Route::post('/changeLang', [SiteController::class, 'changeLang'])->name('site.changeLang');
-    Route::post('/newsletter', [FormsController::class, 'newsletterForm'])->name('site.newsletter');
+    Route::post('/contactForm', [FormsController::class, 'contactForm'])->name('site.contact');
 } else {
     // echo "Precisa de migration";
 }

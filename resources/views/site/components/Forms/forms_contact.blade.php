@@ -1,4 +1,4 @@
-<form action="" id="forms_contact" data-animation='right'>
+<form action="{{route('site.contact')}}" id="forms_contact" data-animation='right'>
     <div class="box_grid">
         <div class="input-group">
             <input fieldName="Name" idError='wwu-error-name' fieldType="name" isRequired="required" type="text" name="name" placeholder="Nome">
