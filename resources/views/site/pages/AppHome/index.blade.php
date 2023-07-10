@@ -248,26 +248,24 @@
 	<div class="section_investing" id="invista">
 		<div class="section_investing--container">
 			<div class="box_text">
-				<span class="box_text--text">DESCUBRA COMO</span>
+				<span class="box_text--text">{{$sixthSection->above_title}}</span>
 				<h2 class="box_text--title">
-					SEU INVESTIMENTO <br>
-					<span>GANHOU UM PLUS</span>
+					{!! ignoreTags($sixthSection->title) !!}
 				</h2>
 
 				<div class="box_text--description">
-					<p>No maior Centro de Convenções do Sul do Brasil, criamos o primeiro ecossistema integrado de eventos, negócios e reuniões da Serra Gaúcha.</p>
-					<p>A região do Vale dos Vinhedos recebe mais de 1200 eventos anualmente.</p>
+					{!! $sixthSection->description !!}
 				</div>
 
-				<a class="box_text--link">SAIBA COMO INVESTIR</a>
+				<a class="box_text--link" href="{{$sixthSection->button_link}}">{{$sixthSection->button_text}}</a>
 			</div>
 
 			<div class="box_image image-block">
-				<img src="{{ asset('site/img/Home/Investing/image-1.png') }}" alt="">
+				<img src="{{ assetJson([$sixthSection->folder,$sixthSection->image_right]) }}" alt="{{imgAltJson($sixthSection->image_right)}}" title="{{imgTitleJson($sixthSection->image_right)}}">
 
 				<div class="box-detail reveal">
 					<div class="image-wrap">
-						<img src="{{ asset('site/img/Home/Investing/image-2.png') }}" alt="">
+						<img src="{{ assetJson([$sixthSection->folder,$sixthSection->image_left]) }}" alt="{{imgAltJson($sixthSection->image_left)}}" title="{{imgTitleJson($sixthSection->image_left)}}">
 					</div>
 				</div>
 			</div>
@@ -277,22 +275,20 @@
 	<div class="section_events">
 		<div class="section_events--container">
 			<div class="box_text">
-				<span class="box_text--text">COMO FAZER</span>
+				<span class="box_text--text">{{$seventhSection->above_title}}</span>
 				<h2 class="box_text--title">
-					UM SÁBIO INVESTIMENTO <br>
-					<span>AGORA EM EVENTOS</span>
+					{!! ignoreTags($seventhSection->title) !!}
 				</h2>
 
 				<div class="box_text--description">
-					<p>Invista na área Plus do maior Centro de <br> Convenções em hotelaria do Sul do Brasil.</p>
-					<p>A região do Vale dos Vinhedos recebe mais de 1200 eventos anualmente. E nós criamos o primeiro ecossistema integrado de eventos, negócios e reuniões da Serra Gaúcha.</p>
+					{!! $seventhSection->description !!}
 				</div>
 
-				<a class="box_text--link">SAIBA COMO INVESTIR</a>
+				<a class="box_text--link" href="{{$seventhSection->button_link}}">{{$seventhSection->button_text}}</a>
 			</div>
 
 			<div class="box_image image-block">
-				<img src="{{ asset('site/img/Home/Investing/image-3.png') }}" alt="">
+				<img src="{{ assetJson([$seventhSection->folder,$seventhSection->image]) }}" alt="{{imgAltJson($seventhSection->image)}}" title="{{imgTitleJson($seventhSection->image)}}">
 
 				<div class="box-detail reveal">
 					<div class="image-wrap">
@@ -323,17 +319,17 @@
 							<span class="error--message message-error-forms" id="wwu-error-name">Digite um nome válido !</span>
 						</div>
 						<div class="input-group">
-							<input fieldName="Name" idError='wwu-error-phone' fieldType="phone" isRequired="required" type="text" name="name" placeholder="Telefone">
+							<input fieldName="Telefone" idError='wwu-error-phone' fieldType="phone" isRequired="required" type="text" name="phone" placeholder="Telefone">
 							<span class="error--message message-error-forms" id="wwu-error-phone">Digite um telefone válido !</span>
 						</div>
 					</div>
 					<div class="input-group">
-						<input fieldName="Name" idError='wwu-error-email' fieldType="email" isRequired="required" type="text" name="name" placeholder="Email">
+						<input fieldName="E-mail" idError='wwu-error-email' fieldType="email" isRequired="required" type="text" name="email" placeholder="Email">
 						<span class="error--message message-error-forms" id="wwu-error-email">Digite um email válido !</span>
 					</div>
 					<div class="input-group">
-						<textarea rows="1" fieldName="Name" idError='wwu-error-subject' fieldType="notNull" isRequired="required" type="text" name="name" placeholder="Mensagem"></textarea>
-						<span class="error--message message-error-forms" id="wwu-error-subject">Digite um nome válido !</span>
+						<textarea rows="1" fieldName="Mensagem" idError='wwu-error-subject' fieldType="notNull" isRequired="required" type="text" name="message" placeholder="Mensagem"></textarea>
+						<span class="error--message message-error-forms" id="wwu-error-subject">Digite sua mensagem !</span>
 					</div>
 
 					<div class="checkbox-group">
