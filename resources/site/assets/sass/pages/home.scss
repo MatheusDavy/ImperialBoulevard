@@ -297,10 +297,6 @@
             }
 
             &--list {
-                display: flex;
-                flex-direction: column;
-                gap: 1.4vh;
-                list-style: disc outside;
                 margin-bottom: 11vh;
                 @include fontTemplate(
                     2.4rem,
@@ -309,6 +305,13 @@
                     $light,
                     $Raleway
                 );
+
+                ul{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1.4vh;
+                    list-style: disc outside;
+                }
 
                 li {
                     list-style: disc outside;
@@ -445,7 +448,7 @@
 
     .section_convention {
         position: relative;
-        background-color: $primaryColor;
+        background-color: white;
         &--container {
             padding-left: 15vw;
             display: grid;
@@ -523,6 +526,7 @@
                 position: absolute;
                 left: 0;
                 bottom: 5.8vh;
+                z-index: 2;
                 transform: translateX(-72%);
                 width: 22.3vw;
                 aspect-ratio: 1;
@@ -1555,6 +1559,14 @@
 
         .box_image {
             z-index: 1;
+
+            &::after{
+                content: '';
+                background-color: rgb(35 26 16 / 67%);
+                position: absolute;
+                inset: 0;
+                object-fit: cover;
+            }
         }
 
         @media (max-width: 799px) {

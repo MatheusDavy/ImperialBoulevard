@@ -1,6 +1,6 @@
-<header id="header" class="header">
+<header id="header" class="header" data-animation>
     <div class="header--container">
-        <a href="{{route('site.home')}}">
+        <a href="{{route('site.home')}}" aria-label="Ir para Home">
             <img class="logo" src="{{ asset('site/img/Header/boulevard-logo.png') }}" alt="Logo Boulevard">
         </a>
 

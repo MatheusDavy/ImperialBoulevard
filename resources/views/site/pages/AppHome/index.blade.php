@@ -22,7 +22,7 @@
 				<p class="box_text--description">
 					{!! ignoreTags($firstSection->subtitle) !!}
 				</p>
-				<a href="{{$firstSection->button_link}}" class="box_text--link" aria-label="Ir para a sessão de Saiba Mais">{{$firstSection->button_title}}</a>
+				<a href="{{url()->current()}}/#regiao" class="box_text--link anchor--link" aria-label="Ir para a sessão de Saiba Mais">{{$firstSection->button_title}}</a>
 
 				<a href="" class="box_text--locale">
 					<img src="{{ asset('site/img/Icons/pinner.svg') }}" alt="">
@@ -105,11 +105,11 @@
 				</div>
 			</div>
 
-			<div class="box_image image-block">
+			<div class="box_image image-block overlayer">
 				<img src="{{ assetJson([$thirdSection->folder,$thirdSection->image_right]) }}" alt="{{imgAltJson($thirdSection->image_right)}}" title="{{imgTitleJson($thirdSection->image_right)}}">
 
-				<div class="box-detail">
-					<div class="image-wrap">
+				<div class="box-detail reveal">
+					<div class="image-wrap overlayer">
 						<img src="{{ assetJson([$thirdSection->folder,$thirdSection->image_left]) }}" alt="{{imgAltJson($thirdSection->image_left)}}" title="{{imgTitleJson($thirdSection->image_left)}}">
 					</div>
 				</div>
@@ -305,7 +305,7 @@
 					{!! $sixthSection->description !!}
 				</div>
 
-				<a class="box_text--link" data-animation='up' href="{{$sixthSection->button_link}}">{{$sixthSection->button_text}}</a>
+				<a href="{{route('site.offers')}}" class="box_text--link" data-animation='up' href="{{$sixthSection->button_link}}">{{$sixthSection->button_text}}</a>
 			</div>
 
 			<div class="box_image image-block">
@@ -332,7 +332,7 @@
 					{!! $seventhSection->description !!}
 				</div>
 
-				<a class="box_text--link" data-animation='up' href="{{$seventhSection->button_link}}">{{$seventhSection->button_text}}</a>
+				<a href="{{route('site.offers')}}" class="box_text--link" data-animation='up' href="{{$seventhSection->button_link}}">{{$seventhSection->button_text}}</a>
 			</div>
 
 			<div class="box_image image-block">
