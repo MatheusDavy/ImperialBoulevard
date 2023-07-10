@@ -1,5 +1,6 @@
 // FUNÇÕES/MÓDULOS SITE
 import FormsContact from "../modules/Forms/contact"
+import { isMobile } from '../modules/Utils/variables_functions'
 gsap.registerPlugin(ScrollTrigger);
 
 /*------------ 0 - Const / Variable ---------------*/
@@ -98,7 +99,12 @@ function whatsappIcon(){
 }
 
 /*------------ 4 - Onloads ---------------*/
-// window.onload = () => new AnimationGradient();
+window.onload = () => {
+    if (!isMobile) new AnimationGradient();
+}
+window.onscroll = ()=>{
+    whatsappIcon()
+}
 
 /*------------ 5 Banner Home ---------------*/
 const swiper = new Swiper('.heroBannerSlider', {
@@ -123,13 +129,9 @@ zoomImg.addEventListener('mouseenter', () => {
 });
 zoomImg.addEventListener('mouseleave', () => {
     fp.zoomToFit()
-});
+}); 
 
 /*-------------/ 7 - Animations SVG /-----------*/
-window.onscroll = ()=>{
-    whatsappIcon()
-}
-
 const SVGSToBeAnimated = document.querySelectorAll('.svg-path-animate')
 SVGSToBeAnimated.forEach(svg =>{
   gsap.to(svg, {
@@ -144,4 +146,3 @@ SVGSToBeAnimated.forEach(svg =>{
 })
 
 /*-------------/ 8 - Button Whatsapp /-----------*/
-
