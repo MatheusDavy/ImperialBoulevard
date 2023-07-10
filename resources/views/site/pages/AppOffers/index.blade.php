@@ -15,35 +15,21 @@
     <div class="section_folders">
         <div class="section_folders--container">
             <div class="box_description">
-                <p>Aqui você tem acesso a todas as informações para tomar a sua decisão com segurança. Tudo de acordo com a legislação, antes e depois da sua compra.</p>
+                <p>{!! $texto->description !!}</p>
             </div>
 
             <div class="box_folders">
                 <h2 class="box_folders--title">ÚLTIMAS OFERTAS</h2>
                 <div class='box_folders--grid'>
-                    <a href='' download class='card'>
-                        <img src="{{ asset('site/img/Icons/folder.svg') }}" alt="Folder">
-                        B.(ANEXO I)
-                        CONTRATO DE VENDA E COMPRA
-                    </a>
-
-                    <a href='' download class='card'>
-                        <img src="{{ asset('site/img/Icons/folder.svg') }}" alt="Folder">
-                        C.(ANEXO I)
-                        QUADRO RESUMO
-                    </a>
-
-                    <a href='' download class='card'>
-                        <img src="{{ asset('site/img/Icons/folder.svg') }}" alt="Folder">
-                        C.(ANEXO I)
-                        QUADRO RESUMO
-                    </a>
-
-                    <a href='' download class='card'>
-                        <img src="{{ asset('site/img/Icons/folder.svg') }}" alt="Folder">
-                        B.(ANEXO I)
-                        CONTRATO DE VENDA E COMPRA
-                    </a>
+                    @foreach ($lista as $card)
+                    @if ($loop->iteration == 5)
+                        @break
+                    @endif
+                        <a href={{assetJson([$card->folder, $card->file])}} download class='card'>
+                            <img src="{{ asset('site/img/Icons/folder.svg') }}" alt="Folder">
+                            {{$card->title}}
+                        </a>
+                    @endforeach
                 </div>
             </div>
         </div>
@@ -51,95 +37,23 @@
 
     <div class="section_questions" data-appearBackToTop>
         <div class="section_questions--container">
+            @foreach ($lista as $card)
             <div class="section_questions--card">
                 <button class="question button-questions">
                     <img src="{{ asset('site/img/Icons/arrow-down.svg') }}" alt="">
-                    A. (ANEXO I) CONTRATO DE LOCAÇÃO
+                    {{$card->title}}
                 </button>
                 <div class="response">
-                    <a href="" download class="response--folder">
+                    <a href={{assetJson([$card->folder, $card->file])}} download class="response--folder">
                         <img src="{{ asset('site/img/Icons/folder-download.svg') }}" alt="">
-
-                        <span class="date">29/06/2023</span>
+                        <span class="date">{{$card->created}}</span>
                     </a>
-
                     <p class="response--description">
-                        Lorem Ipsum tem sido o texto fictício padrão da indústria desde os anos 1500, quando um impressor desconhecido pegou uma galera de tipos e os embaralhou para fazer um livro de espécimes de tipos.
+                        {{$card->description}}
                     </p>
                 </div>
             </div>
-
-            <div class="section_questions--card">
-                <button class="question button-questions">
-                    <img src="{{ asset('site/img/Icons/arrow-down.svg') }}" alt="">
-                    A. (ANEXO I) CONTRATO DE LOCAÇÃO
-                </button>
-                <div class="response">
-                    <a href="" download class="response--folder">
-                        <img src="{{ asset('site/img/Icons/folder-download.svg') }}" alt="">
-
-                        <span class="date">29/06/2023</span>
-                    </a>
-
-                    <p class="response--description">
-                        Lorem Ipsum tem sido o texto fictício padrão da indústria desde os anos 1500, quando um impressor desconhecido pegou uma galera de tipos e os embaralhou para fazer um livro de espécimes de tipos.
-                    </p>
-                </div>
-            </div>
-
-            <div class="section_questions--card">
-                <button class="question button-questions">
-                    <img src="{{ asset('site/img/Icons/arrow-down.svg') }}" alt="">
-                    B.(ANEXO I) CONTRATO DE VENDA E COMPRA
-                </button>
-                <div class="response">
-                    <a href="" download class="response--folder">
-                        <img src="{{ asset('site/img/Icons/folder-download.svg') }}" alt="">
-
-                        <span class="date">29/06/2023</span>
-                    </a>
-
-                    <p class="response--description">
-                        Lorem Ipsum tem sido o texto fictício padrão da indústria desde os anos 1500, quando um impressor desconhecido pegou uma galera de tipos e os embaralhou para fazer um livro de espécimes de tipos.
-                    </p>
-                </div>
-            </div>
-
-            <div class="section_questions--card">
-                <button class="question button-questions">
-                    <img src="{{ asset('site/img/Icons/arrow-down.svg') }}" alt="">
-                    C. (ANEXO I) QUADRO RESUMO
-                </button>
-                <div class="response">
-                    <a href="" download class="response--folder">
-                        <img src="{{ asset('site/img/Icons/folder-download.svg') }}" alt="">
-
-                        <span class="date">29/06/2023</span>
-                    </a>
-
-                    <p class="response--description">
-                        Lorem Ipsum tem sido o texto fictício padrão da indústria desde os anos 1500, quando um impressor desconhecido pegou uma galera de tipos e os embaralhou para fazer um livro de espécimes de tipos.
-                    </p>
-                </div>
-            </div>
-
-            <div class="section_questions--card">
-                <button class="question button-questions">
-                    <img src="{{ asset('site/img/Icons/arrow-down.svg') }}" alt="">
-                    A. (ANEXO I) CONTRATO DE LOCAÇÃO
-                </button>
-                <div class="response">
-                    <a href="" download class="response--folder">
-                        <img src="{{ asset('site/img/Icons/folder-download.svg') }}" alt="">
-
-                        <span class="date">29/06/2023</span>
-                    </a>
-
-                    <p class="response--description">
-                        Lorem Ipsum tem sido o texto fictício padrão da indústria desde os anos 1500, quando um impressor desconhecido pegou uma galera de tipos e os embaralhou para fazer um livro de espécimes de tipos.
-                    </p>
-                </div>
-            </div>
+            @endforeach
         </div>
 
         @include('site.components.Fixed.back_to_top')
