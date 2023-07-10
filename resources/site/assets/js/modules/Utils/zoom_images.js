@@ -12,7 +12,7 @@
 ////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////
 
-export default function zoomImages() {
+export default function ZoomImages() {
     /*------------------ 0 - functions ---------------*/
     function addSourceToImageModal(imageClicked) {
         const sourceImage = imageClicked.dataset.src

@@ -1,0 +1,22 @@
+#whatsapp-link{
+    position: fixed;
+    z-index: 100;
+
+    right: 3vw;
+    bottom: 3vw;
+
+    opacity: 0;
+    pointer-events: none;
+    transition: $transition;
+
+    &.show-button{
+        opacity: 1;
+        pointer-events: none;
+    }
+
+    img{
+        width: 10.6vh;
+        object-fit: contain;
+        height: auto;
+    }
+}

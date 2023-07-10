@@ -1,4 +1,3 @@
-import { setSmoothScrollTo } from "../Utils/variables_functions"
 /*
     SUMMARY
     0 - AUTO YEAR
@@ -22,10 +21,5 @@ export default function Footer() {
         }else{
             anchor.classList.remove('animated')
         }
-    })
-
-    anchor.addEventListener('click', (event)=>{
-        event.preventDefault()
-        setSmoothScrollTo(0, 0, 1000)
     })
 }

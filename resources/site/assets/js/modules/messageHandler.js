@@ -1,20 +1,21 @@
 export default class MessageHandler {
 
-    static showSuccessMessage(message = ''){}
-
-    static showFailMessage(message = 'Preencha todos os Campos'){
-        $('.fail-message').html( `<div class='danger-box'><i class='fa-solid fa-circle-xmark'></i> <span> ${message} </div>` );
-        $('.fail-message').fadeIn(1500, () => {
-            $('.fail-message').fadeOut(1500);
-        });
-        $('.success-message').fadeOut(1500);
+    static showFailMessage(id, showModal = true){
+        let errorMessage =  document.getElementById(id)
+        $('.show--error').removeClass('show--error');
+        errorMessage.parentNode.classList.add("show--error")
+        if(showModal) this.showErrorModal(id)
     }
 
-    static showFormSuccessMessage(message = ''){}
+    static showErrorModal(id){
+        const message =  document.getElementById(id).innerHTML
+        const modal = document.getElementById('error-message-forms')
+        const modalDescription = document.querySelector('#error-message-forms .description')
 
-    static showFormFailMessage(element, elementClass = 'activate', message = ''){
-        $(element).addClass(elementClass);
+        modalDescription.innerHTML = message
+        modal.classList.add("open-modal")
     }
+
 
     static removeAllFormFailMessages(selector = ".message-error-removed", elementClass = 'activate'){
         const inputGroup = document.querySelectorAll(selector);

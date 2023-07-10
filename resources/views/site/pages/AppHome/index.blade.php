@@ -1,14 +1,14 @@
 @extends('site.layout.app')
 @section('content')
-<section id="page-home" id='topo'>
+<section id="page-home">
 	<div class="section_herobanner" id="inicio">
 		<div class="section_herobanner--container">
 			<div class="box_slider swiper heroBannerSlider">
 				<div class="swiper-wrapper">
 					@foreach ($firstSection->gallery as $gallery)
-						<div class="swiper-slide box_slider--content">
-							<img src="{{ assetJson([$firstSection->folder,$gallery->image]) }}" alt="{{imgAltJson($gallery->image)}}" title="{{imgTitleJson($gallery->image)}}">
-						</div>	
+					<div class="swiper-slide box_slider--content">
+						<img src="{{ assetJson([$firstSection->folder,$gallery->image]) }}" alt="{{imgAltJson($gallery->image)}}" title="{{imgTitleJson($gallery->image)}}">
+					</div>
 					@endforeach
 				</div>
 			</div>
@@ -33,6 +33,8 @@
 				<canvas class="section_herobanner--background"></canvas>
 			</div>
 		</div>
+
+		@include('site.components.Fixed.next_section')
 	</div>
 
 	<div class="section_region" id="regiao">
@@ -41,10 +43,10 @@
 			<div class="box_grid box_grid--one">
 				<div class="box_text">
 					<div class="grid-one">
-						<span class="box_text--text">{{$secondSection->above_title}}</span>
-						<h2 class="box_text--title">{{ $secondSection->title }}</h2>
+						<span class="box_text--text" data-animation>{{$secondSection->above_title}}</span>
+						<h2 class="box_text--title" data-animation='right'>{{ $secondSection->title }}</h2>
 
-						<div class="box_text--list">
+						<div class="box_text--list" data-animation>
 							{!! $secondSection->description !!}
 						</div>
 					</div>
@@ -67,20 +69,38 @@
 					<img src="{{ assetJson([$secondSection->folder,$secondSection->image_right]) }}" alt="{{imgAltJson($secondSection->image_right)}}" title="{{imgTitleJson($secondSection->image_right)}}">
 				</div>
 			</div>
+
+			<div class="box_grid_mobile">
+				<div class="box_grid_mobile--image image-block reveal">
+					<div class="image-wrap">
+						<img src="{{ assetJson([$secondSection->folder,$secondSection->image_top]) }}" alt="{{imgAltJson($secondSection->image_top)}}" title="{{imgTitleJson($secondSection->image_top)}}">
+					</div>
+				</div>
+				<div class="box_grid_mobile--image image-block reveal">
+					<div class="image-wrap">
+						<img src="{{ assetJson([$secondSection->folder,$secondSection->image_bottom]) }}" alt="{{imgAltJson($secondSection->image_bottom)}}" title="{{imgTitleJson($secondSection->image_bottom)}}">
+					</div>
+				</div>
+				<div class="box_grid_mobile--image image-block reveal">
+					<div class="image-wrap">
+						<img src="{{ assetJson([$secondSection->folder,$secondSection->image_right]) }}" alt="{{imgAltJson($secondSection->image_right)}}" title="{{imgTitleJson($secondSection->image_right)}}">
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 
 	<div class="section_convention" id="boulevard-convention">
 		<div class="section_convention--container">
 			<div class="box_text">
-				<span class="box_text--text">{{ $thirdSection->above_title }}</span>
-				<h2 class="box_text--title">{{ $thirdSection->title }}</h2>
+				<span class="box_text--text" data-animation>{{ $thirdSection->above_title }}</span>
+				<h2 class="box_text--title" data-animation='right'>{{ $thirdSection->title }}</h2>
 
-				<p class="box_text--description">
+				<p class="box_text--description" data-animation='left'>
 					{{ $thirdSection->subtitle }}
 				</p>
 
-				<div class="box_text--list">
+				<div class="box_text--list" data-animation>
 					{!! $thirdSection->description !!}
 				</div>
 			</div>
@@ -101,7 +121,7 @@
 		<div class="section_about--container">
 			<div class="box_grid box_grid--one">
 				<div class="box_text">
-					<svg class="box_text--logo svg-path-animate" width="458" height="86" viewBox="0 0 458 86" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<svg data-animation='up' class="box_text--logo" width="458" height="86" viewBox="0 0 458 86" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<mask id="mask0_145_358" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="458" height="86">
 							<path d="M458 0.80542H0V85.4996H458V0.80542Z" fill="white" />
 						</mask>
@@ -138,7 +158,7 @@
 						</g>
 					</svg>
 
-					<div class="box_text--description">
+					<div class="box_text--description" data-animation>
 						{!! $fourthSection->description_1 !!}
 					</div>
 
@@ -149,7 +169,7 @@
 				</div>
 
 			</div>
-			<div class="box_grid box_grid--two">
+			<div class="box_grid box_grid--two" data-animation='left'>
 				<div class="box_card box_card--one">
 					<p class="box_card--description">
 						{!! ignoreTags($fourthSection->description_2) !!}
@@ -157,7 +177,7 @@
 				</div>
 
 
-				<div class="box_card  box_card--two">
+				<div class="box_card  box_card--two" data-animation='right'>
 					<img class="box_card--logo" src="{{ asset('site/img/Home/Banner/logo-text.png') }}" />
 					<p class="box_card--description">
 						{!! ignoreTags($fourthSection->subtitle_2) !!}
@@ -180,65 +200,93 @@
 		<div class="section_differential--container">
 			<div class="box_text">
 				<div class="box_grid box_grid--one">
-					<h2 class="box_text--title">{{$fifthSection->title}}</h2>
+					<h2 class="box_text--title" data-animation='right'>{{$fifthSection->title}}</h2>
 					<div class="details details--line"></div>
 				</div>
-				<div class="box_grid box_grid--one">
+				<div class="box_grid box_grid--one" data-animation>
 					<p class="box_text--description">
 						{!! ignoreTags($fifthSection->subtitle) !!}
 					</p>
 				</div>
 			</div>
 
-			<div class="box_image">
-				<div class="box_image--grid-one">
+			<div class="box_image_desktop" data-animation='up'>
+				<div class="box_image_desktop--grid-one">
 					<div class="item-one">
 						@php $gallery = $fifthSection->gallery @endphp
 						@if (isset($gallery[0]) && $gallery[0])
-							<div class="image-one image-block">
-								@include('site.components.ImagesDiferencias', ['gallery' => $gallery[0]])
-							</div>
+						<div class="image-one image-block">
+							@include('site.components.ImagesDiferencias', ['gallery' => $gallery[0]])
+						</div>
 						@endif
 						@if (isset($gallery[1]) && $gallery[1])
-							<div class="image-two image-block">
-								@include('site.components.ImagesDiferencias', ['gallery' => $gallery[1]])
-							</div>
+						<div class="image-two image-block">
+							@include('site.components.ImagesDiferencias', ['gallery' => $gallery[1]])
+						</div>
 						@endif
 					</div>
 					<div class="item-two">
 						@if (isset($gallery[2]) && $gallery[2])
-							<div class="image-one image-block">
-								@include('site.components.ImagesDiferencias', ['gallery' => $gallery[2]])
-							</div>
+						<div class="image-one image-block">
+							@include('site.components.ImagesDiferencias', ['gallery' => $gallery[2]])
+						</div>
 						@endif
 						@if (isset($gallery[3]) && $gallery[3])
-							<div class="image-two image-block">
-								@include('site.components.ImagesDiferencias', ['gallery' => $gallery[3]])
-							</div>
+						<div class="image-two image-block">
+							@include('site.components.ImagesDiferencias', ['gallery' => $gallery[3]])
+						</div>
 						@endif
 					</div>
 				</div>
 
-				<div class="box_image--grid-two">
+				<div class="box_image_desktop--grid-two">
 					<div class="item-one">
 						@if (isset($gallery[4]) && $gallery[4])
-							<div class="image-one image-block">
-								@include('site.components.ImagesDiferencias', ['gallery' => $gallery[4]])
-							</div>
+						<div class="image-one image-block">
+							@include('site.components.ImagesDiferencias', ['gallery' => $gallery[4]])
+						</div>
 						@endif
 						@if (isset($gallery[5]) && $gallery[5])
-							<div class="image-two image-block">
-								@include('site.components.ImagesDiferencias', ['gallery' => $gallery[5]])
-							</div>
+						<div class="image-two image-block">
+							@include('site.components.ImagesDiferencias', ['gallery' => $gallery[5]])
+						</div>
 						@endif
 					</div>
 					<div class="item-two">
 						@if (isset($gallery[6]) && $gallery[6])
-							<div class="image image-block">
-								@include('site.components.ImagesDiferencias', ['gallery' => $gallery[6]])
-							</div>
+						<div class="image image-block">
+							@include('site.components.ImagesDiferencias', ['gallery' => $gallery[6]])
+						</div>
 						@endif
 					</div>
+				</div>
+			</div>
+
+			<div class="box_image_mobile" data-animation='up'>
+				<div class="image-one image-block">
+					@include('site.components.ImagesDiferencias', ['gallery' => $gallery[0]])
+				</div>
+				<div class="box_image_mobile--grid-one">
+					<div class="image-two image-block">
+						@include('site.components.ImagesDiferencias', ['gallery' => $gallery[1]])
+					</div>
+					<div class="image-three image-block">
+						@include('site.components.ImagesDiferencias', ['gallery' => $gallery[2]])
+					</div>
+				</div>
+				<div class="box_image_mobile--grid-two">
+					<div class="image-four image-block">
+						@include('site.components.ImagesDiferencias', ['gallery' => $gallery[3]])
+					</div>
+					<div class="image-five image-block">
+						@include('site.components.ImagesDiferencias', ['gallery' => $gallery[4]])
+					</div>
+					<div class="image-six image-block">
+						@include('site.components.ImagesDiferencias', ['gallery' => $gallery[5]])
+					</div>
+				</div>
+				<div class="image-seven image-block">
+					@include('site.components.ImagesDiferencias', ['gallery' => $gallery[0]])
 				</div>
 			</div>
 		</div>
@@ -248,16 +296,16 @@
 	<div class="section_investing" id="invista">
 		<div class="section_investing--container">
 			<div class="box_text">
-				<span class="box_text--text">{{$sixthSection->above_title}}</span>
-				<h2 class="box_text--title">
+				<span class="box_text--text" data-animation>{{$sixthSection->above_title}}</span>
+				<h2 class="box_text--title" data-animation='right'>
 					{!! ignoreTags($sixthSection->title) !!}
 				</h2>
 
-				<div class="box_text--description">
+				<div class="box_text--description" data-animation>
 					{!! $sixthSection->description !!}
 				</div>
 
-				<a class="box_text--link" href="{{$sixthSection->button_link}}">{{$sixthSection->button_text}}</a>
+				<a class="box_text--link" data-animation='up' href="{{$sixthSection->button_link}}">{{$sixthSection->button_text}}</a>
 			</div>
 
 			<div class="box_image image-block">
@@ -272,19 +320,19 @@
 		</div>
 	</div>
 
-	<div class="section_events">
+	<div class="section_events" id="eventos">
 		<div class="section_events--container">
 			<div class="box_text">
-				<span class="box_text--text">{{$seventhSection->above_title}}</span>
-				<h2 class="box_text--title">
+				<span class="box_text--text" data-animation>{{$seventhSection->above_title}}</span>
+				<h2 class="box_text--title" data-animation='right'>
 					{!! ignoreTags($seventhSection->title) !!}
 				</h2>
 
-				<div class="box_text--description">
+				<div class="box_text--description" data-animation>
 					{!! $seventhSection->description !!}
 				</div>
 
-				<a class="box_text--link" href="{{$seventhSection->button_link}}">{{$seventhSection->button_text}}</a>
+				<a class="box_text--link" data-animation='up' href="{{$seventhSection->button_link}}">{{$seventhSection->button_text}}</a>
 			</div>
 
 			<div class="box_image image-block">
@@ -303,57 +351,25 @@
 		<div class="section_contact--container">
 			<div class="box_grid">
 				<div class="box_text">
-					<span class="box_text--text">VAMOS CONVERSAR</span>
-					<h2 class="box_text--title">
+					<span class="box_text--text" data-animation>VAMOS CONVERSAR</span>
+					<h2 class="box_text--title" data-animation='right'>
 						ENTRE EM CONTATO
 					</h2>
 
-					<div class="box_text--description">
+					<div class="box_text--description" data-animation>
 						<p>Use o formulário abaixo para entrar em contato conosco ou apenas para dizer Olá!</p>
 					</div>
 				</div>
-				<form action="">
-					<div class="box_grid">
-						<div class="input-group">
-							<input fieldName="Name" idError='wwu-error-name' fieldType="name" isRequired="required" type="text" name="name" placeholder="Nome">
-							<span class="error--message message-error-forms" id="wwu-error-name">Digite um nome válido !</span>
-						</div>
-						<div class="input-group">
-							<input fieldName="Telefone" idError='wwu-error-phone' fieldType="phone" isRequired="required" type="text" name="phone" placeholder="Telefone">
-							<span class="error--message message-error-forms" id="wwu-error-phone">Digite um telefone válido !</span>
-						</div>
-					</div>
-					<div class="input-group">
-						<input fieldName="E-mail" idError='wwu-error-email' fieldType="email" isRequired="required" type="text" name="email" placeholder="Email">
-						<span class="error--message message-error-forms" id="wwu-error-email">Digite um email válido !</span>
-					</div>
-					<div class="input-group">
-						<textarea rows="1" fieldName="Mensagem" idError='wwu-error-subject' fieldType="notNull" isRequired="required" type="text" name="message" placeholder="Mensagem"></textarea>
-						<span class="error--message message-error-forms" id="wwu-error-subject">Digite sua mensagem !</span>
-					</div>
-
-					<div class="checkbox-group">
-						<div class="checkbox">
-
-						</div>
-						<label for="checkbox">Ao informar meus dados, eu concordo com a <a href="">Política de Privacidade</a> e com os <a href="">Termos de Uso</a>.</label>
-					</div>
-
-					<button type="submit" class="btn-submit">ENVIAR</button>
-				</form>
+				@include('site.components.Forms.forms_contact')
 			</div>
 			<div class="box_image image-block">
-				<img src="{{ asset('site/img/Home/Contact/image-1.png') }}" alt="">
+				<img data-animation src="{{ asset('site/img/Home/Contact/image-1.png') }}" alt="">
 			</div>
 		</div>
 
 		@include('site.components.Fixed.back_to_top')
 	</div>
-
 </section>
-
-
-
 @endsection
 
 @section('js')

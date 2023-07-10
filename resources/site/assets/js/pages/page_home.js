@@ -1,7 +1,7 @@
 // FUNÇÕES/MÓDULOS SITE
-import initCarousel from '../modules/initCarousel';
-
-initCarousel();
+import FormsContact from "../modules/Forms/contact"
+import { isMobile } from '../modules/Utils/variables_functions'
+gsap.registerPlugin(ScrollTrigger);
 
 /*------------ 0 - Const / Variable ---------------*/
 
@@ -84,27 +84,27 @@ class Circle {
 }
 
 /*------------ 2 - Functions ---------------*/
-function animateSVG(element) {
-    anime({
-        targets: `${element} path`,
-        strokeDashoffset: [anime.setDashoffset, 0],
-        easing: 'easeInOutSine',
-        duration: 2000,
-        delay: 0,
-        loop: false
-    });
+FormsContact()
 
-    anime({
-        targets: element,
-        easing: 'easeInOutSine',
-        duration: 1000,
-        delay: 0,
-        loop: false
-    });
+function whatsappIcon(){
+    const button = document.getElementById('whatsapp-link')
+    const sectionToAppear = document.getElementById('inicio').offsetTop + (window.screen.height * 0.2)
+    const sectionToDisappear = document.getElementById('eventos').offsetTop
+    const scroll = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+    if(sectionToAppear < scroll && scroll < sectionToDisappear){
+        button.classList.add('show-button')
+    }else{
+        button.classList.remove('show-button')
+    }
 }
 
 /*------------ 4 - Onloads ---------------*/
-// window.onload = () => new AnimationGradient();
+window.onload = () => {
+    if (!isMobile) new AnimationGradient();
+}
+window.onscroll = ()=>{
+    whatsappIcon()
+}
 
 /*------------ 5 Banner Home ---------------*/
 const swiper = new Swiper('.heroBannerSlider', {
@@ -129,13 +129,20 @@ zoomImg.addEventListener('mouseenter', () => {
 });
 zoomImg.addEventListener('mouseleave', () => {
     fp.zoomToFit()
-});
+}); 
 
 /*-------------/ 7 - Animations SVG /-----------*/
-window.onscroll = ()=>{
-    const SVGSToBeAnimated = document.querySelectorAll('.svg-path-animate')
-    SVGSToBeAnimated.forEach(svg => {
-        
-    })
-}
+const SVGSToBeAnimated = document.querySelectorAll('.svg-path-animate')
+SVGSToBeAnimated.forEach(svg =>{
+  gsap.to(svg, {
+    scrollTrigger: {
+      trigger: svg,
+      start: "top 90%",
+    },
+    duration: 3,
+    delay: 3,
+    filter: 'grayscale(0%)'
+  });
+})
 
+/*-------------/ 8 - Button Whatsapp /-----------*/

@@ -1,4 +1,4 @@
-export const isMobile = window.screen.width < 999 ? true : false
+export const isMobile = window.screen.width < 799 ? true : false
 
 export function setSmoothScrollTo(endX, endY, duration) {
     const startX = window.scrollX || window.pageXOffset;
@@ -24,4 +24,9 @@ export function setSmoothScrollTo(endX, endY, duration) {
         }
         window.scroll(newX, newY);
     }, 1000 / 60);
+}
+
+export function anchorVerify(id){
+    var targetOffset = document.getElementById(id).offsetTop
+    setSmoothScrollTo(0, targetOffset, 1000)
 }
