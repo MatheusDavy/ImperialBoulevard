@@ -362,6 +362,7 @@
                 </h2>
 
                 <div class="box_text--description" data-animation>
+					{!! $seventhSection->subtitle !!}
                     {!! $seventhSection->description !!}
                 </div>
 
