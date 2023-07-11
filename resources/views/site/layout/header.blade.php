@@ -4,7 +4,7 @@
             <img class="logo" src="{{ asset('site/img/Header/boulevard-logo.png') }}" alt="Logo Boulevard">
         </a>
 
-        <button class="menu-button">
+        <button class="menu-button" aria-label="Abrir/Fechar o Menu">
             <span></span>
             <span></span>
             <span></span>

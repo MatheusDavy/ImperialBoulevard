@@ -44,10 +44,7 @@
                     display: flex;
                     align-items: center;
                     gap: 1.46vw;
-                }
 
-                a {
-                    text-decoration: none;
                     @include fontTemplate(
                         2rem,
                         1.4,
@@ -55,6 +52,10 @@
                         $medium,
                         $Raleway
                     );
+                }
+
+                a {
+                    text-decoration: none;
                 }
 
                 .icon {
@@ -193,9 +194,6 @@
                     li {
                         justify-content: center;
                         gap: 10px;
-                    }
-
-                    a {
                         font-size: 1.6rem;
                     }
 

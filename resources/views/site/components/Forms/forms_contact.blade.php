@@ -20,7 +20,7 @@
 
     <div class="checkbox-group">
         <div class="checkbox" style="font-size: 3vmin">
-            <input type="checkbox" required/>
+            <input type="checkbox" name="checkbox" aria-label="Checkbox" required/>
             <div class="check"></div>
         </div>
         <label for="checkbox">Ao informar meus dados, eu concordo com a <a href="">Política de Privacidade</a> e com os <a href="">Termos de Uso</a>.</label>

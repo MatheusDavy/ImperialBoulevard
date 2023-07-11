@@ -18,14 +18,14 @@
                 <div class="style style_one">
 
 				</div>
-				<img class="box_text--logo" src="{{ asset('site/img/Home/Banner/logo-text.png') }}" />
+				<img class="box_text--logo" src="{{ asset('site/img/Home/Banner/logo-text.png') }}" alt="Logo Meeting Plus"/>
 				<p class="box_text--description">
 					{!! ignoreTags($firstSection->subtitle) !!}
 				</p>
 				<a href="{{url()->current()}}/#regiao" class="box_text--link anchor--link" aria-label="Ir para a sessão de Saiba Mais">{{$firstSection->button_title}}</a>
 
                 <a href="" class="box_text--locale">
-                    <img loading="lazy" src="{{ asset('site/img/Icons/pinner.svg') }}" alt="">
+                    <img loading="lazy" src="{{ asset('site/img/Icons/pinner.svg') }}" alt="Icone - Piner">
                     <span style="opacity: 0.6;">{{$firstSection->location}}</span>
                 </a>
                 <div class="style style_two"></div>
@@ -196,7 +196,7 @@
 
 
                 <div class="box_card  box_card--two" data-animation='right'>
-                    <img loading="lazy" class="box_card--logo" src="{{ asset('site/img/Home/Banner/logo-text.png') }}" />
+                    <img loading="lazy" class="box_card--logo" src="{{ asset('site/img/Home/Banner/logo-text.png') }}" alt="Logo Meeting Plus" />
                     <p class="box_card--description">
                         {!! ignoreTags($fourthSection->subtitle_2) !!}
                     </p>
@@ -374,7 +374,7 @@
 
                 <div class="box-detail reveal">
                     <div class="image-wrap">
-                        <img src="{{ asset('site/img/Home/Investing/Logo.png') }}" alt="">
+                        <img src="{{ asset('site/img/Home/Investing/Logo.png') }}" alt="Logo Boulevard">
                     </div>
                 </div>
             </div>
