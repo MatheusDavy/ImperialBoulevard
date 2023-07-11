@@ -27,7 +27,7 @@
 
         &--title {
             margin-bottom: 4.2vh;
-            @include fontTemplate(2.4rem, 1, $primaryColor, $bold, $Raleway);
+            @include fontTemplate(2rem, 1, $primaryColor, $bold, $Raleway);
             text-transform: uppercase;
         }
 
@@ -36,7 +36,7 @@
             ul {
                 display: flex;
                 flex-direction: column;
-                gap: 3.7vh;
+                gap: 4vh;
                 margin: 0;
                 padding: 0;
 
@@ -49,7 +49,7 @@
                 a {
                     text-decoration: none;
                     @include fontTemplate(
-                        2.4rem,
+                        2rem,
                         1.4,
                         $primaryColor,
                         $medium,
@@ -58,7 +58,7 @@
                 }
 
                 .icon {
-                    width: 1.6vw;
+                    width: 1.3vw;
                     height: auto;
                     object-fit: contain;
                 }
@@ -104,7 +104,7 @@
         align-items: end;
 
         &--main {
-            width: 27.5vw;
+            width: 22.5vw;
             height: auto;
             object-fit: contain;
         }
@@ -119,13 +119,13 @@
                 object-fit: contain;
 
                 &:nth-child(1) {
-                    width: 7.6vw;
+                    width: 6.6vw;
                 }
                 &:nth-child(2) {
-                    width: 9vw;
+                    width: 8vw;
                 }
                 &:nth-child(3) {
-                    width: 3.5vw;
+                    width: 2.5vw;
                 }
             }
         }

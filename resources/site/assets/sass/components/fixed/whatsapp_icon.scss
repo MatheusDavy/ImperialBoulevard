@@ -7,13 +7,15 @@
 
     opacity: 0;
     transition: $transition;
+    pointer-events: none;
 
     &.show-button{
         opacity: 1;
+        pointer-events: all;
     }
 
     img{
-        width: 8.6vh;
+        width: 9.6vh;
         object-fit: contain;
         height: auto;
     }

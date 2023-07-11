@@ -35,9 +35,19 @@
                 </div>
             </div>
         </div>
+
+        <svg class="lines lines--one" xmlns="http://www.w3.org/2000/svg" width="2" height="1080" viewBox="0 0 2 1080" fill="none">
+            <path d="M1 0V1080" stroke="#F1F1F1" stroke-opacity="0.3" />
+        </svg>
+        <svg class="lines lines--two" xmlns="http://www.w3.org/2000/svg" width="2" height="1080" viewBox="0 0 2 1080" fill="none">
+            <path d="M1 0V1080" stroke="#F1F1F1" stroke-opacity="0.3" />
+        </svg>
+        <svg class="lines lines--three" xmlns="http://www.w3.org/2000/svg" width="2" height="1080" viewBox="0 0 2 1080" fill="none">
+            <path d="M1 0V1080" stroke="#F1F1F1" stroke-opacity="0.3" />
+        </svg>
     </div>
 
-    <div class="section_questions" data-appearBackToTop data-sequencial>
+    <div class="section_questions" id="questions" data-appearBackToTop data-sequencial>
         <div class="section_questions--container">
             @foreach ($lista as $card)
             <div class="section_questions--card" data-sequencial-stagger="right">
@@ -60,6 +70,10 @@
 
         @include('site.components.Fixed.back_to_top')
     </div>
+
+    <svg class="line--continuous" xmlns="http://www.w3.org/2000/svg" width="2" height="1080" viewBox="0 0 2 1080" fill="none">
+        <path d="M1 0V1080" stroke="#F1F1F1" stroke-opacity="0.3" />
+    </svg>
 </section>
 @endsection
 
