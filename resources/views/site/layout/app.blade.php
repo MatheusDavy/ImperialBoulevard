@@ -25,8 +25,6 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <!-- SCROLL -->
     <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
-    <!-- ANIME SVG -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     @if (isset($gtm) && $gtm)
     <script>
@@ -57,8 +55,6 @@
     <link rel="shortcut icon" href="{{ asset('site/img/favicon.ico') }}" />
     <input hidden type="text" id="recaptcha" value="{{$recaptcha}}">
 
-    <!-- <link href="{{ asset(mix('site/css/vendor.css')) }}" rel="stylesheet">
-    <link href="{{ asset(mix('site/css/plugins/cropper.css')) }}" rel="stylesheet"> -->
     <link href="{{ asset('site/css/main.css') }}" rel="stylesheet">
 
 </head>
