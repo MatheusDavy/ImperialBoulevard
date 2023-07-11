@@ -24,7 +24,7 @@
 				</p>
 				<a href="{{url()->current()}}/#regiao" class="box_text--link anchor--link" aria-label="Ir para a sessão de Saiba Mais">{{$firstSection->button_title}}</a>
 
-                <a href="" class="box_text--locale">
+                <a href="{{$socials->google_maps_link}}" class="box_text--locale">
                     <img loading="lazy" src="{{ asset('site/img/Icons/pinner.svg') }}" alt="Icone - Piner">
                     <span style="opacity: 0.6;">{{$firstSection->location}}</span>
                 </a>
