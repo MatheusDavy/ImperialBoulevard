@@ -9,9 +9,9 @@
 						<svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path id="Vector" d="M23.8606 2.54337C24.1433 1.85684 23.9817 1.06647 23.4567 0.54148C22.9318 0.0164889 22.1414 -0.145047 21.4549 0.137641L1.14749 8.4452C0.328278 8.77981 -0.133253 9.64518 0.0340517 10.5105C0.201357 11.3759 0.962882 11.999 1.84556 11.999H11.9992V22.1527C11.9992 23.0353 12.6223 23.7911 13.4877 23.9642C14.353 24.1372 15.2184 23.6699 15.553 22.8507L23.8606 2.54337Z" fill="#F1F1F1" />
 						</svg>
-
-						{!! ignoreTags($empresa->address) !!}
-
+						<a href="" aria-label="Ver local no Google Maps" target="_blank">
+							{!! ignoreTags($empresa->address) !!}
+						</a>
 					</li>
 					@endif
 					@if ($empresa->email)
