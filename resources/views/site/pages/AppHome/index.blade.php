@@ -24,10 +24,10 @@
 				</p>
 				<a href="{{url()->current()}}/#regiao" class="box_text--link anchor--link" aria-label="Ir para a sessão de Saiba Mais">{{$firstSection->button_title}}</a>
 
-                <p class="box_text--locale">
+                <a href="" class="box_text--locale">
                     <img loading="lazy" src="{{ asset('site/img/Icons/pinner.svg') }}" alt="Icone - Piner">
                     <span style="opacity: 0.6;">{{$firstSection->location}}</span>
-                </p>
+                </a>
                 <div class="style style_two"></div>
                 <div class="style style_three"></div>
                 <canvas class="section_herobanner--background"></canvas>
