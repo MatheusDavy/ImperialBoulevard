@@ -37,4 +37,20 @@ body{
     &.block-scroll{
         overflow: hidden !important;
     }
+
+    & {
+        scrollbar-width: auto;
+        scrollbar-color: $accentColor $secondColor;
+    }
+    &::-webkit-scrollbar {
+        width: 3px;
+    }
+    &::-webkit-scrollbar-track {
+        background: $secondColor;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: $accentColor;
+        border-radius: 0px;
+        border: 3px none $secondColor;
+    }
 }
