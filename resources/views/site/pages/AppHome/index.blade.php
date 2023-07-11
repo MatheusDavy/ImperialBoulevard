@@ -7,7 +7,7 @@
                 <div class="swiper-wrapper">
                     @foreach ($firstSection->gallery as $gallery)
                     <div class="swiper-slide box_slider--content">
-                        <img loading="lazy" src="{{ assetJson([$firstSection->folder,$gallery->image]) }}" alt="{{imgAltJson($gallery->image)}}" title="{{imgTitleJson($gallery->image)}}">
+                        <img src="{{ assetJson([$firstSection->folder,$gallery->image]) }}" alt="{{imgAltJson($gallery->image)}}" title="{{imgTitleJson($gallery->image)}}">
                     </div>
                     @endforeach
                 </div>
