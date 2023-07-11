@@ -9,7 +9,12 @@
         width: 10.6vh;
         object-fit: contain;
         height: auto;
-
+        #Vector{
+            animation: drop 1.3s infinite 0.1s;
+        }
+        #Vector_2{
+            animation: drop 1.3s infinite;
+        }
         @media (max-width: 799px) {
             width: 70px !important;
         }

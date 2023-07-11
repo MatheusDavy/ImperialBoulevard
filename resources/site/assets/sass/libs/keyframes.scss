@@ -1,0 +1,11 @@
+
+@keyframes drop {
+    from{
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+    to{
+        transform: translate(0, 10px);
+        opacity: 0;
+    }
+}
