@@ -159,7 +159,7 @@
                     width: -webkit-fill-available;
                     height: -webkit-fill-available;
                     border-left:1px solid  rgb(210 166 113 / 30%);
-        
+
                     &::after{
                         content: '';
                         position: absolute;
@@ -400,6 +400,16 @@
             bottom: 0;
             height: 100% !important;
         }
+        @media (max-width: 799px){
+            .region_line-3{
+                right: 55px;
+            }
+            .region_line-2{
+                right: inherit;
+                left: 10px;
+            }
+        }
+
 
         @media (max-width: 799px) {
             padding-bottom: 63px;
@@ -433,9 +443,9 @@
 
                 &--list {
                     font-size: 1.6rem;
-                    margin-left: 30px;
+                    margin-left: 20px;
                     margin-bottom: 40px;
-
+                    max-width: 80%;
                     ul{
                         display: flex;
                         flex-direction: column;
@@ -817,6 +827,15 @@
         }
 
         @media (max-width: 799px) {
+            .about_line-1{
+                left: 10px;
+            }
+            .about_line-3{
+                display: none;
+            }
+            .about_line-2{
+                top: 46%;
+            }
             .box_grid {
                 grid-template-columns: 1fr;
 
@@ -894,7 +913,7 @@
         background: url(../img/Home/Differentials/bg-overlayer.webp),
             lightgray 50% / cover no-repeat;
         padding-bottom: 12vh;
-       
+
         &--container {
             position: relative;
             z-index: 1;
@@ -1099,9 +1118,24 @@
             left: 35.9vw;
             top: 0;
         }
-
+        .differential_ball-1{
+          display: none;
+        }
         @media (max-width: 799px) {
             padding-bottom: 90px;
+            .differential_line-2{
+                display: none;
+            }
+            .differential_line-1{
+                top: 100px;
+                right: 66px;
+            }
+            .differential_ball-1{
+               position: absolute;
+               top: 85px;
+               right: 54px;
+               display: block;
+              }
             .box_text {
                 grid-template-columns: 1fr;
 
@@ -1412,7 +1446,7 @@
     .section_events {
         position: relative;
         background-color: $secondColor;
-       
+
         &--container {
             padding-left: 15vw;
             display: grid;
@@ -1544,6 +1578,16 @@
         }
 
         @media (max-width: 799px) {
+            .events_line-1{
+                left: 10px;
+            }
+            .events_line-2{
+                right: 10px;
+            }
+            .events_line-3{
+                left: 19px;
+                bottom: 44%;
+            }
             &--container {
                 padding-left: 0vw;
                 display: grid;

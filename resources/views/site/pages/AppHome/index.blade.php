@@ -17,12 +17,12 @@
                 <span class="box_text--text">{{$firstSection->above_title}}</span>
                 <div class="style style_one">
 
-				</div>
-				<img class="box_text--logo" src="{{ asset('site/img/Home/Banner/logo-text.png') }}" alt="Logo Meeting Plus"/>
-				<p class="box_text--description">
-					{!! ignoreTags($firstSection->subtitle) !!}
-				</p>
-				<a href="{{url()->current()}}/#regiao" class="box_text--link anchor--link" aria-label="Ir para a sessão de Saiba Mais">{{$firstSection->button_title}}</a>
+                </div>
+                <img class="box_text--logo" src="{{ asset('site/img/Home/Banner/logo-text.png') }}" alt="Logo Meeting Plus" />
+                <p class="box_text--description">
+                    {!! ignoreTags($firstSection->subtitle) !!}
+                </p>
+                <a href="{{url()->current()}}/#regiao" class="box_text--link anchor--link" aria-label="Ir para a sessão de Saiba Mais">{{$firstSection->button_title}}</a>
 
                 <a href="{{$socials->google_maps_link}}" class="box_text--locale">
                     <img loading="lazy" src="{{ asset('site/img/Icons/pinner.svg') }}" alt="Icone - Piner">
@@ -114,17 +114,17 @@
                 </div>
             </div>
 
-			<div class="box_image image-block overlayer">
-				<img loading="lazy" src="{{ assetJson([$thirdSection->folder,$thirdSection->image_right]) }}" alt="{{imgAltJson($thirdSection->image_right)}}" title="{{imgTitleJson($thirdSection->image_right)}}">
+            <div class="box_image image-block overlayer">
+                <img loading="lazy" src="{{ assetJson([$thirdSection->folder,$thirdSection->image_right]) }}" alt="{{imgAltJson($thirdSection->image_right)}}" title="{{imgTitleJson($thirdSection->image_right)}}">
 
-				<div class="box-detail reveal">
-					<div class="image-wrap overlayer">
-						<img src="{{ assetJson([$thirdSection->folder,$thirdSection->image_left]) }}" alt="{{imgAltJson($thirdSection->image_left)}}" title="{{imgTitleJson($thirdSection->image_left)}}">
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+                <div class="box-detail reveal">
+                    <div class="image-wrap overlayer">
+                        <img src="{{ assetJson([$thirdSection->folder,$thirdSection->image_left]) }}" alt="{{imgAltJson($thirdSection->image_left)}}" title="{{imgTitleJson($thirdSection->image_left)}}">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="section_about" id="meeting-plus">
         <svg class="about_line-1" xmlns="http://www.w3.org/2000/svg" width="2" height="2117" viewBox="0 0 2 2117" fill="none">
@@ -220,6 +220,9 @@
         </svg>
         <svg class="differential_line-2" xmlns="http://www.w3.org/2000/svg" width="2" height="1289" viewBox="0 0 2 1289" fill="none">
             <path opacity="0.3" d="M1 0L0.999944 1289" stroke="#F1F1F1" />
+        </svg>
+        <svg class="differential_ball-1" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+            <circle cx="13" cy="13" r="13" fill="#D2A671" />
         </svg>
         <div class="section_differential--container">
             <div class="box_text">
@@ -329,8 +332,8 @@
                     {!! $sixthSection->description !!}
                 </div>
 
-				<a href="{{route('site.offers')}}" class="box_text--link" data-animation='up'>{{$sixthSection->button_text}}</a>
-			</div>
+                <a href="{{route('site.offers')}}" class="box_text--link" data-animation='up'>{{$sixthSection->button_text}}</a>
+            </div>
 
             <div class="box_image image-block">
                 <img loading="lazy" src="{{ assetJson([$sixthSection->folder,$sixthSection->image_right]) }}" alt="{{imgAltJson($sixthSection->image_right)}}" title="{{imgTitleJson($sixthSection->image_right)}}">
@@ -362,12 +365,12 @@
                 </h2>
 
                 <div class="box_text--description" data-animation>
-					{!! $seventhSection->subtitle !!}
+                    {!! $seventhSection->subtitle !!}
                     {!! $seventhSection->description !!}
                 </div>
 
-				<a href="{{route('site.offers')}}" class="box_text--link" data-animation='up'>{{$seventhSection->button_text}}</a>
-			</div>
+                <a href="{{route('site.offers')}}" class="box_text--link" data-animation='up'>{{$seventhSection->button_text}}</a>
+            </div>
 
             <div class="box_image image-block">
                 <img loading="lazy" src="{{ assetJson([$seventhSection->folder,$seventhSection->image]) }}" alt="{{imgAltJson($seventhSection->image)}}" title="{{imgTitleJson($seventhSection->image)}}">
