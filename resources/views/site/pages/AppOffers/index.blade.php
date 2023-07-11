@@ -51,13 +51,13 @@
         <div class="section_questions--container">
             @foreach ($lista as $card)
             <div class="section_questions--card" data-sequencial-stagger="right">
-                <button class="question button-questions">
+                <button class="question button-questions" aria-label="Ver descrição: {{$card->title}}">
                     <img src="{{ asset('site/img/Icons/arrow-down.svg') }}" alt="">
                     {{$card->title}}
                 </button>
                 <div class="response">
                     <a href={{assetJson([$card->folder, $card->file])}} download class="response--folder">
-                        <img src="{{ asset('site/img/Icons/folder-download.svg') }}" alt="">
+                        <img loading='lazy' src="{{ asset('site/img/Icons/folder-download.svg') }}" alt="">
                         <span class="date">{{formatDateDiaMes($card->created)}}</span>
                     </a>
                     <p class="response--description">
@@ -79,4 +79,4 @@
 
 @section('js')
 <script src="{{ asset('site/js/pages/page_offers.js') }}"></script>
-@endsection
+@endsection 

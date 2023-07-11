@@ -7,7 +7,7 @@
                 <div class="swiper-wrapper">
                     @foreach ($firstSection->gallery as $gallery)
                     <div class="swiper-slide box_slider--content">
-                        <img src="{{ assetJson([$firstSection->folder,$gallery->image]) }}" alt="{{imgAltJson($gallery->image)}}" title="{{imgTitleJson($gallery->image)}}">
+                        <img loading="lazy" src="{{ assetJson([$firstSection->folder,$gallery->image]) }}" alt="{{imgAltJson($gallery->image)}}" title="{{imgTitleJson($gallery->image)}}">
                     </div>
                     @endforeach
                 </div>
@@ -25,7 +25,7 @@
 				<a href="{{url()->current()}}/#regiao" class="box_text--link anchor--link" aria-label="Ir para a sessão de Saiba Mais">{{$firstSection->button_title}}</a>
 
                 <a href="" class="box_text--locale">
-                    <img src="{{ asset('site/img/Icons/pinner.svg') }}" alt="">
+                    <img loading="lazy" src="{{ asset('site/img/Icons/pinner.svg') }}" alt="">
                     <span style="opacity: 0.6;">{{$firstSection->location}}</span>
                 </a>
                 <div class="style style_two"></div>
@@ -115,7 +115,7 @@
             </div>
 
 			<div class="box_image image-block overlayer">
-				<img src="{{ assetJson([$thirdSection->folder,$thirdSection->image_right]) }}" alt="{{imgAltJson($thirdSection->image_right)}}" title="{{imgTitleJson($thirdSection->image_right)}}">
+				<img loading="lazy" src="{{ assetJson([$thirdSection->folder,$thirdSection->image_right]) }}" alt="{{imgAltJson($thirdSection->image_right)}}" title="{{imgTitleJson($thirdSection->image_right)}}">
 
 				<div class="box-detail reveal">
 					<div class="image-wrap overlayer">
@@ -182,8 +182,8 @@
 
                 </div>
 
-                <div class="box_image image-block">
-                    <img src="{{ assetJson([$fourthSection->folder,$fourthSection->image_1]) }}" alt="{{imgAltJson($fourthSection->image_1)}}" title="{{imgTitleJson($fourthSection->image_1)}}">
+                <div class="box_image image-block" data-animation>
+                    <img loading="lazy" src="{{ assetJson([$fourthSection->folder,$fourthSection->image_1]) }}" alt="{{imgAltJson($fourthSection->image_1)}}" title="{{imgTitleJson($fourthSection->image_1)}}">
                 </div>
 
             </div>
@@ -196,7 +196,7 @@
 
 
                 <div class="box_card  box_card--two" data-animation='right'>
-                    <img class="box_card--logo" src="{{ asset('site/img/Home/Banner/logo-text.png') }}" />
+                    <img loading="lazy" class="box_card--logo" src="{{ asset('site/img/Home/Banner/logo-text.png') }}" />
                     <p class="box_card--description">
                         {!! ignoreTags($fourthSection->subtitle_2) !!}
                     </p>
@@ -333,7 +333,7 @@
 			</div>
 
             <div class="box_image image-block">
-                <img src="{{ assetJson([$sixthSection->folder,$sixthSection->image_right]) }}" alt="{{imgAltJson($sixthSection->image_right)}}" title="{{imgTitleJson($sixthSection->image_right)}}">
+                <img loading="lazy" src="{{ assetJson([$sixthSection->folder,$sixthSection->image_right]) }}" alt="{{imgAltJson($sixthSection->image_right)}}" title="{{imgTitleJson($sixthSection->image_right)}}">
 
                 <div class="box-detail reveal">
                     <div class="image-wrap">
@@ -370,7 +370,7 @@
 			</div>
 
             <div class="box_image image-block">
-                <img src="{{ assetJson([$seventhSection->folder,$seventhSection->image]) }}" alt="{{imgAltJson($seventhSection->image)}}" title="{{imgTitleJson($seventhSection->image)}}">
+                <img loading="lazy" src="{{ assetJson([$seventhSection->folder,$seventhSection->image]) }}" alt="{{imgAltJson($seventhSection->image)}}" title="{{imgTitleJson($seventhSection->image)}}">
 
                 <div class="box-detail reveal">
                     <div class="image-wrap">
@@ -396,8 +396,8 @@
                 </div>
                 @include('site.components.Forms.forms_contact')
             </div>
-            <div class="box_image image-block">
-                <img data-animation src="{{ asset('site/img/Home/Contact/image-contact.webp') }}" alt="">
+            <div class="box_image image-block" data-animation>
+                <img loading="lazy" src="{{ asset('site/img/Home/Contact/image-contact.webp') }}" alt="Imagem Destaque">
             </div>
         </div>
 

@@ -1,6 +1,6 @@
 <div class='error-message-forms' id="error-message-forms">
     <div class="error-message-forms--container">
-        <button id='btn--close-error-message' class="close-error-message" aria-label="{{lang('Fechar Mensagem de Sucesso')}}">
+        <button id='btn--close-error-message' class="close-error-message" aria-label="Fechar Mensagem">
             <ion-icon name="close-outline"></ion-icon> 
         </button>
 

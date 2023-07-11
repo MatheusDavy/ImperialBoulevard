@@ -255,7 +255,7 @@
     .section_region {
         background-color: #231f20;
         position: relative;
-        overflow: hidden;
+    
         .region_line-1{
             position: absolute;
             width: 100%;
@@ -266,11 +266,13 @@
             position: absolute;
             right: 44vw;
             bottom: 0;
+            height: 100%;
         }
         .region_line-3{
             position: absolute;
             right: 7.5vw;
             bottom: 0;
+            height: 100%;
         }
         &--container {
             padding-top: 9.6vh;
