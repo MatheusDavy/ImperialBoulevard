@@ -84,27 +84,38 @@ class Circle {
 }
 
 /*------------ 2 - Functions ---------------*/
-FormsContact()
-
-function whatsappIcon(){
+function whatsappIcon() {
     const button = document.getElementById('whatsapp-link')
     const sectionToAppear = document.getElementById('inicio').offsetTop + (window.screen.height * 0.2)
     const sectionToDisappear = document.getElementById('eventos').offsetTop
     const scroll = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
-    if(sectionToAppear < scroll && scroll < sectionToDisappear){
+    if (sectionToAppear < scroll && scroll < sectionToDisappear) {
         button.classList.add('show-button')
-    }else{
+    } else {
         button.classList.remove('show-button')
     }
 }
+function setLinesDetails() {
+    const linesHeroBanner = () => {
+        const reference = document.querySelector(".section_herobanner .style_one").offsetTop
+        document.documentElement.style.setProperty("--heightLinesBanner", `${reference}px`)
+    }
 
+    linesHeroBanner()
+}
+
+FormsContact()
 /*------------ 4 - Onloads ---------------*/
 window.onload = () => {
+   setTimeout(()=>{
+        setLinesDetails()
+   }, 1000)
     // if (!isMobile) new AnimationGradient();
 }
-window.onscroll = ()=>{
+window.onscroll = () => {
     whatsappIcon()
 }
+
 
 /*------------ 5 Banner Home ---------------*/
 const swiper = new Swiper('.heroBannerSlider', {
@@ -129,20 +140,20 @@ zoomImg.addEventListener('mouseenter', () => {
 });
 zoomImg.addEventListener('mouseleave', () => {
     fp.zoomToFit()
-}); 
+});
 
 /*-------------/ 7 - Animations SVG /-----------*/
 const SVGSToBeAnimated = document.querySelectorAll('.svg-path-animate')
-SVGSToBeAnimated.forEach(svg =>{
-  gsap.to(svg, {
-    scrollTrigger: {
-      trigger: svg,
-      start: "top 90%",
-    },
-    duration: 3,
-    delay: 3,
-    filter: 'grayscale(0%)'
-  });
+SVGSToBeAnimated.forEach(svg => {
+    gsap.to(svg, {
+        scrollTrigger: {
+            trigger: svg,
+            start: "top 90%",
+        },
+        duration: 3,
+        delay: 3,
+        filter: 'grayscale(0%)'
+    });
 })
 
 /*-------------/ 8 - Button Whatsapp /-----------*/

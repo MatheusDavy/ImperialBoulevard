@@ -29,7 +29,7 @@
                     <span style="opacity: 0.6;">{{$firstSection->location}}</span>
                 </a>
                 <div class="style style_two"></div>
-
+                <div class="style style_three"></div>
                 <canvas class="section_herobanner--background"></canvas>
             </div>
         </div>
@@ -38,14 +38,14 @@
     </div>
 
     <div class="section_region" id="regiao">
-        <svg class="region_line-1" xmlns="http://www.w3.org/2000/svg" width="1920" height="2" viewBox="0 0 1920 2" fill="none">
-            <path d="M0 1H1920" stroke="#F1F1F1" stroke-opacity="0.3" />
+        <svg class="region_line-1" xmlns="http://www.w3.org/2000/svg" width="1920" height="2" viewBox="0 0 3000 2" fill="none">
+            <path d="M0 1H3000" stroke="#F1F1F1" stroke-opacity="0.3" />
         </svg>
-        <svg class="region_line-2" xmlns="http://www.w3.org/2000/svg" width="2" height="1080" viewBox="0 0 2 1080" fill="none">
-            <path d="M1 0V1080" stroke="#F1F1F1" stroke-opacity="0.3" stroke-linejoin="round" />
+        <svg class="region_line-2" xmlns="http://www.w3.org/2000/svg" width="2" height="1080" viewBox="0 0 2 3000" fill="none">
+            <path d="M1 0V3000" stroke="#F1F1F1" stroke-opacity="0.3" stroke-linejoin="round" />
         </svg>
-        <svg class="region_line-3" xmlns="http://www.w3.org/2000/svg" width="2" height="1080" viewBox="0 0 2 1080" fill="none">
-            <path d="M1 0V1080" stroke="#F1F1F1" stroke-opacity="0.3" stroke-linejoin="round" />
+        <svg class="region_line-3" xmlns="http://www.w3.org/2000/svg" width="2" height="1080" viewBox="0 0 2 3000" fill="none">
+            <path d="M1 0V3000" stroke="#F1F1F1" stroke-opacity="0.3" stroke-linejoin="round" />
         </svg>
         <div class="section_region--container">
 

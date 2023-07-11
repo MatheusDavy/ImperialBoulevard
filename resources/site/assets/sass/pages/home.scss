@@ -147,10 +147,38 @@
                     }
                 }
                 &_two {
-                    width: 100%;
-                    width: -webkit-fill-available;
+                    width: 19vw;
                     height: 1px;
                     background-color: rgb(210 166 113 / 30%);
+                }
+                &_three {
+                    position: absolute;
+                    z-index: 0;
+                    bottom: 7vh;
+                    right: 1.7vw;
+                    width: -webkit-fill-available;
+                    height: -webkit-fill-available;
+                    border-left:1px solid  rgb(210 166 113 / 30%);
+        
+                    &::after{
+                        content: '';
+                        position: absolute;
+                        height: 1px;
+                        background-color: rgb(210 166 113 / 30%);
+                        bottom: 0;
+                        right: 0;
+                        width: 5vw;
+                    }
+
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        height: calc(100% - var(--heightLinesBanner));
+                        background-color: rgb(210 166 113 / 30%);
+                        bottom: 0;
+                        right: 0;
+                        width: 1px;
+                    }
                 }
             }
         }
@@ -255,25 +283,8 @@
     .section_region {
         background-color: #231f20;
         position: relative;
-    
-        .region_line-1{
-            position: absolute;
-            width: 100%;
-            bottom: 30vh;
-            left: 0;
-        }
-        .region_line-2{
-            position: absolute;
-            right: 44vw;
-            bottom: 0;
-            height: 100%;
-        }
-        .region_line-3{
-            position: absolute;
-            right: 7.5vw;
-            bottom: 0;
-            height: 100%;
-        }
+        overflow: hidden;
+
         &--container {
             padding-top: 9.6vh;
             padding-left: 15vw;
@@ -368,6 +379,26 @@
 
         .box_grid_mobile {
             display: none;
+        }
+
+        // Lines - Details
+        .region_line-1{
+            position: absolute;
+            width: 100%;
+            bottom: 30vh;
+            left: 0;
+        }
+        .region_line-2{
+            position: absolute;
+            right: 44vw;
+            bottom: 0;
+            height: 100% !important;
+        }
+        .region_line-3{
+            position: absolute;
+            right: 7.5vw;
+            bottom: 0;
+            height: 100% !important;
         }
 
         @media (max-width: 799px) {
@@ -863,16 +894,7 @@
         background: url(../img/Home/Differentials/bg-overlayer.webp),
             lightgray 50% / cover no-repeat;
         padding-bottom: 12vh;
-        .differential_line-1{
-            position: absolute;
-            right: 7.5vw;
-            top: 0;
-        }
-        .differential_line-2{
-            position: absolute;
-            left: 35.9vw;
-            top: 0;
-        }
+       
         &--container {
             position: relative;
             z-index: 1;
@@ -1064,6 +1086,18 @@
         }
         .box_image_mobile {
             display: none;
+        }
+
+        // Lines - Details
+        .differential_line-1{
+            position: absolute;
+            right: 7.5vw;
+            top: 0;
+        }
+        .differential_line-2{
+            position: absolute;
+            left: 35.9vw;
+            top: 0;
         }
 
         @media (max-width: 799px) {
@@ -1378,19 +1412,7 @@
     .section_events {
         position: relative;
         background-color: $secondColor;
-        .events_line-1{
-            position: absolute;
-            left: 7.5vw;
-        }
-        .events_line-2{
-            position: absolute;
-            right: 7.5vw;
-        }
-        .events_line-3{
-            position: absolute;
-            width: 100%;
-            bottom: 20vh;
-        }
+       
         &--container {
             padding-left: 15vw;
             display: grid;
@@ -1504,6 +1526,21 @@
                     transform: translate(-50%, -50%);
                 }
             }
+        }
+
+        // Lines - Details
+        .events_line-1{
+            position: absolute;
+            left: 7.5vw;
+        }
+        .events_line-2{
+            position: absolute;
+            right: 7.5vw;
+        }
+        .events_line-3{
+            position: absolute;
+            width: 100%;
+            bottom: 20vh;
         }
 
         @media (max-width: 799px) {
