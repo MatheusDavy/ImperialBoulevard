@@ -206,7 +206,7 @@
             <div class="box_plant">
                 <div class="f-panzoom" id="myPanzoom" data-lenis-prevent>
                     <div class="f-panzoom__viewport">
-                        <img loading="lazy" class="f-panzoom__content" src="{{ assetJson([$fourthSection->folder,$fourthSection->image_2]) }}" alt="{{imgAltJson($fourthSection->image_2)}}" title="{{imgTitleJson($fourthSection->image_2)}}">
+                        <img class="f-panzoom__content" src="{{ assetJson([$fourthSection->folder,$fourthSection->image_2]) }}" alt="{{imgAltJson($fourthSection->image_2)}}" title="{{imgTitleJson($fourthSection->image_2)}}">
                     </div>
                 </div>
             </div>
