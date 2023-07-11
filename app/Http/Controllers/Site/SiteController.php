@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Site;
 
 use App\Http\Controllers\Controller;
 use App\Models\Adm\CompaniesModel;
+use App\Models\Adm\InstitutionalModel;
 use Illuminate\Support\Facades\Route;
 use App\Models\Site\CommonModel;
 use Illuminate\Http\Request;
@@ -49,7 +50,7 @@ class SiteController extends Controller
         $routeParams = array_values(Route::current()->parameters());
         $company = CompaniesModel::first();
 
-        $this->data['empresa'] = $company;
+        $this->data['socials'] = InstitutionalModel::query()->first();
         $this->data['routeParams'] = $routeParams;
         $this->data['gtm'] = $company->gtm;
         $this->data['rd'] = $company->rd;
