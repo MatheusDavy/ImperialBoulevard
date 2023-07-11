@@ -59,7 +59,7 @@
 					</svg>
 				</a>
 				@endif
-				@if ($empresa->social)
+				{{-- @if ($empresa->social)
 				<a href="{{$empresa->social}}">
 					<svg xmlns="http://www.w3.org/2000/svg" width="74" height="64" viewBox="0 0 74 64" fill="none">
 						<g clip-path="url(#clip0_158_193)">
@@ -72,7 +72,7 @@
 						</defs>
 					</svg>
 				</a>
-				@endif
+				@endif --}}
 			</div>
 		</div>
 
