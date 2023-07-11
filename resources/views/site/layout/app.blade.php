@@ -57,11 +57,9 @@
     <link rel="shortcut icon" href="{{ asset('site/img/favicon.ico') }}" />
     <input hidden type="text" id="recaptcha" value="{{$recaptcha}}">
 
-    <link href="{{ asset(mix('site/css/vendor.css')) }}" rel="stylesheet">
+    <!-- <link href="{{ asset(mix('site/css/vendor.css')) }}" rel="stylesheet">
+    <link href="{{ asset(mix('site/css/plugins/cropper.css')) }}" rel="stylesheet"> -->
     <link href="{{ asset('site/css/main.css') }}" rel="stylesheet">
-    <link href="{{ asset(mix('site/css/plugins/cropper.css')) }}" rel="stylesheet">
-
-
 
 </head>
 
