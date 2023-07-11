@@ -27,6 +27,7 @@ class InstitutionalController extends AdmController
             $this->textField('input', 'Facebook', 'facebook'),
             $this->textField('input', 'Instagram', 'instagram'),
             $this->textField('input', 'Youtube', 'youtube'),
+            $this->textField('input', 'Endereço', 'address'),
             $this->textField('input', 'Google Maps Link', 'google_maps_link'),
         );
     }
