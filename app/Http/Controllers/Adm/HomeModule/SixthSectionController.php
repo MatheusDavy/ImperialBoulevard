@@ -31,7 +31,7 @@ class SixthSectionController extends AdmController
             $this->imageField('Imagem Direita', 'image_right', 'SextaSecao', true, true),
             $this->imageField('Imagem Direita Mobile', 'image_right_mobile', 'SextaSecao', true, true),
             $this->textField('input', 'Botão Texto', 'button_text'),
-            $this->textField('input', 'Botão Link', 'button_link'),
+            // $this->textField('input', 'Botão Link', 'button_link'),
         );
     }
 

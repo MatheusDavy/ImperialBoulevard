@@ -30,7 +30,7 @@ class SeventhSectionController extends AdmController
             $this->imageField('Imagem', 'image', 'SetimaSecao', true, true),
             $this->imageField('Imagem Mobile', 'image_mobile', 'SetimaSecao', true, true),
             $this->textField('input', 'Botão Texto', 'button_text'),
-            $this->textField('input', 'Botão Link', 'button_link'),
+            // $this->textField('input', 'Botão Link', 'button_link'),
         );
     }
 

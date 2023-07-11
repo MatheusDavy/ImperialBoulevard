@@ -329,7 +329,7 @@
                     {!! $sixthSection->description !!}
                 </div>
 
-				<a href="{{route('site.offers')}}" class="box_text--link" data-animation='up' href="{{$sixthSection->button_link}}">{{$sixthSection->button_text}}</a>
+				<a href="{{route('site.offers')}}" class="box_text--link" data-animation='up'>{{$sixthSection->button_text}}</a>
 			</div>
 
             <div class="box_image image-block">
@@ -366,7 +366,7 @@
                     {!! $seventhSection->description !!}
                 </div>
 
-				<a href="{{route('site.offers')}}" class="box_text--link" data-animation='up' href="{{$seventhSection->button_link}}">{{$seventhSection->button_text}}</a>
+				<a href="{{route('site.offers')}}" class="box_text--link" data-animation='up'>{{$seventhSection->button_text}}</a>
 			</div>
 
             <div class="box_image image-block">
