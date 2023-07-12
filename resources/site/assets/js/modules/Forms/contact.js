@@ -14,9 +14,12 @@ export default function FormsContact () {
     /*-------------/ Forms /--------------------*/
     $("#forms_contact").on('submit', function (e) {
         e.preventDefault();
+        const Loader = document.getElementById("loading-forms")
         MessageHandler.removeAllFormFailMessages()
         let form = $(this);
+        let terms = $("#confirm-terms").prop('checked') == true;
         let fields = form.serializeArray();
+        console.log(fields)
 
         let validation = new FormValidate(fields);
         validation.validateAll(fields);
@@ -27,7 +30,14 @@ export default function FormsContact () {
             MessageHandler.showFailMessage(errorMessageId);
         }
 
+        if (!error && !terms){
+            error = true
+            const id = ( $("#confirm-terms").attr('idError'))
+            MessageHandler.showFailMessage(id);
+        }
+
         if (!error) {
+            Loader.classList.add("open-modal");
             if ($(this).attr('disabled') == 'disabled') {
                 return false;
             }
@@ -40,6 +50,7 @@ export default function FormsContact () {
             const modalDescription = document.querySelector('#error-message-forms .description');
             class Contact extends AjaxClass {
                 successFunction(data, form) {
+                    Loader.classList.remove("open-modal");
                     if (data.status == true) {
                         $('#forms_contact').trigger("reset");
                         $("#forms_contact").removeAttr('disabled');
@@ -51,6 +62,7 @@ export default function FormsContact () {
                     }
                 };
                 errorFunction(xhr, textStatus, errorThrown){
+                    Loader.classList.remove("open-modal");
                     modalDescription.innerHTML = "Ocorreu um erro. Tente novamente mais tarde.";
                     modalError.classList.add("open-modal");
                     $("#forms_contact").removeAttr('disabled');

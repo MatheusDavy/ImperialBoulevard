@@ -67,6 +67,7 @@
     @include('site.components.Modal.zoom_modal')
     @include('site.components.Modal.Forms.error_message')
     @include('site.components.Modal.Forms.success_message')
+    @include('site.components.Modal.Forms.loading')
     @include('site.components.Fixed.whatsapp_icon')
 
     @include('site.layout.header')

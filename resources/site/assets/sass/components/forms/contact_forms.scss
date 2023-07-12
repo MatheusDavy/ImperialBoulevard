@@ -128,6 +128,16 @@ form#forms_contact {
                 $Raleway
             );
         }
+
+        .error--message {
+            display: none;
+        }
+
+        &.show--error {
+            label {
+                color: red;
+            }
+        }
     }
 
     .btn-submit {
