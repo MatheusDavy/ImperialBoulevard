@@ -45,7 +45,7 @@ class FormsController extends SiteController
             $to = $dados['email'];
             
             if (env('APP_ENV') == 'production') {
-                $to = [$dados['email'], 'contato@boulevardconvention.com'];
+                $to = [$dados['email'], 'contato@boulevardconvention.com.br'];
             }
             newSendMail([
                 'to' => $to,
