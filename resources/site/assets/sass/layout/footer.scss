@@ -3,6 +3,7 @@
         lightgray 50% / cover no-repeat;
     display: flex;
     flex-direction: column;
+    
     &--container {
         margin: 0 auto;
         max-width: 70vw;
@@ -113,21 +114,28 @@
         &--group {
             display: flex;
             align-items: center;
-            gap: 5vw;
+            gap: 2vw;
 
             img {
                 height: auto;
                 object-fit: contain;
+                position: relative;
 
                 &:nth-child(1) {
                     width: 6.6vw;
                 }
-                &:nth-child(2) {
+                &:nth-child(3) {
                     width: 8vw;
                 }
-                &:nth-child(3) {
-                    width: 2.5vw;
+                &:nth-child(5) {
+                    width: 3vw;
                 }
+            }
+
+            .styles-lines {
+                width: 1px;
+                height: 45%;
+                background-color: $accentColor;
             }
         }
     }
@@ -227,7 +235,7 @@
             &--group {
                 display: flex;
                 align-items: center;
-                gap: 40px;
+                gap: 20px;
 
                 img {
                     height: auto;
@@ -236,10 +244,10 @@
                     &:nth-child(1) {
                         width: 88.075px;
                     }
-                    &:nth-child(2) {
+                    &:nth-child(3) {
                         width: 98.65px;
                     }
-                    &:nth-child(3) {
+                    &:nth-child(5) {
                         width: 40.368px;
                     }
                 }

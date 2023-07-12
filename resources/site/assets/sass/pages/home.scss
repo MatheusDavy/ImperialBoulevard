@@ -1,4 +1,5 @@
 #page-home {
+    overflow-x: hidden;
     .section_herobanner {
         position: relative;
         &--container {
@@ -1710,7 +1711,7 @@
 
             &::after{
                 content: '';
-                background-color: rgb(35 26 16 / 67%);
+                background-color: rgb(35 26 16 / 40%);
                 position: absolute;
                 inset: 0;
                 object-fit: cover;

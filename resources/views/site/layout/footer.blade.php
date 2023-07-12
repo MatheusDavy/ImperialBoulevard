@@ -81,7 +81,9 @@
 
 			<div class="box_logos--group">
 				<img src="{{ asset('site/img/Footer/boulevard.png') }}" alt="Logo Boulevard">
+				<div class="styles-lines"></div>
 				<img src="{{ asset('site/img/Footer/prime.svg') }}" alt="Logo PrimeA">
+				<div class="styles-lines"></div>
 				<img src="{{ asset('site/img/Footer/vj&j.png') }}" alt="lOGO VJ&J">
 			</div>
 		</div>
