@@ -35,24 +35,25 @@ export default function FormsContact () {
             let type = 'POST';
             let url = $(this).attr('action');
             let dataType = 'json';
-            const modal = document.getElementById('error-message-forms');
+            const modalSuccess = document.getElementById('success-message-forms');
+            const modalError = document.getElementById('error-message-forms');
             const modalDescription = document.querySelector('#error-message-forms .description');
             class Contact extends AjaxClass {
                 successFunction(data, form) {
                     if (data.status == true) {
                         $('#forms_contact').trigger("reset");
-                        modalDescription.innerHTML = data.txt;
-                        modal.classList.add("open-modal");
                         $("#forms_contact").removeAttr('disabled');
+                        modalSuccess.classList.add("open-modal");
                     } else {
                         modalDescription.innerHTML = data.txt;
-                        modal.classList.add("open-modal");
+                        modalError.classList.add("open-modal");
                         $("#forms_contact").removeAttr('disabled');
                     }
+                    
                 };
                 errorFunction(xhr, textStatus, errorThrown){
                     modalDescription.innerHTML = "Ocorreu um erro. Tente novamente mais tarde.";
-                    modal.classList.add("open-modal");
+                    modalError.classList.add("open-modal");
                     $("#forms_contact").removeAttr('disabled');
                 };
             }
