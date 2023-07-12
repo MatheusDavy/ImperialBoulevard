@@ -213,11 +213,10 @@
                 height: 100%;
                 object-fit: cover;
                 inset: 0;
-                z-index: -1;
+                z-index: -3;
             }
             .box_text {
                 padding-bottom: 77px;
-                background-color: rgb(35 26 16 / 67%);
 
                 &--logo {
                     margin-left: 5vw;
@@ -272,6 +271,15 @@
                         background-color: $accentColor;
                     }
                 }
+            }
+
+            &::before{
+                content: '';
+                position: absolute;
+                object-fit: contain;
+                background-color: rgb(35 26 16 / 67%);
+                inset: 0;
+                z-index: -2;
             }
 
             &::after {
@@ -1745,6 +1753,7 @@
                 padding-inline: 5vw;
                 &--text {
                     font-size: 1.8rem;
+                    margin-bottom: 12px;
                 }
 
                 &--title {
@@ -1758,7 +1767,7 @@
                     flex-direction: column;
                     gap: 12px;
                     p {
-                        font-size: 1.6rem;
+                        font-size: 1.8rem;
                     }
                 }
             }
