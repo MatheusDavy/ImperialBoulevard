@@ -1,0 +1,85 @@
+.preloader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    inset: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+
+    background-color: $secondColor;
+
+    &--logo {
+        width: 15vw;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .preloader-container{
+        display: inline-block;
+        width: 3vw;
+        height: 3vw;
+        position: absolute;
+        left: 0;
+        position: relative;
+        border-radius: 50%;
+
+        .animated-preloader{
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-radius: 50%;
+            background-color: $accentColor;
+
+            &:after{
+                content: '';
+                display: inline-block;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                border-radius: 50%;
+                top: 0;
+                left: 0;
+                background: $secondColor;
+                -webkit-animation: preloader-inside-white 1s ease-in-out infinite;
+                -ms-animation:     preloader-inside-white 1s ease-in-out infinite;
+                animation:         preloader-inside-white 1s ease-in-out infinite;
+            }
+            &:before{
+                content: '';
+                display: inline-block;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 10;
+                border-radius: 50%;
+                background: $accentColor;
+                -webkit-animation: preloader-inside-red 1s ease-in-out infinite;
+                -ms-animation:     preloader-inside-red 1s ease-in-out infinite;
+                animation:         preloader-inside-red 1s ease-in-out infinite;
+            }
+        }
+    }
+
+    @media (max-width: 799px) {
+        &--logo {
+            width: 200px;
+            height: auto;
+            object-fit: contain;
+        }
+    
+        .preloader-container{
+            width: 40px;
+            height: 40px;
+        }
+    }
+}

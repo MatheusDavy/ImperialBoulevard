@@ -69,6 +69,7 @@
     @include('site.components.Modal.Forms.success_message')
     @include('site.components.Modal.Forms.loading')
     @include('site.components.Fixed.whatsapp_icon')
+    @include('site.components.Fixed.preloader')
 
     @include('site.layout.header')
     <main id="main">

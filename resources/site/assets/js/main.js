@@ -9,10 +9,12 @@ import ZoomImages from './modules/Utils/zoom_images';
 import AnimationElements from './modules/Animation/enterElements';
 import AnchorLinks from './modules/Utils/anchor_links';
 import FormsContact from './modules/Forms/contact';
+import Preloader from './modules/Utils/preloader';
 
 changeLang();
 FormsContact();
 
+Preloader()
 new Menu()
 Footer()
 AnimationElements()
