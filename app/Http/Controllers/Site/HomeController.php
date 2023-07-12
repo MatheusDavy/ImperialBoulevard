@@ -50,7 +50,7 @@ class HomeController extends SiteController
             $this->data['sixthSection']->image_left = $this->data['sixthSection']->image_left_mobile;
             $this->data['sixthSection']->image_right = $this->data['sixthSection']->image_right_mobile;
 
-            $this->data['seventhSection']->image = $this->data['fourthSection']->image_mobile;
+            $this->data['seventhSection']->image = $this->data['seventhSection']->image_mobile;
         }
     }
 }
