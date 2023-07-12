@@ -19,7 +19,6 @@ export default function FormsContact () {
         let form = $(this);
         let terms = $("#confirm-terms").prop('checked') == true;
         let fields = form.serializeArray();
-        console.log(fields)
 
         let validation = new FormValidate(fields);
         validation.validateAll(fields);
