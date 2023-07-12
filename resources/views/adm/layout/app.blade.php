@@ -11,19 +11,19 @@
     <title>{{ isset($title) && $title ? $title . ' - ' : '' }}{{ $main_title }}</title>
     <link rel="shortcut icon" href="{{ asset('adm/img/favicon.png') }}" />
 
-    <link async href="{{ asset('adm/plugins/notyf/notyf.min.css') }}" rel="stylesheet">
-    <link async href="{{ asset('site/css/vendor.css') }}" rel="stylesheet">
-    <link async href="{{ asset('adm/css/main.css') }}" rel="stylesheet">
-    <link async href="{{ asset(mix('site/css/plugins/cropper.css')) }}" rel="stylesheet">
+    <link href="{{ asset('adm/plugins/notyf/notyf.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('site/css/vendor.css') }}" rel="stylesheet">
+    <link href="{{ asset('adm/css/main.css') }}" rel="stylesheet">
+    <link href="{{ asset(mix('site/css/plugins/cropper.css')) }}" rel="stylesheet">
 
     <!-- NEW THEME -->
     {{-- <link href="{{ asset('adm/plugins/new-theme/libs/admin-resources/jquery.vectormap/jquery-jvectormap-1.2.2.css') }}" rel="stylesheet" type="text/css" /> --}}
-    <link async href="{{ asset('adm/plugins/new-theme/libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css') }}" rel="stylesheet" type="text/css" />
-    <link async href="{{ asset('adm/plugins/new-theme/libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css') }}" rel="stylesheet" type="text/css" />
-    <link async href="{{ asset('adm/plugins/new-theme/css/bootstrap.min.css') }}" id="bootstrap-style" rel="stylesheet" type="text/css" />
-    <link async href="{{ asset('adm/plugins/new-theme/css/icons.min.css') }}" rel="stylesheet" type="text/css" />
-    <link async href="{{ asset('adm/plugins/new-theme/css/app.min.css') }}" id="app-style" rel="stylesheet" type="text/css" />
-    <link async href="{{ asset('adm/plugins/select2/select2.css') }}" rel="stylesheet">
+    <link href="{{ asset('adm/plugins/new-theme/libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css') }}" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('adm/plugins/new-theme/libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css') }}" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('adm/plugins/new-theme/css/bootstrap.min.css') }}" id="bootstrap-style" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('adm/plugins/new-theme/css/icons.min.css') }}" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('adm/plugins/new-theme/css/app.min.css') }}" id="app-style" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('adm/plugins/select2/select2.css') }}" rel="stylesheet">
     @yield('css')
 </head>
 
@@ -115,39 +115,39 @@
     @yield('js')
     <!-- NEW THEME -->
     <script src="{{ asset('adm/plugins/new-theme/libs/jquery/jquery.min.js') }}"></script>
-    <script defer src="https://cdn.ckeditor.com/ckeditor5/37.1.0/super-build/ckeditor.js"></script>
-    <script defer src="{{ asset('adm/plugins/new-theme/libs/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
-    <script defer src="{{ asset('adm/plugins/new-theme/libs/metismenu/metisMenu.min.js') }}"></script>
-    <script defer src="{{ asset('adm/plugins/new-theme/libs/simplebar/simplebar.min.js') }}"></script>
-    <script defer src="{{ asset('adm/plugins/new-theme/libs/node-waves/waves.min.js') }}"></script>
+    <script src="https://cdn.ckeditor.com/ckeditor5/37.1.0/super-build/ckeditor.js"></script>
+    <script src="{{ asset('adm/plugins/new-theme/libs/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset('adm/plugins/new-theme/libs/metismenu/metisMenu.min.js') }}"></script>
+    <script src="{{ asset('adm/plugins/new-theme/libs/simplebar/simplebar.min.js') }}"></script>
+    <script src="{{ asset('adm/plugins/new-theme/libs/node-waves/waves.min.js') }}"></script>
     {{-- <script src="{{ asset('adm/plugins/new-theme/libs/apexcharts/apexcharts.min.js') }}"></script> --}}
     {{-- <script src="{{ asset('adm/plugins/new-theme/libs/admin-resources/jquery.vectormap/jquery-jvectormap-1.2.2.min.js') }}"></script>
     <script src="{{ asset('adm/plugins/new-theme/libs/admin-resources/jquery.vectormap/maps/jquery-jvectormap-us-merc-en.js') }}"></script> --}}
-    <script defer src="{{ asset('adm/plugins/new-theme/libs/datatables.net/js/jquery.dataTables.min.js') }}"></script>
-    <script defer src="{{ asset('adm/plugins/new-theme/libs/datatables.net-bs4/js/dataTables.bootstrap4.min.js') }}"></script>
-    <script defer src="{{ asset('adm/plugins/new-theme/libs/datatables.net-responsive/js/dataTables.responsive.min.js') }}"></script>
-    <script defer src="{{ asset('adm/plugins/new-theme/libs/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js') }}"></script>
+    <script src="{{ asset('adm/plugins/new-theme/libs/datatables.net/js/jquery.dataTables.min.js') }}"></script>
+    <script src="{{ asset('adm/plugins/new-theme/libs/datatables.net-bs4/js/dataTables.bootstrap4.min.js') }}"></script>
+    <script src="{{ asset('adm/plugins/new-theme/libs/datatables.net-responsive/js/dataTables.responsive.min.js') }}"></script>
+    <script src="{{ asset('adm/plugins/new-theme/libs/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js') }}"></script>
     {{-- <script src="{{ asset('adm/plugins/new-theme/js/pages/dashboard.init.js') }}"></script> --}}
-    <script defer src="{{ asset('adm/plugins/new-theme/js/app.js') }}"></script>
+    <script src="{{ asset('adm/plugins/new-theme/js/app.js') }}"></script>
     {{-- <script src="{{ asset('adm/plugins/new-theme/libs/tinymce/tinymce.min.js') }}"></script> --}}
     {{-- <script src="{{ asset('adm/plugins/new-theme/js/pages/form-editor.init.js') }}"></script> --}}
 
 
     <!-- PLUGINS -->
-    {{-- <script defer src="{{ asset('adm/plugins/bootstrap/popper.min.js') }}"></script> --}}
-    <script defer src="{{ asset('adm/plugins/notyf/notyf.min.js') }}"></script>
-    <script defer src="{{ asset('adm/js/main.js') }}"></script>
-    <script async src="{{ asset('adm/js/auth.js') }}"></script>
-    <script defer src="{{ asset('adm/plugins/jquery-ui/jquery-ui.min.js') }}"></script>
-    <script defer src="{{ asset('adm/plugins/datepicker/datepicker.js') }}"></script>
-    <script defer src="{{ asset('adm/plugins/jscolor/jscolor.js') }}"></script>
-    <script async src="{{ asset('site/js/pages/cropper.js') }}"></script>
-    <script async src="{{ asset('site/js/pages/jquery-cropper.js') }}"></script>
-    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDW3K7whEjNxFrR1u8RTv9HYbkg_f9b630&libraries=places" type="text/javascript"></script>
-    <script async src="{{ asset('adm/js/inputs.js') }}"></script>
-    <script defer src="{{ asset('adm/plugins/select2/select2.js') }}"></script>
-    <script async src="{{asset('adm/js/backup.js')}}"></script>
-    <script defer src="{{asset('adm/js/ckEditorHandler.js')}}"></script>
+    {{-- <script src="{{ asset('adm/plugins/bootstrap/popper.min.js') }}"></script> --}}
+    <script src="{{ asset('adm/plugins/notyf/notyf.min.js') }}"></script>
+    <script src="{{ asset('adm/js/main.js') }}"></script>
+    <script src="{{ asset('adm/js/auth.js') }}"></script>
+    <script src="{{ asset('adm/plugins/jquery-ui/jquery-ui.min.js') }}"></script>
+    <script src="{{ asset('adm/plugins/datepicker/datepicker.js') }}"></script>
+    <script src="{{ asset('adm/plugins/jscolor/jscolor.js') }}"></script>
+    <script src="{{ asset('site/js/pages/cropper.js') }}"></script>
+    <script src="{{ asset('site/js/pages/jquery-cropper.js') }}"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDW3K7whEjNxFrR1u8RTv9HYbkg_f9b630&libraries=places" type="text/javascript"></script>
+    <script src="{{ asset('adm/js/inputs.js') }}"></script>
+    <script src="{{ asset('adm/plugins/select2/select2.js') }}"></script>
+    <script src="{{asset('adm/js/backup.js')}}"></script>
+    <script src="{{asset('adm/js/ckEditorHandler.js')}}"></script>
     @yield('js')
 </body>
 
