@@ -405,8 +405,10 @@
         </div>
 
         @include('site.components.Fixed.back_to_top')
+
     </div>
 </section>
+@include('site.components.Fixed.social')
 @endsection
 
 @section('js')
