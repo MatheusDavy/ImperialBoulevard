@@ -313,7 +313,7 @@
                     </div>
                 </div>
                 <div class="image-seven image-block">
-                    @include('site.components.ImagesDiferencias', ['gallery' => $gallery[0]])
+                    @include('site.components.ImagesDiferencias', ['gallery' => $gallery[6]])
                 </div>
             </div>
         </div>
