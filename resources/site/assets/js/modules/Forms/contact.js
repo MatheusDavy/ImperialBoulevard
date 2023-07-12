@@ -34,9 +34,10 @@ export default function FormsContact () {
             error = true
             const id = ( $("#confirm-terms").attr('idError'))
             MessageHandler.showFailMessage(id);
+            return false;
         }
 
-        if (!error) {
+        if (error == false) {
             Loader.classList.add("open-modal");
             if ($(this).attr('disabled') == 'disabled') {
                 return false;
