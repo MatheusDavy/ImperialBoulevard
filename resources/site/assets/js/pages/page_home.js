@@ -84,6 +84,8 @@ class Circle {
 }
 
 /*------------ 2 - Functions ---------------*/
+FormsContact()
+
 function whatsappIcon() {
     const button = document.getElementById('whatsapp-link')
     const sectionToAppear = document.getElementById('inicio').offsetTop + (window.screen.height * 0.2)
@@ -104,13 +106,12 @@ function setLinesDetails() {
     linesHeroBanner()
 }
 
-FormsContact()
 /*------------ 4 - Onloads ---------------*/
 window.onload = () => {
    setTimeout(()=>{
         setLinesDetails()
    }, 1000)
-    if (!isMobile) new AnimationGradient();
+   if (!isMobile) new AnimationGradient();
 }
 window.onscroll = () => {
     whatsappIcon()

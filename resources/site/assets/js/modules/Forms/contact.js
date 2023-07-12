@@ -49,7 +49,6 @@ export default function FormsContact () {
                         modalError.classList.add("open-modal");
                         $("#forms_contact").removeAttr('disabled');
                     }
-                    
                 };
                 errorFunction(xhr, textStatus, errorThrown){
                     modalDescription.innerHTML = "Ocorreu um erro. Tente novamente mais tarde.";
