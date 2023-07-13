@@ -7,15 +7,7 @@ export default function FormsContact () {
     $("#Form-Click").on('click', function (e) {
         $("#forms_contact").trigger('submit');
     });
-
-    /*-------------/ Open Policy Privacy /--------------------*/
-    const linkPolicyPrivacy = document.getElementById("link-policy-privacy")
-    linkPolicyPrivacy.addEventListener("click", (e)=>{
-        e.preventDefault()
-        const modalPolicyPrivacy = document.getElementById("privacy-policy")
-        modalPolicyPrivacy.classList.add("open-modal")
-    })
-
+    
     /*-------------/ Input Mask /--------------------*/
     $('#phone-input').mask('(00) 00000-0000')
 
