@@ -1,4 +1,4 @@
-<header id="header" class="header" data-animation>
+<header id="header" class="header" data-animation  data-lenis-prevent>
     <div class="header--container">
         <a href="{{route('site.home')}}" aria-label="Ir para Home">
             <img class="logo" src="{{ asset('site/img/Header/boulevard-logo.png') }}" alt="Logo Boulevard">

@@ -22,7 +22,7 @@
             <input id="confirm-terms" type="checkbox" fieldName="Termos" idError='wwu-error-terms' fieldType="checkbox" isRequired="required" name="checkbox" aria-label="Checkbox"/>
             <div class="check"></div>
         </div>
-        <label for="checkbox">Ao informar meus dados, eu concordo com a <a href="">Política de Privacidade</a></label>
+        <label for="checkbox">Ao informar meus dados, eu concordo com a <a href="/politica-de-provacidade" id="link-policy-privacy">Política de Privacidade</a></label>
         <span class="error--message message-error-forms" id="wwu-error-terms">Você deve aceitar nossa Política de Privacidade!</span>
     </div>
     <button type="submit" hidden id="actual-submit">ENVIAR</button>

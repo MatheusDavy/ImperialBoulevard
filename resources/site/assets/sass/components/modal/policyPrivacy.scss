@@ -1,0 +1,173 @@
+.policy-privacy {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 10000;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    opacity: 1;
+
+    &.open-modal{
+        display: flex;
+    }  
+
+    &--container {
+        background-color: $primaryColor;
+        border-radius: 1rem;
+        overflow: hidden;
+        width: 50vw;
+        height: 85vh;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    &--header {
+        background-color: $accentColor;
+        display: flex;
+        justify-content: flex-end;
+
+        .close-button {
+            color: white !important;
+            padding: 1vw;
+            border: 0 !important;
+            background-color: 0 !important;
+            cursor: pointer;
+
+            ion-icon {
+                font-size: 4rem;
+            }
+        }
+    }
+
+    &--content {
+        padding: 2vh 3vw;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+
+        & {
+            scrollbar-width: auto;
+            scrollbar-color: $accentColor $secondColor;
+        }
+        &::-webkit-scrollbar {
+            width: 3px;
+        }
+        &::-webkit-scrollbar-track {
+            background: $primaryColor;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: $secondColor;
+            border-radius: 0px;
+            border: 3px none $primaryColor;
+        }
+
+        .title {
+            @include fontTemplate(
+                3rem,
+                1.7,
+                $accentColor,
+                $regular,
+                $Butler,
+                center
+            );
+        }
+
+        h3 {
+            @include fontTemplate(2.4rem, 1.7, $accentColor, $regular, $Butler);
+            margin-top: 5vh;
+        }
+
+        p {
+            @include fontTemplate(
+                1.8rem,
+                1.7,
+                $secondColor,
+                $regular,
+                $Raleway
+            );
+            margin-top: 2vh;
+        }
+
+        ul,
+        ol {
+            margin-left: 1vw;
+            margin-top: 2vh;
+            display: flex;
+            flex-direction: column;
+            gap: 1vh;
+            li {
+                @include fontTemplate(
+                    1.8rem,
+                    1.7,
+                    $secondColor,
+                    $regular,
+                    $Raleway
+                );
+
+                &::marker {
+                    color: $accentColor;
+                }
+            }
+        }
+
+        ul {
+            list-style: disc inside;
+            li {
+                list-style: disc inside;
+            }
+        }
+
+        ol {
+            list-style: upper-roman inside;
+            li {
+                list-style: upper-roman inside;
+            }
+        }
+
+        a{
+            text-decoration: underline;
+            color: inherit;
+        }
+    }
+
+    @media (max-width: 799px) {
+        &--container{
+            width: 90vw;
+            height: 80vh;
+        }
+
+        &--header{
+            padding: 10px;
+            ion-icon{
+                font-size: 2.5rem;
+            }
+        }
+
+        &--content{
+            padding: 30px;
+            .title{
+                margin-top: 0px;
+            }
+
+            h3{
+                font-size: 2.6rem;
+                margin-top: 40px;
+            }
+
+            p{
+                font-size: 1.6rem;
+                margin-top: 20px;
+            }
+
+            ol,ul{
+                li{
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    }
+}

@@ -65,6 +65,7 @@
     @endif
 
     @include('site.components.Modal.zoom_modal')
+    @include('site.components.Modal.privacyPolicy')
     @include('site.components.Modal.Forms.error_message')
     @include('site.components.Modal.Forms.success_message')
     @include('site.components.Modal.Forms.loading')
@@ -87,6 +88,7 @@
         @yield('content')
     </main>
     @include('site.layout.footer')
+    @include('site.components.Modal.privacyPolicy')
     @if (isset($rd) && $rd)
     <script type="text/javascript" async src="{{$rd}}"></script>
     @endif

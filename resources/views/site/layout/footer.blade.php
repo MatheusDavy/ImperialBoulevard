@@ -79,11 +79,17 @@
 			<img class="box_logos--main" src="{{ asset('site/img/Footer/meeting-plus.svg') }}" alt="Logo Meeting Plus">
 
 			<div class="box_logos--group">
-				<img src="{{ asset('site/img/Footer/boulevard.png') }}" alt="Logo Boulevard">
+				<a href="/">
+					<img class="image-one" src="{{ asset('site/img/Footer/boulevard.png') }}" alt="Logo Boulevard">
+				</a>
 				<div class="styles-lines"></div>
-				<img src="{{ asset('site/img/Footer/prime.svg') }}" alt="Logo PrimeA">
+				<a href="https://primehotelaria.com.br/" target="_blank">
+					<img class="image-two" src="{{ asset('site/img/Footer/prime.svg') }}" alt="Logo PrimeA">
+				</a>
 				<div class="styles-lines"></div>
-				<img src="{{ asset('site/img/Footer/vj&j.png') }}" alt="lOGO VJ&J">
+				<a href="https://vjjempreendimentos.com.br/" target="_blank">
+					<img class="image-three" src="{{ asset('site/img/Footer/vj&j.png') }}" alt="lOGO VJ&J">
+				</a>
 			</div>
 		</div>
 	</div>
