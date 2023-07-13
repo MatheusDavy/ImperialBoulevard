@@ -10,9 +10,12 @@ import AnimationElements from './modules/Animation/enterElements';
 import AnchorLinks from './modules/Utils/anchor_links';
 import FormsContact from './modules/Forms/contact';
 import Preloader from './modules/Utils/preloader';
+import PolicyPrivacy from './modules/Utils/privacyPolicy';
 
 changeLang();
 FormsContact();
+
+PolicyPrivacy()
 
 Preloader()
 new Menu()

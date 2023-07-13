@@ -46,10 +46,3 @@
         </div>
     </div>
 </div>
-
-<script>
-    $('#close-privacy-policy').click(function() {
-        const modal = document.getElementById('privacy-policy')
-        modal.classList.remove("open-modal")
-    });
-</script>

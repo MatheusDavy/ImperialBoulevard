@@ -11,6 +11,8 @@
                     </div>
                     @endforeach
                 </div>
+
+                @include('site.components.Fixed.social')
             </div>
 
             <div class="box_text">
@@ -408,7 +410,7 @@
 
     </div>
 </section>
-@include('site.components.Fixed.social')
+
 @endsection
 
 @section('js')
