@@ -26,7 +26,7 @@
     <!-- SCROLL -->
     <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
 
-    @if (isset($gtm) && $gtm)
+    @if (isset($gtm) && $gtm && env('APP_ENV') == 'production')
     <script>
         (function(w, d, s, l, i) {
             w[l] = w[l] || [];
