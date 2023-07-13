@@ -19,7 +19,7 @@
     &.activate-modal{
         opacity: 1;
         transform: scale(1);
-        z-index: $zIndex-modal;
+        z-index: 10000;
     }
 
     #btn-close__zoom-modal{

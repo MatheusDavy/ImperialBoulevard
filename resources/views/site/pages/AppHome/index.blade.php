@@ -208,8 +208,15 @@
             <div class="box_plant">
                 <div class="f-panzoom" id="myPanzoom" data-lenis-prevent>
                     <div class="f-panzoom__viewport">
-                        <img class="f-panzoom__content" src="{{ assetJson([$fourthSection->folder,$fourthSection->image_2]) }}" alt="{{imgAltJson($fourthSection->image_2)}}" title="{{imgTitleJson($fourthSection->image_2)}}">
+                        <img class="f-panzoom__content" class='mobile--plant' src="{{ assetJson([$fourthSection->folder,$fourthSection->image_2]) }}" alt="{{imgAltJson($fourthSection->image_2)}}" title="{{imgTitleJson($fourthSection->image_2)}}">
                     </div>
+                </div>
+
+                <div class="plant-mobile">
+                    <img class="plant" src="{{ assetJson([$fourthSection->folder,$fourthSection->image_2]) }}" alt="{{imgAltJson($fourthSection->image_2)}}" title="{{imgTitleJson($fourthSection->image_2)}}">
+                    <button class="open-zoom-plant-mobile">
+                        <img loading="lazy" src="{{ asset('site/img/Home/Differentials/zoom.svg') }}" alt="">
+                    </button>
                 </div>
             </div>
 
@@ -319,7 +326,6 @@
                 </div>
             </div>
         </div>
-
     </div>
 
     <div class="section_investing" id="invista">

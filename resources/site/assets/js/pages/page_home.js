@@ -1,6 +1,7 @@
 // FUNÇÕES/MÓDULOS SITE
 import FormsContact from "../modules/Forms/contact"
 import { isMobile } from '../modules/Utils/variables_functions'
+import  ZooomPlant from "../modules/Utils/zoom_plant";
 gsap.registerPlugin(ScrollTrigger);
 
 /*------------ 0 - Const / Variable ---------------*/
@@ -85,6 +86,7 @@ class Circle {
 
 /*------------ 2 - Functions ---------------*/
 FormsContact()
+ZooomPlant()
 
 function whatsappIcon() {
     const button = document.getElementById('whatsapp-link')
@@ -111,7 +113,7 @@ window.onload = () => {
    setTimeout(()=>{
         setLinesDetails()
    }, 1000)
-   if (!isMobile) new AnimationGradient();
+//    if (!isMobile) new AnimationGradient();
 }
 window.onscroll = () => {
     whatsappIcon()
@@ -128,7 +130,7 @@ const swiper = new Swiper('.heroBannerSlider', {
 });
 
 /*------------ 6 - Zoom Image ---------------*/
-let zoomImg = document.querySelector(".f-panzoom");
+let zoomImg = document.querySelector("#myPanzoom");
 const optionsZoom = {
     panMode: "mousemove",
     mouseMoveFactor: 3,

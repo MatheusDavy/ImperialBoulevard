@@ -65,6 +65,7 @@
     @endif
 
     @include('site.components.Modal.zoom_modal')
+    @include('site.components.Modal.zoom_plant')
     @include('site.components.Modal.acceptPolicy')
     @include('site.components.Modal.privacyPolicy')
     @include('site.components.Modal.Forms.error_message')

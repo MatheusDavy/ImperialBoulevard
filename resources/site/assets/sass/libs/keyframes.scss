@@ -1,58 +1,74 @@
-
 // Arrow Down - Hero banner
 @keyframes drop {
-    from{
+    from {
         transform: translate(0, 0);
         opacity: 1;
     }
-    to{
+    to {
         transform: translate(0, 10px);
         opacity: 0;
     }
 }
 // Loader forms
-@keyframes s3 {to{transform: rotate(1turn)}}
+@keyframes s3 {
+    to {
+        transform: rotate(1turn);
+    }
+}
 
 // Preloader
 @-webkit-keyframes preloader-inside-white {
     0% {
-      transform: scale(0, 0);
+        transform: scale(0, 0);
     }
     100% {
-      transform: scale(1, 1);
+        transform: scale(1, 1);
     }
-  }
-  
-  @-webkit-keyframes preloader-inside-red {
+}
+@-webkit-keyframes preloader-inside-red {
     0% {
-      transform: scale(0, 0);
+        transform: scale(0, 0);
     }
     30% {
-      transform: scale(0, 0);
+        transform: scale(0, 0);
     }
     100% {
-      transform: scale(1, 1);
+        transform: scale(1, 1);
     }
-  }
-  
-  @keyframes preloader-inside-white {
+}
+@keyframes preloader-inside-white {
     0% {
-      transform: scale(0, 0);
+        transform: scale(0, 0);
     }
     100% {
-      transform: scale(1, 1);
+        transform: scale(1, 1);
     }
-  }
-  
-  @keyframes preloader-inside-red {
+}
+@keyframes preloader-inside-red {
     0% {
-      transform: scale(0, 0);
+        transform: scale(0, 0);
     }
     30% {
-      transform: scale(0, 0);
+        transform: scale(0, 0);
     }
     100% {
-      transform: scale(1, 1);
+        transform: scale(1, 1);
     }
-  }
-  
+}
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(-90deg);
+    }
+    100% {
+        transform: rotate(-90deg);
+    }
+}
+@media only screen and (max-device-width: 812px) and (orientation: landscape) {
+    .phone,
+    .message {
+        display: block;
+    }
+}
