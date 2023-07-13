@@ -13,7 +13,7 @@
         <div class="menu-content">
             <nav class="menu-content--nav">
                 <ul class="menu-content--list">
-                    <li class="menu-content--item"> <a href="{{route('site.home')}}/#inicio">INICIO</a></li>
+                    <li class="menu-content--item"> <a href="{{route('site.home')}}/#inicio">INÍCIO</a></li>
                     <li class="menu-content--item"> <a href="{{route('site.home')}}/#regiao">A REGIÃO</a></li>
                     <li class="menu-content--item"> <a href="{{route('site.home')}}/#boulevard-convention">BOULEVARD CONVENTION</a></li>
                     <li class="menu-content--item"> <a href="{{route('site.home')}}/#meeting-plus">MEETING PLUS</a></li>
