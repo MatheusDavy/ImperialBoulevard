@@ -7,8 +7,7 @@
         <div class="phone">
         </div>
         <div class="message">
-            Vire seu dispositivo verticalmente <br>
-            (Habilite a rotação do seu dispositivo)
+            Gire seu celular <br>
         </div>
     </div>
 
