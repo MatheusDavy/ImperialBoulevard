@@ -113,7 +113,7 @@ window.onload = () => {
    setTimeout(()=>{
         setLinesDetails()
    }, 1000)
-//    if (!isMobile) new AnimationGradient();
+   if (!isMobile) new AnimationGradient();
 }
 window.onscroll = () => {
     whatsappIcon()
